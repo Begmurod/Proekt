@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<visualDesignerDiagram dslVersion="1.0.0.0" Id="46554a95-e856-446e-be89-b36d2fb416fa" absoluteBounds="0, 0, 23.625, 35.25" name="ORMDataModelSensorSet">
+  <dataBaseObjectModelMoniker Id="8df0ab20-7bdd-4997-b610-1b594022831a" />
+  <nestedChildShapes>
+    <xpObjectShape Id="45bcdeda-4e43-489a-8b91-bd5a19768122" absoluteBounds="10.499999, 3.5359562174479171, 1.5, 3.1011832682291658">
+      <xpObjectMoniker Id="ef416730-2d96-4c97-815a-456e1b4984ee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a9d79cf1-4457-4566-a7dc-05b497c8f8b4" absoluteBounds="10.514999000000001, 3.8459562174479172, 1.4700000000000002, 1.787801106770833" name="Fields" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="5573cd1e-fd0a-414b-8f3c-541caac88294" absoluteBounds="10.514999000000001, 5.6437573242187495, 1.4700000000000002, 0.2493896484375" name="Indexes" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="941ff7ee-eb0f-48ac-a707-f2fd0367ac40" absoluteBounds="10.514999000000001, 5.9031469726562493, 1.4700000000000002, 0.63399251302083348" name="Collections" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </xpObjectShape>
+    <xpObjectShape Id="b0c6ca58-8342-42bb-932e-80e544a7eb91" absoluteBounds="5.9999994999999995, 5.894287109375, 1.5, 5.2164990234375">
+      <xpObjectMoniker Id="9a62020f-39f9-4db9-9319-bae3ebe8418c" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c7b6c9e8-42ef-4196-941f-044afe921e5f" absoluteBounds="6.0149995, 6.2042871093750005, 1.4700000000000002, 3.7108154296874996" name="Fields" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="93d48313-f0d7-4888-b675-27f9eaacb7a1" absoluteBounds="6.0149995, 9.9251025390625, 1.4700000000000002, 0.2493896484375" name="Indexes" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="09f431e0-15a9-457d-b1a1-8a94705d71ae" absoluteBounds="6.0149995, 10.184492187499998, 1.4700000000000002, 0.8262939453125" name="Collections" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </xpObjectShape>
+    <xpObjectShape Id="e421b32e-cc74-4bbc-bf57-b883104b2e3c" absoluteBounds="8.2499995, 0.75, 1.5, 1.7550732421874997">
+      <xpObjectMoniker Id="639b51b9-1e57-40d5-a2a0-57078cada992" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fd1ff2bf-f13f-472e-befd-9e251f890dd7" absoluteBounds="8.2649995, 1.06, 1.4700000000000002, 0.63399251302083326" name="Fields" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="89510aa1-5461-4956-995f-fcf263e4b4ff" absoluteBounds="8.2649995, 1.7039925130208333, 1.4700000000000002, 0.2493896484375" name="Indexes" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="6b78aaef-072e-4398-84eb-b30b087fad2f" absoluteBounds="8.2649995, 1.9633821614583333, 1.4700000000000002, 0.44169108072916674" name="Collections" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </xpObjectShape>
+    <xpObjectShape Id="380e4e16-c0c5-46f6-a496-15173e132e56" absoluteBounds="3, 26.269246419270832, 1.5, 2.7165804036458354">
+      <xpObjectMoniker Id="790def7a-c919-46f9-b297-79203b95cc7a" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5d6a23c9-8e21-45f6-b191-53d3aeb0653d" absoluteBounds="3.0150000000000006, 26.579246419270831, 1.4700000000000002, 1.4031982421875" name="Fields" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="95757487-c431-436d-8bcb-615f9c82c9b2" absoluteBounds="3.0150000000000006, 27.992444661458332, 1.4700000000000002, 0.2493896484375" name="Indexes" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="4859f29a-c1eb-45cb-95e3-0b2c50b47f98" absoluteBounds="3.0150000000000006, 28.25183430989583, 1.4700000000000002, 0.633992513020833" name="Collections" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </xpObjectShape>
+    <xpObjectShape Id="ff93c1d7-c025-44ef-8947-06627ce00153" absoluteBounds="2.9999994999999995, 7.048095703125, 1.4999999999999996, 2.9088818359374997">
+      <xpObjectMoniker Id="3e0ae0b9-4de0-40f0-9891-eee225dcbeb5" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f63587ef-89c7-4be9-963a-80ffa7fc10d6" absoluteBounds="3.0149994999999992, 7.3580957031250005, 1.4700000000000002, 1.9801025390625" name="Fields" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="1f66137b-0183-4c03-a115-da83c8ce8ff1" absoluteBounds="3.0149994999999992, 9.3481982421875, 1.4700000000000002, 0.2493896484375" name="Indexes" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="8f3325aa-0b01-4fc6-a5c4-36f9a3649fdb" absoluteBounds="3.0149994999999992, 9.607587890625, 1.4700000000000002, 0.2493896484375" name="Collections" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </xpObjectShape>
+    <xpObjectShape Id="f0462eec-808a-4ee4-b42f-51d3aac9b5c8" absoluteBounds="0.75, 7.048095703125, 1.5, 2.9088818359374997">
+      <xpObjectMoniker Id="99312e07-0b18-4534-bca0-ef5b99449248" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fa0b078e-3a6b-476b-84d0-3eacd090dbfe" absoluteBounds="0.76499999999999968, 7.358095703125, 1.4700000000000002, 1.9801025390625" name="Fields" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="a059e1d3-7700-4ab0-8dbd-442cdc2d4dd9" absoluteBounds="0.76499999999999968, 9.3481982421875, 1.4700000000000002, 0.2493896484375" name="Indexes" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="0e244114-924d-41e3-827f-f738f37c3f9b" absoluteBounds="0.76499999999999968, 9.607587890625, 1.4700000000000002, 0.2493896484375" name="Collections" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </xpObjectShape>
+    <xpObjectShape Id="416bcb4b-560e-43ec-85b9-5666d99fb9e7" absoluteBounds="3.75, 11.144246419270834, 1.5, 2.7165804036458319">
+      <xpObjectMoniker Id="e2d26e1d-9fb0-4068-a5da-6eb7a92d6985" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b03f9efb-1234-473e-a79a-2b71d1f94849" absoluteBounds="3.765, 11.454246419270834, 1.4700000000000002, 1.787801106770833" name="Fields" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="9f0c071d-3dd9-4cc7-a03e-a4044f6173fd" absoluteBounds="3.765, 13.252047526041666, 1.4700000000000002, 0.2493896484375" name="Indexes" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="6a769a4c-3544-4aee-896b-654ada7e9aca" absoluteBounds="3.765, 13.511437174479166, 1.4700000000000002, 0.2493896484375" name="Collections" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </xpObjectShape>
+    <xpObjectShape Id="53a24dd1-32d9-4feb-adba-a8bd2ec0d66c" absoluteBounds="10.499999, 12.137139485677082, 1.5, 2.3319775390624997">
+      <xpObjectMoniker Id="3c30f946-3d36-4bce-a1da-9c0362e2fa68" />
+      <nestedChildShapes>
+        <elementListCompartment Id="299af53b-7631-4e8c-8d71-3aad46109eff" absoluteBounds="10.514999000000001, 12.447139485677083, 1.4700000000000002, 1.0185953776041665" name="Fields" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="48486ebc-190c-4d5c-80b9-d850f269c804" absoluteBounds="10.514999000000001, 13.475734863281248, 1.4700000000000002, 0.2493896484375" name="Indexes" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="c67fc792-a7b0-4399-8119-1054c779a583" absoluteBounds="10.514999000000001, 13.735124511718748, 1.4700000000000002, 0.63399251302083348" name="Collections" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </xpObjectShape>
+    <xpObjectShape Id="085c0e61-bb6e-4d96-bbaa-1b36c78d8473" absoluteBounds="17.124998499999997, 1.2609325358072934, 1.5, 1.5627718098958332">
+      <xpObjectMoniker Id="7b421e79-5df8-403a-92ae-1ef770a8c61c" />
+      <nestedChildShapes>
+        <elementListCompartment Id="94e28b9b-196e-4994-b617-32c5e0ec1b39" absoluteBounds="17.139998499999997, 1.5709325358072932, 1.4700000000000002, 0.63399251302083326" name="Fields" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="e91ae19e-0499-4fec-823b-526b5aabfbc1" absoluteBounds="17.139998499999997, 2.2149250488281269, 1.4700000000000002, 0.2493896484375" name="Indexes" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="4ce111fd-871e-49f7-9442-1375b91586eb" absoluteBounds="17.139998499999997, 2.4743146972656267, 1.4700000000000002, 0.2493896484375" name="Collections" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </xpObjectShape>
+    <xpObjectShape Id="0f4e56c8-569c-4cb8-bdd0-cee9eaf6e081" absoluteBounds="8.249999, 6.6634928385416679, 1.5, 3.678087565104164">
+      <xpObjectMoniker Id="9b13c093-64c3-4e08-a21b-11960a21e367" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f212d32f-377d-44a4-8033-241fd41e78ee" absoluteBounds="8.2649990000000013, 6.9734928385416683, 1.4700000000000002, 2.1724039713541665" name="Fields" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="7fcf99ef-6bd3-4d96-aa24-4a4f04dec55c" absoluteBounds="8.2649990000000013, 9.1558968098958342, 1.4700000000000002, 0.2493896484375" name="Indexes" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="489e4e6c-2b16-4c65-b597-2dcabb3a6cca" absoluteBounds="8.2649990000000013, 9.415286458333334, 1.4700000000000002, 0.8262939453125" name="Collections" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </xpObjectShape>
+    <xpObjectShape Id="72a80a62-f5a2-4db5-8a37-78e3458e01a5" absoluteBounds="2.9999994999999995, 3.2403971354166679, 1.4999999999999996, 2.524278971354164">
+      <xpObjectMoniker Id="1cf9572e-3ba3-452d-b059-0308a0876090" />
+      <nestedChildShapes>
+        <elementListCompartment Id="96b31813-3e29-42e2-84e4-458e4049cf57" absoluteBounds="3.0149994999999996, 3.5503971354166683, 1.4700000000000002, 1.5954996744791665" name="Fields" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="3ce250ad-c908-494e-b6cf-cb6e343d67e6" absoluteBounds="3.0149994999999996, 5.1558968098958342, 1.4700000000000002, 0.2493896484375" name="Indexes" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="675353aa-f01f-4ad2-9e54-041735eeb771" absoluteBounds="3.0149994999999996, 5.415286458333334, 1.4700000000000002, 0.2493896484375" name="Collections" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </xpObjectShape>
+    <xpObjectShape Id="e3c308a1-c838-43a5-b9e5-a827a3594bb2" absoluteBounds="5.2499994999999995, 17.03641845703125, 1.5, 2.3319775390624997">
+      <xpObjectMoniker Id="12742ae1-4ce3-40fd-9d65-ed5a175a6fba" />
+      <nestedChildShapes>
+        <elementListCompartment Id="62a357a3-ac4b-443c-aedf-7dc44dc77d96" absoluteBounds="5.2649994999999992, 17.346418457031248, 1.4700000000000002, 1.0185953776041665" name="Fields" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="f7377419-a922-4672-aed2-e207335a3418" absoluteBounds="5.2649994999999992, 18.375013834635418, 1.4700000000000002, 0.2493896484375" name="Indexes" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="9dd5f465-cb52-4a7b-9f98-4b9808f538e1" absoluteBounds="5.2649994999999992, 18.634403483072916, 1.4700000000000002, 0.63399251302083348" name="Collections" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </xpObjectShape>
+    <xpObjectShape Id="d7ce5486-3f17-4f84-97c5-2dd499a42b06" absoluteBounds="7.4999994999999995, 17.33451416015625, 1.5, 3.4857861328124997">
+      <xpObjectMoniker Id="2b4fbeee-5eb3-4e70-bab2-4e0191f8d721" />
+      <nestedChildShapes>
+        <elementListCompartment Id="877993e1-1cf9-4360-ad53-3c10f8ee0f70" absoluteBounds="7.5149995, 17.644514160156252, 1.4700000000000002, 1.9801025390625" name="Fields" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="7cdb73ba-6c20-4028-b493-8ac1cf7a6086" absoluteBounds="7.5149995, 19.63461669921875, 1.4700000000000002, 0.2493896484375" name="Indexes" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="7f91ce83-0cf1-49c8-a291-32fd0c2e9ed2" absoluteBounds="7.5149995, 19.894006347656248, 1.4700000000000002, 0.8262939453125" name="Collections" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </xpObjectShape>
+    <xpObjectShape Id="a24374bb-23e1-4fd4-8ace-b86706924869" absoluteBounds="10.499998500000002, 7.5288492838541679, 1.5, 1.9473746744791649">
+      <xpObjectMoniker Id="fd828794-869b-41a9-bb00-bde050350360" />
+      <nestedChildShapes>
+        <elementListCompartment Id="347ca7c3-cdd7-4d5e-a93e-636c260e62ef" absoluteBounds="10.5149985, 7.8388492838541675, 1.4700000000000002, 0.8262939453125" name="Fields" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="99d27fcd-2353-40d7-8a9b-952398a59c86" absoluteBounds="10.5149985, 8.6751432291666681, 1.4700000000000002, 0.2493896484375" name="Indexes" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="772cfea0-437e-42e8-afb4-c672c083f6ba" absoluteBounds="10.5149985, 8.9345328776041679, 1.4700000000000002, 0.44169108072916652" name="Collections" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </xpObjectShape>
+    <commentShape Id="3248cc60-ea6e-4832-af2b-d8d5aeaedb38" absoluteBounds="12.75, 4.625, 3.375, 1">
+      <commentMoniker Id="ca2e8392-539f-4e0f-a3cf-6edc9dd73aa5" />
+    </commentShape>
+    <commentShape Id="fa144c1e-740b-4388-8b6c-7bacfd03ebbb" absoluteBounds="8.25, 24.25, 3.625, 1">
+      <commentMoniker Id="00b48236-1761-4f8b-800a-847969de541b" />
+    </commentShape>
+    <commentShape Id="cafb6a8c-d418-45c3-81ea-d43ee74e89f1" absoluteBounds="10.5, 1.125, 4.125, 1">
+      <commentMoniker Id="e4b54d18-1d63-4b9c-9d52-00daeb78f579" />
+    </commentShape>
+    <commentShape Id="c9225787-501d-4b83-b316-9f870e52100c" absoluteBounds="5.25, 27.125, 4.25, 1">
+      <commentMoniker Id="effcaebb-3f18-4fe0-bb01-62c2d4ab201c" />
+    </commentShape>
+    <commentShape Id="fb50dfb6-9091-4a74-b311-c73c01b04b4d" absoluteBounds="5.25, 34, 5.125, 1">
+      <commentMoniker Id="d9ffd9bb-e27f-4f59-82ed-40b1156b6d7e" />
+    </commentShape>
+    <commentShape Id="e6839355-c823-4663-8e30-b3461f7ce292" absoluteBounds="3, 29.75, 4.625, 1">
+      <commentMoniker Id="d9b8c797-8207-4bf2-a7a3-14225285d72f" />
+    </commentShape>
+    <commentShape Id="de6ac51a-d459-4db4-8616-fb87afef6def" absoluteBounds="6, 32, 3.875, 1">
+      <commentMoniker Id="73d14a49-9e9b-4934-abcb-c020e29a499d" />
+    </commentShape>
+    <commentShape Id="f777f6c6-6025-4394-8344-c9ed0152930d" absoluteBounds="12.75, 12.75, 3.875, 1">
+      <commentMoniker Id="237db381-ff5a-4c93-ac5b-e890aeb19650" />
+    </commentShape>
+    <commentShape Id="6baee32d-500e-4e6d-99c2-0834d5c501ce" absoluteBounds="19.375, 1.5, 4, 1">
+      <commentMoniker Id="35b00dfe-fabb-487f-b096-c24eee2fb9db" />
+    </commentShape>
+    <commentShape Id="0b72b96b-4780-491a-8d60-4810fea28aed" absoluteBounds="10.5, 10.375, 3.875, 1">
+      <commentMoniker Id="094101b6-b84b-442b-9a2d-0f7d01c4533f" />
+    </commentShape>
+    <commentShape Id="92099733-8533-4412-9959-6dc722adfa28" absoluteBounds="5.25, 21.625, 4.25, 1">
+      <commentMoniker Id="c199bcdb-369f-48ac-8cff-91d31541606c" />
+    </commentShape>
+    <commentShape Id="069a1520-9516-43bc-bfdc-6d14406f468d" absoluteBounds="7.5, 15.625, 3.625, 1">
+      <commentMoniker Id="fd3002b3-d809-4ede-a888-7a309781f995" />
+    </commentShape>
+    <commentShape Id="68bff9d4-f49d-4d02-b85a-68b35f55f613" absoluteBounds="9.75, 18.625, 3.625, 1">
+      <commentMoniker Id="dff0547e-499a-4468-9618-c00eca0f55c3" />
+    </commentShape>
+    <commentShape Id="3fd20139-7140-488d-b801-2800fe2a56c0" absoluteBounds="12.75, 8, 3.5, 1">
+      <commentMoniker Id="fc4c8cc4-6088-4edb-9f8c-9864fb35f6b2" />
+    </commentShape>
+    <simpleAssociationConnector Id="4ab46685-17e1-468a-bf6d-1577aba33a1a" edgePoints="[(8.2499995 : 1.62753662109375); (6.7499995 : 1.62753662109375); (6.7499995 : 5.894287109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <simpleAssociationMoniker Id="c2c820d7-fdba-4402-af97-7778e88cd2d5" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="e421b32e-cc74-4bbc-bf57-b883104b2e3c" />
+        <xpObjectShapeMoniker Id="b0c6ca58-8342-42bb-932e-80e544a7eb91" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="df272083-3cd3-4f33-a7da-3c10cecf40a0">
+          <collectionFieldMoniker Id="e404fd13-b3d6-4a75-a976-8bbcfc0571df" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <simpleAssociationConnector Id="559ce6d0-c69e-4a62-9fb1-f6fef5143fec" edgePoints="[(6.53192257692308 : 11.1107861328125); (6.53192257692308 : 11.3607861328125); (6.97846103846154 : 11.3607861328125); (6.97846103846154 : 11.1107861328125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <simpleAssociationMoniker Id="29523282-bb61-4d27-8be1-860361836f60" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="b0c6ca58-8342-42bb-932e-80e544a7eb91" />
+        <xpObjectShapeMoniker Id="b0c6ca58-8342-42bb-932e-80e544a7eb91" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="d43fe30a-f958-4495-85c9-febceb2bf21c">
+          <collectionFieldMoniker Id="282bbc0b-be2f-41ea-8919-2d7cece4eb29" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <simpleAssociationConnector Id="3affb5b9-542b-4da3-bf19-118822c52792" edgePoints="[(8.249999 : 8.50253662109375); (7.4999995 : 8.50253662109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <simpleAssociationMoniker Id="b9cdc637-65fd-4c9f-856d-0ed7176821b5" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="0f4e56c8-569c-4cb8-bdd0-cee9eaf6e081" />
+        <xpObjectShapeMoniker Id="b0c6ca58-8342-42bb-932e-80e544a7eb91" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="7626ff41-fcb1-4d93-92ea-72b716f35dd5">
+          <collectionFieldMoniker Id="110ba338-3083-4168-b507-08bada3e5039" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <simpleAssociationConnector Id="62f57711-7714-4faa-9e06-96725cfad555" edgePoints="[(10.499999 : 6.26571329752604); (9.48958483333333 : 6.26571329752604 : JumpStart); (9.32291816666667 : 6.26571329752604 : JumpEnd); (9.08333233333333 : 6.26571329752604 : JumpStart); (8.91666566666667 : 6.26571329752604 : JumpEnd); (8.67707983333334 : 6.26571329752604 : JumpStart); (8.51041316666667 : 6.26571329752604 : JumpEnd); (7.4999995 : 6.26571329752604)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <simpleAssociationMoniker Id="e3cbe79b-6e16-400e-98b2-06a0f369ea89" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="45bcdeda-4e43-489a-8b91-bd5a19768122" />
+        <xpObjectShapeMoniker Id="b0c6ca58-8342-42bb-932e-80e544a7eb91" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="90dabade-e1f0-465a-8e37-3a762e2b7ea1">
+          <collectionFieldMoniker Id="156e2fac-2887-4baa-9f29-bed9c78a8f19" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <simpleAssociationConnector Id="0b713ef6-9615-494a-aa4c-9303151f3107" edgePoints="[(7.4999995 : 20.1255981445312); (5.59236269731487 : 20.1255981445312 : JumpStart); (5.42569603064821 : 20.1255981445312 : JumpEnd); (5.26242985438341 : 20.1255981445312 : JumpStart); (5.09576318771675 : 20.1255981445312 : JumpEnd); (4.90053382379959 : 20.1255981445312 : JumpStart); (4.73386715713292 : 20.1255981445312 : JumpEnd); (3.75 : 20.1255981445312); (3.75 : 26.2692464192708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <simpleAssociationMoniker Id="c903fcc5-2221-4c70-b5b6-5d1a9a3d368b" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="d7ce5486-3f17-4f84-97c5-2dd499a42b06" />
+        <xpObjectShapeMoniker Id="380e4e16-c0c5-46f6-a496-15173e132e56" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="06c2b740-85a2-477d-a8d9-447f038d7bf9">
+          <collectionFieldMoniker Id="b8ff3e4f-297c-465e-a348-6937f5376998" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <simpleAssociationConnector Id="b1067e61-f32f-4eab-8d72-d535013fd3d6" edgePoints="[(3.3125 : 26.2692464192708); (3.3125 : 9.9569775390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <simpleAssociationMoniker Id="95edd0dd-5401-493a-8d39-0cef6d91fb75" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="380e4e16-c0c5-46f6-a496-15173e132e56" />
+        <xpObjectShapeMoniker Id="ff93c1d7-c025-44ef-8947-06627ce00153" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="a3ca257e-a31c-4aab-9e60-9f0668bf7972">
+          <collectionFieldMoniker Id="c542c4b6-b694-46e5-8c9d-5c96e57d5879" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <simpleAssociationConnector Id="f5224893-a7f6-4769-83d0-213685f7723b" edgePoints="[(8.999999 : 6.66349283854167); (8.999999 : 5.644287109375); (8.67707983333334 : 5.644287109375 : JumpStart); (8.51041316666667 : 5.644287109375 : JumpEnd); (6.83333283333333 : 5.644287109375 : JumpStart); (6.66666616666667 : 5.644287109375 : JumpEnd); (5.6538117275641 : 5.644287109375 : JumpStart); (5.48714506089744 : 5.644287109375 : JumpEnd); (4.8749995 : 5.644287109375); (4.8749995 : 8.50253662109375); (4.71280035042162 : 8.50253662109375 : JumpStart); (4.54613368375496 : 8.50253662109375 : JumpEnd); (4.4999995 : 8.50253662109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <simpleAssociationMoniker Id="f10653bb-63bf-4365-8340-fedb28fd7765" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="0f4e56c8-569c-4cb8-bdd0-cee9eaf6e081" />
+        <xpObjectShapeMoniker Id="ff93c1d7-c025-44ef-8947-06627ce00153" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="b1480b4b-ce2e-4a83-9225-f92ae3d47f8c">
+          <collectionFieldMoniker Id="2c09bb2c-391a-4be5-8399-d226eb2cecc7" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <simpleAssociationConnector Id="4135b551-816e-46e3-928c-a595b677db3d" edgePoints="[(5.9999995 : 10.5651343359375); (5.6538117275641 : 10.5651343359375 : JumpStart); (5.48714506089744 : 10.5651343359375 : JumpEnd); (5.14583308333333 : 10.5651343359375 : JumpStart); (4.97916641666667 : 10.5651343359375 : JumpEnd); (4.81033614652803 : 10.5651343359375 : JumpStart); (4.64366947986137 : 10.5651343359375 : JumpEnd); (4.60230373861264 : 10.5651343359375 : JumpStart); (4.43563707194597 : 10.5651343359375 : JumpEnd); (3.39583333333333 : 10.5651343359375 : JumpStart); (3.22916666666667 : 10.5651343359375 : JumpEnd); (2.35637769649497 : 10.5651343359375 : JumpStart); (2.1897110298283 : 10.5651343359375 : JumpEnd); (1.98958583333333 : 10.5651343359375 : JumpStart); (1.82291916666667 : 10.5651343359375 : JumpEnd); (1.5 : 10.5651343359375); (1.5 : 9.9569775390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <simpleAssociationMoniker Id="f7f79491-85e6-42b7-b688-7718c90e2624" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="b0c6ca58-8342-42bb-932e-80e544a7eb91" />
+        <xpObjectShapeMoniker Id="f0462eec-808a-4ee4-b42f-51d3aac9b5c8" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="d6ad9a2d-541c-499f-88e9-b4903274e033">
+          <collectionFieldMoniker Id="59faf280-5f1f-431d-af76-595d3d05aa9b" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <simpleAssociationConnector Id="b23cb649-83ab-470f-b11e-0ac0cc0ef75f" edgePoints="[(3 : 27.6275366210938); (1.9062525 : 27.6275366210938); (1.9062525 : 9.9569775390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <simpleAssociationMoniker Id="6df60266-b091-45eb-8757-2c5ebdca14ae" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="380e4e16-c0c5-46f6-a496-15173e132e56" />
+        <xpObjectShapeMoniker Id="f0462eec-808a-4ee4-b42f-51d3aac9b5c8" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="b5130fcf-3c85-4791-a574-209b968c6cba">
+          <collectionFieldMoniker Id="6886d631-b696-4e63-bed4-e24b1fe6bcc9" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <simpleAssociationConnector Id="732eaa8d-711e-40fb-b3f7-e71685bbcb41" edgePoints="[(5.9999995 : 6.43994140625); (5.6538117275641 : 6.43994140625 : JumpStart); (5.48714506089744 : 6.43994140625 : JumpEnd); (5.06249975 : 6.43994140625); (5.06249975 : 11.1442464192708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <simpleAssociationMoniker Id="353b968e-a866-46c5-8d98-1f3e4ad33013" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="b0c6ca58-8342-42bb-932e-80e544a7eb91" />
+        <xpObjectShapeMoniker Id="416bcb4b-560e-43ec-85b9-5666d99fb9e7" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="a1196362-c3c9-4f0f-ae62-bb9a49c321cf">
+          <collectionFieldMoniker Id="4d3cc66f-f582-4aa5-a345-d8a5d595223e" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <simpleAssociationConnector Id="4daf5662-8a3e-4c3b-8946-ba091e5d22bf" edgePoints="[(5.89096178846154 : 17.0364184570313); (5.89096178846154 : 12.6108064778646); (5.6538117275641 : 12.6108064778646 : JumpStart); (5.48714506089744 : 12.6108064778646 : JumpEnd); (5.25 : 12.6108064778646)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <simpleAssociationMoniker Id="f0320b54-9b07-4fd4-933a-6fb9b74bb163" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="e3c308a1-c838-43a5-b9e5-a827a3594bb2" />
+        <xpObjectShapeMoniker Id="416bcb4b-560e-43ec-85b9-5666d99fb9e7" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="1ab4476d-e7af-4130-9037-2785daab0788">
+          <collectionFieldMoniker Id="466908be-81eb-4718-95ff-005f7274d2b2" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <simpleAssociationConnector Id="fdb9b1de-8c39-4cba-a244-1c7766ecb522" edgePoints="[(11.0319220769231 : 14.4691170247396); (11.0319220769231 : 14.7191170247396); (11.4784605384615 : 14.7191170247396); (11.4784605384615 : 14.4691170247396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <simpleAssociationMoniker Id="03852a6c-4615-4565-a8f9-606cf36b99de" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="53a24dd1-32d9-4feb-adba-a8bd2ec0d66c" />
+        <xpObjectShapeMoniker Id="53a24dd1-32d9-4feb-adba-a8bd2ec0d66c" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="b43229ec-e813-4a33-80f6-05ca4d2e23f5">
+          <collectionFieldMoniker Id="80fcd038-b078-4846-8298-85bc00ab65dc" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <simpleAssociationConnector Id="32f94a48-9a8e-4803-800c-93665552afd7" edgePoints="[(10.499999 : 13.3031282552083); (8.999999 : 13.3031282552083); (8.999999 : 10.3415804036458)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <simpleAssociationMoniker Id="10f84767-cf78-48ea-8913-f7aa16f49966" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="53a24dd1-32d9-4feb-adba-a8bd2ec0d66c" />
+        <xpObjectShapeMoniker Id="0f4e56c8-569c-4cb8-bdd0-cee9eaf6e081" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="749e48fa-6614-49a2-82d8-b5fb9b58036f">
+          <collectionFieldMoniker Id="8f68257a-9051-4378-9d91-d58b71baa5a6" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <simpleAssociationConnector Id="33809389-9aaa-408a-9768-dc92e0aeccc1" edgePoints="[(10.499999 : 4.59012166341146); (9.4062515 : 4.59012166341146); (9.4062515 : 6.66349283854167)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <simpleAssociationMoniker Id="c58423b2-f5b5-478f-a25d-e56d90242910" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="45bcdeda-4e43-489a-8b91-bd5a19768122" />
+        <xpObjectShapeMoniker Id="0f4e56c8-569c-4cb8-bdd0-cee9eaf6e081" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="229c167c-f227-421e-8889-587fba03c829">
+          <collectionFieldMoniker Id="96e8ccf0-8844-4b20-bf77-2d4b67582cc7" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <simpleAssociationConnector Id="b0637f08-4e33-4db6-85eb-1ab4951def8e" edgePoints="[(10.4999985 : 8.50253662109375); (9.749999 : 8.50253662109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <simpleAssociationMoniker Id="712beac7-2161-4383-8601-68d7bddf7156" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="a24374bb-23e1-4fd4-8ace-b86706924869" />
+        <xpObjectShapeMoniker Id="0f4e56c8-569c-4cb8-bdd0-cee9eaf6e081" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="a9820753-761b-463a-a28c-fa74c63a9277">
+          <collectionFieldMoniker Id="0ca033e9-8974-46ac-84f7-aa1a36116544" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <simpleAssociationConnector Id="1f11b51d-0b1d-4097-8ba3-98bad86a1403" edgePoints="[(8.5937465 : 6.66349283854167); (8.5937465 : 3.91525939941406); (6.83333283333333 : 3.91525939941406 : JumpStart); (6.66666616666667 : 3.91525939941406 : JumpEnd); (4.4999995 : 3.91525939941406)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <simpleAssociationMoniker Id="c2172625-3334-41b9-9022-1f14735b323c" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="0f4e56c8-569c-4cb8-bdd0-cee9eaf6e081" />
+        <xpObjectShapeMoniker Id="72a80a62-f5a2-4db5-8a37-78e3458e01a5" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="38809c27-950e-43f1-bb3f-40ee71438ded">
+          <collectionFieldMoniker Id="a4b763f6-4947-4333-af3f-9ef23f3cadb5" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <simpleAssociationConnector Id="c6ffae70-daae-48d2-aabc-0f6cae512b65" edgePoints="[(5.57047839423077 : 17.0364184570313); (5.57047839423077 : 4.81102575439453); (4.4999995 : 4.81102575439453)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <simpleAssociationMoniker Id="9af65e2c-ccc6-4260-8f91-46f31a3a0687" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="e3c308a1-c838-43a5-b9e5-a827a3594bb2" />
+        <xpObjectShapeMoniker Id="72a80a62-f5a2-4db5-8a37-78e3458e01a5" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="a32913aa-a8aa-49f7-acaf-84827b2f3cbd">
+          <collectionFieldMoniker Id="03e8190d-047f-4c8f-bb93-5286cd7ed680" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <simpleAssociationConnector Id="2b3ec6c4-6e83-4d6f-87d0-758c2c117450" edgePoints="[(7.4999995 : 18.351455078125); (6.7499995 : 18.351455078125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <simpleAssociationMoniker Id="f52a0821-ef02-451c-bfb7-ced20ccd00c0" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="d7ce5486-3f17-4f84-97c5-2dd499a42b06" />
+        <xpObjectShapeMoniker Id="e3c308a1-c838-43a5-b9e5-a827a3594bb2" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="5b9c5cc3-c39e-41b5-bd85-e18d11043830">
+          <collectionFieldMoniker Id="19a152af-d965-46e6-b518-b9d96bfa78be" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <simpleAssociationConnector Id="d1d71dad-8968-4e45-9d0a-3c9ccc835ce5" edgePoints="[(8.03192257692308 : 20.8203002929687); (8.03192257692308 : 21.0703002929687); (8.47846103846154 : 21.0703002929687); (8.47846103846154 : 20.8203002929687)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <simpleAssociationMoniker Id="3296c8b0-e6b0-49c8-9a8d-4b0f9b5b3781" />
+      <relativeChildShapes />
+      <nodes>
+        <xpObjectShapeMoniker Id="d7ce5486-3f17-4f84-97c5-2dd499a42b06" />
+        <xpObjectShapeMoniker Id="d7ce5486-3f17-4f84-97c5-2dd499a42b06" />
+      </nodes>
+      <sourceCollectionField>
+        <associationConnectorReferencesSourceCollectionField Id="7f0be5d3-fb34-45d5-b247-e49baab0afa7">
+          <collectionFieldMoniker Id="c02b36cb-78fd-4230-9875-1aeb0a8f74f9" />
+        </associationConnectorReferencesSourceCollectionField>
+      </sourceCollectionField>
+    </simpleAssociationConnector>
+    <commentConnector Id="d1060f25-07e6-4ad9-82ab-afb45ae0e1ed" edgePoints="[(12.75 : 5.125); (11.999999 : 5.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <commentReferencesSubjectsMoniker Id="d75ff7c7-35d0-468c-9ab0-88e2b02d1cf4" />
+      <nodes>
+        <commentShapeMoniker Id="3248cc60-ea6e-4832-af2b-d8d5aeaedb38" />
+        <xpObjectShapeMoniker Id="45bcdeda-4e43-489a-8b91-bd5a19768122" />
+      </nodes>
+    </commentConnector>
+    <commentConnector Id="ce5bec27-cff7-4d9b-a325-2b93af3550f4" edgePoints="[(8.25 : 24.25); (7.4999995 : 11.1107861328125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <commentReferencesSubjectsMoniker Id="3a7c9478-4180-43bc-b50d-1fa3bc0f0ff0" />
+      <nodes>
+        <commentShapeMoniker Id="fa144c1e-740b-4388-8b6c-7bacfd03ebbb" />
+        <xpObjectShapeMoniker Id="b0c6ca58-8342-42bb-932e-80e544a7eb91" />
+      </nodes>
+    </commentConnector>
+    <commentConnector Id="3c8189da-f1f7-4826-825d-c996f6d564b9" edgePoints="[(10.5 : 1.625); (9.7499995 : 1.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <commentReferencesSubjectsMoniker Id="1c7111ce-8189-4faa-b498-632fdfb95621" />
+      <nodes>
+        <commentShapeMoniker Id="cafb6a8c-d418-45c3-81ea-d43ee74e89f1" />
+        <xpObjectShapeMoniker Id="e421b32e-cc74-4bbc-bf57-b883104b2e3c" />
+      </nodes>
+    </commentConnector>
+    <commentConnector Id="d662cca6-2f2e-4300-ab4f-97679698a43a" edgePoints="[(5.25 : 27.625); (5.1344709317668 : 27.625 : JumpStart); (4.96780426510014 : 27.625 : JumpEnd); (4.5 : 27.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <commentReferencesSubjectsMoniker Id="e5d4a957-84fa-402b-b315-a2381860bf85" />
+      <nodes>
+        <commentShapeMoniker Id="c9225787-501d-4b83-b316-9f870e52100c" />
+        <xpObjectShapeMoniker Id="380e4e16-c0c5-46f6-a496-15173e132e56" />
+      </nodes>
+    </commentConnector>
+    <commentConnector Id="2a197fc9-8165-4445-851b-c75c70a4d9c8" edgePoints="[(5.25 : 34); (4.4999995 : 9.9569775390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <commentReferencesSubjectsMoniker Id="60fc69fe-e441-4731-a1bf-de8fbffa880b" />
+      <nodes>
+        <commentShapeMoniker Id="fb50dfb6-9091-4a74-b311-c73c01b04b4d" />
+        <xpObjectShapeMoniker Id="ff93c1d7-c025-44ef-8947-06627ce00153" />
+      </nodes>
+    </commentConnector>
+    <commentConnector Id="f653d642-43f3-4ab1-ae4d-d2756abcde80" edgePoints="[(3 : 29.75); (2.25 : 9.9569775390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <commentReferencesSubjectsMoniker Id="011ebaee-7126-462f-81fb-b6a1bc1cc9c5" />
+      <nodes>
+        <commentShapeMoniker Id="e6839355-c823-4663-8e30-b3461f7ce292" />
+        <xpObjectShapeMoniker Id="f0462eec-808a-4ee4-b42f-51d3aac9b5c8" />
+      </nodes>
+    </commentConnector>
+    <commentConnector Id="9cdd43e4-88c4-4fe5-bf52-8260d9507cfc" edgePoints="[(6 : 32); (5.25 : 13.8608268229167)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <commentReferencesSubjectsMoniker Id="928b99e6-a013-450d-b893-9dd6bb2e96a2" />
+      <nodes>
+        <commentShapeMoniker Id="de6ac51a-d459-4db4-8616-fb87afef6def" />
+        <xpObjectShapeMoniker Id="416bcb4b-560e-43ec-85b9-5666d99fb9e7" />
+      </nodes>
+    </commentConnector>
+    <commentConnector Id="0bc75b30-8aa4-40bc-bd1d-38d15fc24b77" edgePoints="[(12.75 : 13.25); (11.999999 : 13.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <commentReferencesSubjectsMoniker Id="18d4686a-6f8b-4a92-9c37-3f4e560100d2" />
+      <nodes>
+        <commentShapeMoniker Id="f777f6c6-6025-4394-8344-c9ed0152930d" />
+        <xpObjectShapeMoniker Id="53a24dd1-32d9-4feb-adba-a8bd2ec0d66c" />
+      </nodes>
+    </commentConnector>
+    <commentConnector Id="1c5428a9-0607-4cff-89f8-ad10c69f3046" edgePoints="[(19.375 : 2); (18.6249985 : 2)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <commentReferencesSubjectsMoniker Id="4b7e9558-017b-4d6b-9d36-8299f3b3315e" />
+      <nodes>
+        <commentShapeMoniker Id="6baee32d-500e-4e6d-99c2-0834d5c501ce" />
+        <xpObjectShapeMoniker Id="085c0e61-bb6e-4d96-bbaa-1b36c78d8473" />
+      </nodes>
+    </commentConnector>
+    <commentConnector Id="50fb130f-0e26-4995-ae88-e500feb88221" edgePoints="[(10.5 : 10.375); (9.749999 : 10.3415804036458)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <commentReferencesSubjectsMoniker Id="b7bbcbba-e272-458c-a57c-2fcfebc078df" />
+      <nodes>
+        <commentShapeMoniker Id="0b72b96b-4780-491a-8d60-4810fea28aed" />
+        <xpObjectShapeMoniker Id="0f4e56c8-569c-4cb8-bdd0-cee9eaf6e081" />
+      </nodes>
+    </commentConnector>
+    <commentConnector Id="368255d2-46d2-45ef-9f3c-604f06a41f22" edgePoints="[(5.25 : 21.625); (4.4999995 : 5.76467610677083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <commentReferencesSubjectsMoniker Id="4e014d9d-0dcb-49e1-a5a1-862afd516e6c" />
+      <nodes>
+        <commentShapeMoniker Id="92099733-8533-4412-9959-6dc722adfa28" />
+        <xpObjectShapeMoniker Id="72a80a62-f5a2-4db5-8a37-78e3458e01a5" />
+      </nodes>
+    </commentConnector>
+    <commentConnector Id="8fc97dc6-21e5-4fc5-8cb2-351d9b536a61" edgePoints="[(7.5 : 16.625); (6.7499995 : 17.0364184570313)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <commentReferencesSubjectsMoniker Id="639687b3-09d4-485d-9762-7db9db3902d2" />
+      <nodes>
+        <commentShapeMoniker Id="069a1520-9516-43bc-bfdc-6d14406f468d" />
+        <xpObjectShapeMoniker Id="e3c308a1-c838-43a5-b9e5-a827a3594bb2" />
+      </nodes>
+    </commentConnector>
+    <commentConnector Id="a532df3a-7047-403f-a407-334eeac881eb" edgePoints="[(9.75 : 19.125); (8.9999995 : 19.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <commentReferencesSubjectsMoniker Id="08bf4887-7186-4edc-96ec-10dc1b759d58" />
+      <nodes>
+        <commentShapeMoniker Id="68bff9d4-f49d-4d02-b85a-68b35f55f613" />
+        <xpObjectShapeMoniker Id="d7ce5486-3f17-4f84-97c5-2dd499a42b06" />
+      </nodes>
+    </commentConnector>
+    <commentConnector Id="79f40211-c634-4040-aa74-ce3657c9f350" edgePoints="[(12.75 : 8.5); (11.9999985 : 8.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <commentReferencesSubjectsMoniker Id="e30fb1e3-47ae-406e-875d-a5a803b2011b" />
+      <nodes>
+        <commentShapeMoniker Id="3fd20139-7140-488d-b801-2800fe2a56c0" />
+        <xpObjectShapeMoniker Id="a24374bb-23e1-4fd4-8ace-b86706924869" />
+      </nodes>
+    </commentConnector>
+  </nestedChildShapes>
+</visualDesignerDiagram>

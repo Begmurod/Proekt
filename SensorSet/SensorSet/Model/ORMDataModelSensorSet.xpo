@@ -1,0 +1,664 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="8df0ab20-7bdd-4997-b610-1b594022831a" dbName="SensorSet" connectionInfo="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxEZXZFeHByZXNzWHBvR2VuZXJhdG9yU2V0dGluZ3MgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM6eHNkPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgcHJvdmlkZXJLZXk9Ik1TU3FsU2VydmVyIj4NCiAgPHBhcmFtZXRlcj4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0ic2VydmVyIiB2YWx1ZT0iV1M2Ni0xMjBcU1FMRVhQUkVTUyIgLz4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0iZGF0YWJhc2UiIHZhbHVlPSJTZW5zb3JTZXQiIC8+DQogICAgPENvbm5lY3Rpb25QYWdlU2V0dGluZ3NJdGVtIG5hbWU9InVzZUludGVncmF0ZWRTZWN1cml0eSIgdmFsdWU9IkZhbHNlIiAvPg0KICAgIDxDb25uZWN0aW9uUGFnZVNldHRpbmdzSXRlbSBuYW1lPSJ1c2VyaWQiIHZhbHVlPSJzYSIgLz4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0icGFzc3dvcmQiIHZhbHVlPSIxNkNnZmhuZnl3dGQiIC8+DQogICAgPENvbm5lY3Rpb25QYWdlU2V0dGluZ3NJdGVtIG5hbWU9InJlYWQgb25seSIgdmFsdWU9IjEiIC8+DQogICAgPENvbm5lY3Rpb25QYWdlU2V0dGluZ3NJdGVtIG5hbWU9ImdlbmVyYXRlQ29ubmVjdGlvbkhlbHBlciIgdmFsdWU9InRydWUiIC8+DQogIDwvcGFyYW1ldGVyPg0KPC9EZXZFeHByZXNzWHBvR2VuZXJhdG9yU2V0dGluZ3M+" namespace="SensorSet.Model.SensorSet" connectionString="XpoProvider=MSSqlServer;data source=WS66-120\SQLEXPRESS;user id=sa;password=16Cgfhnfywtd;initial catalog=SensorSet;Persist Security Info=true" dataBaseShemaInfo="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" generateConnectionHelper="true" generateStoredProcedures="true" fieldNameCase="Unchanged" generateDefaultConstructors="false" generateClassesForViews="true" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
+  <comments>
+    <dataBaseObjectModelHasComments Id="056ed639-803b-4038-ad8f-4e75efc1f180">
+      <comment Id="ca2e8392-539f-4e0f-a3cf-6edc9dd73aa5" text="The 'PK_dbo.Users' index is ignored, because 'Id' is a key" name="auth_UsersComment">
+        <subjects>
+          <commentReferencesSubjects Id="d75ff7c7-35d0-468c-9ab0-88e2b02d1cf4">
+            <xpObjectMoniker Id="ef416730-2d96-4c97-815a-456e1b4984ee" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="89783a57-2a8e-48f5-af0b-08a5c3e8541e">
+      <comment Id="00b48236-1761-4f8b-800a-847969de541b" text="The 'PK_Equipment' index is ignored, because 'GUID' is a key" name="device_EquipmentComment">
+        <subjects>
+          <commentReferencesSubjects Id="3a7c9478-4180-43bc-b50d-1fa3bc0f0ff0">
+            <xpObjectMoniker Id="9a62020f-39f9-4db9-9319-bae3ebe8418c" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="17cfcbd8-888b-4cf2-b164-59e40327b4bd">
+      <comment Id="e4b54d18-1d63-4b9c-9d52-00daeb78f579" text="The 'PK_EquipmentCategory' index is ignored, because 'GUID' is a key" name="device_EquipmentCategoryComment">
+        <subjects>
+          <commentReferencesSubjects Id="1c7111ce-8189-4faa-b498-632fdfb95621">
+            <xpObjectMoniker Id="639b51b9-1e57-40d5-a2a0-57078cada992" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="a44c2107-ed87-425f-8341-c2269aa1659b">
+      <comment Id="effcaebb-3f18-4fe0-bb01-62c2d4ab201c" text="The 'PK_EquipmentCharacter' index is ignored, because 'GUID' is a key" name="device_EquipmentCharacterComment">
+        <subjects>
+          <commentReferencesSubjects Id="e5d4a957-84fa-402b-b315-a2381860bf85">
+            <xpObjectMoniker Id="790def7a-c919-46f9-b297-79203b95cc7a" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="41ccf294-e444-4c53-a56e-53526ae88b8f">
+      <comment Id="d9ffd9bb-e27f-4f59-82ed-40b1156b6d7e" text="The 'PK_EquipmentCharacterEquipmentType' index is ignored, because 'GUID' is a key" name="device_EquipmentCharacterEquipmentTypeComment">
+        <subjects>
+          <commentReferencesSubjects Id="60fc69fe-e441-4731-a1bf-de8fbffa880b">
+            <xpObjectMoniker Id="3e0ae0b9-4de0-40f0-9891-eee225dcbeb5" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="e7527d68-213d-469b-8215-a42dbef7e829">
+      <comment Id="d9b8c797-8207-4bf2-a7a3-14225285d72f" text="The 'PK_EquipmentCharacterParam' index is ignored, because 'GUID' is a key" name="device_EquipmentCharacterParamComment">
+        <subjects>
+          <commentReferencesSubjects Id="011ebaee-7126-462f-81fb-b6a1bc1cc9c5">
+            <xpObjectMoniker Id="99312e07-0b18-4534-bca0-ef5b99449248" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="4b59d09d-2855-4be4-98ef-a491212f7511">
+      <comment Id="73d14a49-9e9b-4934-abcb-c020e29a499d" text="The 'PK_EquipmentError' index is ignored, because 'GUID' is a key" name="device_EquipmentErrorComment">
+        <subjects>
+          <commentReferencesSubjects Id="928b99e6-a013-450d-b893-9dd6bb2e96a2">
+            <xpObjectMoniker Id="e2d26e1d-9fb0-4068-a5da-6eb7a92d6985" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="77f92749-6eab-4491-93e9-0c36f637c814">
+      <comment Id="237db381-ff5a-4c93-ac5b-e890aeb19650" text="The 'PK_EquipmentKind' index is ignored, because 'GUID' is a key" name="device_EquipmentKindComment">
+        <subjects>
+          <commentReferencesSubjects Id="18d4686a-6f8b-4a92-9c37-3f4e560100d2">
+            <xpObjectMoniker Id="3c30f946-3d36-4bce-a1da-9c0362e2fa68" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="4326474e-be62-46e8-bdf6-5f51bed9a28d">
+      <comment Id="35b00dfe-fabb-487f-b096-c24eee2fb9db" text="The 'PK_EquipmentState' index is ignored, because 'GUID' is a key" name="device_EquipmentStateComment">
+        <subjects>
+          <commentReferencesSubjects Id="4b7e9558-017b-4d6b-9d36-8299f3b3315e">
+            <xpObjectMoniker Id="7b421e79-5df8-403a-92ae-1ef770a8c61c" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="f3329d75-091c-4ac5-be15-71fa75348b87">
+      <comment Id="094101b6-b84b-442b-9a2d-0f7d01c4533f" text="The 'PK_EquipmentType' index is ignored, because 'GUID' is a key" name="device_EquipmentTypeComment">
+        <subjects>
+          <commentReferencesSubjects Id="b7bbcbba-e272-458c-a57c-2fcfebc078df">
+            <xpObjectMoniker Id="9b13c093-64c3-4e08-a21b-11960a21e367" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="412c8a4d-6c0b-49c1-9648-ab550cc73966">
+      <comment Id="c199bcdb-369f-48ac-8cff-91d31541606c" text="The 'PK_EquipmentTypeError' index is ignored, because 'GUID' is a key" name="device_EquipmentTypeErrorComment">
+        <subjects>
+          <commentReferencesSubjects Id="4e014d9d-0dcb-49e1-a5a1-862afd516e6c">
+            <xpObjectMoniker Id="1cf9572e-3ba3-452d-b059-0308a0876090" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="904fe5ba-fe74-4661-be16-007002d6907d">
+      <comment Id="fd3002b3-d809-4ede-a888-7a309781f995" text="The 'PK_Measurand' index is ignored, because 'GUID' is a key" name="device_MeasurandComment">
+        <subjects>
+          <commentReferencesSubjects Id="639687b3-09d4-485d-9762-7db9db3902d2">
+            <xpObjectMoniker Id="12742ae1-4ce3-40fd-9d65-ed5a175a6fba" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="a0a6d503-8ee5-4cbd-9bae-7bc0c7d0a67a">
+      <comment Id="dff0547e-499a-4468-9618-c00eca0f55c3" text="The 'PK_Dimension' index is ignored, because 'GUID' is a key" name="list_DimensionComment">
+        <subjects>
+          <commentReferencesSubjects Id="08bf4887-7186-4edc-96ec-10dc1b759d58">
+            <xpObjectMoniker Id="2b4fbeee-5eb3-4e70-bab2-4e0191f8d721" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="cfe8de45-1431-4498-8c12-c02b31f284fe">
+      <comment Id="fc4c8cc4-6088-4edb-9f8c-9864fb35f6b2" text="The 'PK_Vendor' index is ignored, because 'GUID' is a key" name="list_VendorComment">
+        <subjects>
+          <commentReferencesSubjects Id="e30fb1e3-47ae-406e-875d-a5a803b2011b">
+            <xpObjectMoniker Id="fd828794-869b-41a9-bb00-bde050350360" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+  </comments>
+  <classes>
+    <dataBaseObjectModelHasClasses Id="de4f8230-4e6f-4986-ad63-38fbd1daae1e">
+      <xpObject Id="ef416730-2d96-4c97-815a-456e1b4984ee" name="auth_Users" baseClass="XPLiteObject" userFileName="auth_Users" designerFileName="auth_Users.Designer" className="auth_Users" virtualBaseClass="XPLiteObject" persistent="auth.Users" virtualName="auth_Users">
+        <fields>
+          <generalXpObjectHasFields Id="d636f2d1-8246-4a9e-93b7-4c9b6fef537d">
+            <field Id="e48f5ae6-6586-478c-9e82-8729177f6730" name="Id" columnType="Int32" key="true" isIdentity="true" persistent="Id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="8825eb49-8033-4eff-a388-c1a5d3d383eb">
+            <field Id="eb422c36-9e9c-4ad4-8c5d-db9d74d58fa8" name="Login" persistent="Login" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="Unlimited" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="512bcf95-ef89-4929-a302-0c7bbe48a365">
+            <field Id="24d7e814-24f5-439c-b130-4fe8488c9772" name="Password" persistent="Password" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="Unlimited" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="aa86aade-c51a-42c6-a031-15cd7a00a6ee">
+            <field Id="ba17b53c-8766-4876-9199-530237844fa0" name="FirstName" persistent="FirstName" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="20" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="727b3cce-7853-447d-9310-483d53537fa3">
+            <field Id="3c637e87-78b6-430c-bf6a-30e7e23310f1" name="MiddleName" persistent="MiddleName" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="20" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="47d3049d-c037-4e00-aacb-23de51909c4d">
+            <field Id="6564b499-0a45-4b81-ae6d-208d9a4ff48d" name="LastName" persistent="LastName" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="20" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="fcb79944-b50e-4c99-94f9-13bc834eb56f">
+            <field Id="0393844e-ce3c-4ca0-8104-2ece9c44cf2c" name="Email" persistent="Email" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="8cfcaade-34a3-4c01-8a8b-8cbfed29d7c4">
+            <field Id="a51044af-254e-4f07-b21a-12b77b3b625f" name="DeletedDate" columnType="DateTime" persistent="DeletedDate" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="e3cbe79b-6e16-400e-98b2-06a0f369ea89" sourceCollectionName="device_Equipments" name="device_EquipmentReferencesauth_Users" targetFieldName="ChangedUserID">
+            <xpObjectMoniker Id="9a62020f-39f9-4db9-9319-bae3ebe8418c" />
+          </simpleAssociation>
+          <simpleAssociation Id="c58423b2-f5b5-478f-a25d-e56d90242910" sourceCollectionName="device_EquipmentTypes" name="device_EquipmentTypeReferencesauth_Users" targetFieldName="ChangedUserID">
+            <xpObjectMoniker Id="9b13c093-64c3-4e08-a21b-11960a21e367" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="e757cb04-6f8e-41af-81d2-e73c99f21570">
+            <collectionField Id="156e2fac-2887-4baa-9f29-bed9c78a8f19" name="device_Equipments" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="35c303c1-3866-4dcb-8e35-aed2eeacd423">
+            <collectionField Id="96e8ccf0-8844-4b20-bf77-2d4b67582cc7" name="device_EquipmentTypes" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="1a0045a1-5288-4f57-baaf-0ca3fb12d090">
+      <xpObject Id="9a62020f-39f9-4db9-9319-bae3ebe8418c" name="device_Equipment" baseClass="XPLiteObject" userFileName="device_Equipment" designerFileName="device_Equipment.Designer" className="device_Equipment" virtualBaseClass="XPLiteObject" persistent="device.Equipment" virtualName="device_Equipment">
+        <fields>
+          <generalXpObjectHasFields Id="71ac9974-b1ce-4a91-9c40-e19ccbed6661">
+            <field Id="2555bd29-585a-47f8-8e3e-6e0dfbb3535f" name="GUID" columnType="Guid" key="true" isIdentity="true" persistent="GUID" virtualColumnType="Guid" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="696a8e61-a96b-4b81-8ea6-33b17a86b1af">
+            <field Id="05ffcf3e-5430-4fdf-a4c7-a84c842cf3be" name="EquipmentTypeGUID" columnType="Guid" persistent="EquipmentTypeGUID" virtualColumnType="device_EquipmentType" logicalType="device_EquipmentType" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="dc52ba70-b8c8-45f5-8ade-d2e9baec3508">
+            <field Id="4d7dfd2b-cef0-4f17-8155-b2d77a602038" name="EquipmentCategoryGUID" columnType="Guid" persistent="EquipmentCategoryGUID" virtualColumnType="device_EquipmentCategory" logicalType="device_EquipmentCategory" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1ffeaba8-40d2-4576-92ba-8770de0118b2">
+            <field Id="c1093b60-6bd2-4e90-8db0-d5dbe16d5ef4" name="ParentGUID" columnType="Guid" persistent="ParentGUID" virtualColumnType="device_Equipment" logicalType="device_Equipment" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="d6dea856-c9bd-4fd7-ba00-6c02244092d3">
+            <field Id="ce31eb88-eb45-434e-ae13-c8d1dff97d1b" name="InventoryNumber" persistent="InventoryNumber" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e8c38bf9-e640-4ed6-8ae9-4db5e9b23e1d">
+            <field Id="7f29975c-223f-4e6a-ab04-f57376278180" name="SerialNumber" persistent="SerialNumber" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="64" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="5b386b13-b6e1-4148-9808-8011d0326c46">
+            <field Id="d2b6c88c-6ef1-4a2a-aa98-4de0b23ccf8a" name="ManufacturingDate" columnType="DateTime" persistent="ManufacturingDate" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="fe4d3e9a-e2b7-4b4b-9322-d5f49bbaf1b0">
+            <field Id="ccf34ee1-ec42-4411-ab85-03c38339fb96" name="StartUseDate" columnType="DateTime" persistent="StartUseDate" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="329bc9d6-c86a-4ebc-a2a4-2b6e2e1607bf">
+            <field Id="982aa0d0-2ac6-45a9-8f7f-35942447d212" name="IpAddress" persistent="IpAddress" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="15" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="b93afc8b-11e3-4f1e-b8f0-4486abc93c30">
+            <field Id="f0464851-0dcc-4ffc-9a2d-314c6c07814d" name="Port" persistent="Port" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="10" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="294e468e-227f-497c-9ecb-ef8ebe6fd307">
+            <field Id="3a1022f3-93e5-435d-8fe3-615319a05b02" name="BalanceCost" columnType="Decimal" persistent="BalanceCost" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="518ada3a-e58e-4f28-a72f-922b7e4be57c">
+            <field Id="757bace6-ef8c-492a-8603-d27ce39fa4ad" name="ChangedUserID" columnType="Int32" persistent="ChangedUserID" virtualColumnType="auth_Users" logicalType="auth_Users" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="0c7f73c9-e74b-43c2-923b-e3a91a95280b">
+            <field Id="541549ee-822c-4938-bcfe-a404dcc3e1e2" name="UseMonths" columnType="Int32" persistent="UseMonths" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="43c2685a-b2b3-4dc8-b573-606d6b562cab">
+            <field Id="592976ce-54e6-4cc5-a01c-c1eb93dd9ca2" name="RemainingBalance" columnType="Decimal" persistent="RemainingBalance" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1dbc3533-db7b-424f-8a1e-70f48327a282">
+            <field Id="fff8d3ff-27a0-4235-b2bb-674f63137ce7" name="GarantyPeriod" columnType="DateTime" persistent="GarantyPeriod" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="beda6d42-fcc9-48d2-99bc-0b5644069fab">
+            <field Id="18c21621-5817-46ec-864e-4f3f07e8eb2a" name="DeletedDate" columnType="DateTime" persistent="DeletedDate" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="b183da71-2735-44e2-a94a-d4fb76351001">
+            <field Id="8b8f9b11-661a-4035-b4d2-b7e54990c11d" name="DateCreate" columnType="DateTime" persistent="DateCreate" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="ee3a2e4e-9352-4be7-87c3-5ba7e04d5d8d">
+            <field Id="f507c2bb-85f9-4c4d-a905-94ea263cfbd6" name="DateModify" columnType="DateTime" persistent="DateModify" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="29523282-bb61-4d27-8be1-860361836f60" sourceCollectionName="device_EquipmentCollection" name="device_EquipmentReferencesdevice_Equipment" targetFieldName="ParentGUID">
+            <xpObjectMoniker Id="9a62020f-39f9-4db9-9319-bae3ebe8418c" />
+          </simpleAssociation>
+          <simpleAssociation Id="f7f79491-85e6-42b7-b688-7718c90e2624" sourceCollectionName="device_EquipmentCharacterParams" name="device_EquipmentCharacterParamReferencesdevice_Equipment" targetFieldName="EquipmentGUID">
+            <xpObjectMoniker Id="99312e07-0b18-4534-bca0-ef5b99449248" />
+          </simpleAssociation>
+          <simpleAssociation Id="353b968e-a866-46c5-8d98-1f3e4ad33013" sourceCollectionName="device_EquipmentErrors" name="device_EquipmentErrorReferencesdevice_Equipment" targetFieldName="EquipmentGUID">
+            <xpObjectMoniker Id="e2d26e1d-9fb0-4068-a5da-6eb7a92d6985" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="9089f2d2-9a08-4f28-9feb-7315841033dc">
+            <collectionField Id="282bbc0b-be2f-41ea-8919-2d7cece4eb29" name="device_EquipmentCollection" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="b1ab8cc1-4626-4725-a6dd-eb6a0e61cebc">
+            <collectionField Id="59faf280-5f1f-431d-af76-595d3d05aa9b" name="device_EquipmentCharacterParams" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="d8444402-b6e6-424b-b38e-538f54a999a4">
+            <collectionField Id="4d3cc66f-f582-4aa5-a345-d8a5d595223e" name="device_EquipmentErrors" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="53bd6f17-e8fe-49dc-9ffb-8e5720818a1d">
+      <xpObject Id="639b51b9-1e57-40d5-a2a0-57078cada992" name="device_EquipmentCategory" baseClass="XPLiteObject" userFileName="device_EquipmentCategory" designerFileName="device_EquipmentCategory.Designer" className="device_EquipmentCategory" virtualBaseClass="XPLiteObject" persistent="device.EquipmentCategory" virtualName="device_EquipmentCategory">
+        <fields>
+          <generalXpObjectHasFields Id="7cd26a25-3ec3-4023-9b71-f6dc63580f41">
+            <field Id="23bea039-7529-41e8-bb15-30b480cac472" name="GUID" columnType="Guid" key="true" isIdentity="true" persistent="GUID" virtualColumnType="Guid" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="04d138f0-fc90-4e35-9257-0441798cdf99">
+            <field Id="013afcbe-e6c0-4679-8e3f-589317e94171" name="Name" persistent="Name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="64" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="c2c820d7-fdba-4402-af97-7778e88cd2d5" sourceCollectionName="device_Equipments" name="device_EquipmentReferencesdevice_EquipmentCategory" targetFieldName="EquipmentCategoryGUID">
+            <xpObjectMoniker Id="9a62020f-39f9-4db9-9319-bae3ebe8418c" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="83119309-98e7-4b1a-9820-730a617eda01">
+            <collectionField Id="e404fd13-b3d6-4a75-a976-8bbcfc0571df" name="device_Equipments" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="dbcc8207-721e-4562-8640-5448e6036d5b">
+      <xpObject Id="790def7a-c919-46f9-b297-79203b95cc7a" name="device_EquipmentCharacter" baseClass="XPLiteObject" userFileName="device_EquipmentCharacter" designerFileName="device_EquipmentCharacter.Designer" className="device_EquipmentCharacter" virtualBaseClass="XPLiteObject" persistent="device.EquipmentCharacter" virtualName="device_EquipmentCharacter">
+        <fields>
+          <generalXpObjectHasFields Id="6e48fd75-59c6-48c2-9f03-05b3d2b84e9a">
+            <field Id="4527bc6f-2741-43b6-8f63-8c05fbcdd091" name="GUID" columnType="Guid" key="true" isIdentity="true" persistent="GUID" virtualColumnType="Guid" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="777cb1a4-3e87-4681-9c5a-c419f72b06d2">
+            <field Id="b9a09445-ac71-4931-83ad-cf8c28d761bc" name="CharacterName" persistent="CharacterName" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="128" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="620b2965-2470-4c3e-9fcf-88f63d52aaee">
+            <field Id="3a7b76c0-28eb-4c93-b918-a88f47ade623" name="FieldName" persistent="FieldName" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="31" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3fe1042c-e453-4b51-96f3-30de49a777f6">
+            <field Id="617ec02d-0db3-468d-b414-3f7acb059e4c" name="ParamType" columnType="Int16" persistent="ParamType" virtualColumnType="Int16" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="5051bb1c-5f37-4470-9e50-3f859fb399c4">
+            <field Id="ae6392b4-1dc1-4164-adba-5268dd5d8646" name="DimensionGUID" columnType="Guid" persistent="DimensionGUID" virtualColumnType="list_Dimension" logicalType="list_Dimension" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="be1ff880-927d-4c58-8a54-ac2224d09ea1">
+            <field Id="54227f81-87b7-44e8-ad49-124501167f28" name="IsSystem" columnType="Boolean" persistent="IsSystem" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="95edd0dd-5401-493a-8d39-0cef6d91fb75" sourceCollectionName="device_EquipmentCharacterEquipmentTypes" name="device_EquipmentCharacterEquipmentTypeReferencesdevice_EquipmentCharacter" targetFieldName="EquipmentCharacterGUID">
+            <xpObjectMoniker Id="3e0ae0b9-4de0-40f0-9891-eee225dcbeb5" />
+          </simpleAssociation>
+          <simpleAssociation Id="6df60266-b091-45eb-8757-2c5ebdca14ae" sourceCollectionName="device_EquipmentCharacterParams" name="device_EquipmentCharacterParamReferencesdevice_EquipmentCharacter" targetFieldName="EquipmentCharacterGUID">
+            <xpObjectMoniker Id="99312e07-0b18-4534-bca0-ef5b99449248" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="5ba55557-838a-4796-8e01-2a3539b6e7f1">
+            <collectionField Id="c542c4b6-b694-46e5-8c9d-5c96e57d5879" name="device_EquipmentCharacterEquipmentTypes" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="26324a0f-b1f1-4d84-b157-fbf8ee24f0e9">
+            <collectionField Id="6886d631-b696-4e63-bed4-e24b1fe6bcc9" name="device_EquipmentCharacterParams" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="5959dbc0-4fdf-43e6-a404-95c0f7799088">
+      <xpObject Id="3e0ae0b9-4de0-40f0-9891-eee225dcbeb5" name="device_EquipmentCharacterEquipmentType" baseClass="XPLiteObject" userFileName="device_EquipmentCharacterEquipmentType" designerFileName="device_EquipmentCharacterEquipmentType.Designer" className="device_EquipmentCharacterEquipmentType" virtualBaseClass="XPLiteObject" persistent="device.EquipmentCharacterEquipmentType" virtualName="device_EquipmentCharacterEquipmentType">
+        <fields>
+          <generalXpObjectHasFields Id="ebecee5d-66ea-4a3d-8965-52b964d4c4d8">
+            <field Id="bb35e22d-c48e-4dff-aa85-ead5e6635018" name="GUID" columnType="Guid" key="true" isIdentity="true" persistent="GUID" virtualColumnType="Guid" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="8b02b8a7-e436-41a8-8c43-8d6b6ac8b3f9">
+            <field Id="48e98fc1-2f7c-4be6-bf0f-743a5868d896" name="EquipmentTypeGUID" columnType="Guid" persistent="EquipmentTypeGUID" virtualColumnType="device_EquipmentType" logicalType="device_EquipmentType" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="8793148c-546a-46f2-a382-175e599a5da3">
+            <field Id="4efed9ae-afbe-40e3-bc20-066bdff93107" name="EquipmentCharacterGUID" columnType="Guid" persistent="EquipmentCharacterGUID" virtualColumnType="device_EquipmentCharacter" logicalType="device_EquipmentCharacter" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="97687dec-9793-49cd-848a-24a94bb524ce">
+            <field Id="ba3c6c2f-c622-4071-a5de-05f067411e23" name="IntParam" columnType="Int64" persistent="IntParam" virtualColumnType="Int64" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1bce200a-7500-4527-8a09-a3ad4376243a">
+            <field Id="89245466-f655-49ce-93b0-5c9df1118cd2" name="StrParam" persistent="StrParam" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="Unlimited" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="96205183-c942-4255-a71c-23b34b734a26">
+            <field Id="331fc35d-3498-4de1-be4f-449eff009218" name="DataParam" columnType="DateTime" persistent="DataParam" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="d41b1d28-60db-48ec-828e-65672e0298ec">
+            <field Id="9402d025-3847-4fe4-ae44-c746a85e4bd0" name="BoolParam" columnType="Boolean" persistent="BoolParam" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3d939ab0-92e6-44cb-a95f-09a3c7d7c28b">
+            <field Id="08d26241-3fbb-4ab6-9665-3ffead8e2b3f" name="NumericParam" columnType="Int64" persistent="NumericParam" virtualColumnType="Int64" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="53159c4e-035d-4fad-9b79-62274c092598">
+            <field Id="96262a2e-0a9b-4666-9bc6-d6acb69ff0d1" name="NumericParam2" columnType="Double" persistent="NumericParam2" virtualColumnType="Double" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="3447c099-c93e-42ad-93fa-2bef50bf192b">
+      <xpObject Id="99312e07-0b18-4534-bca0-ef5b99449248" name="device_EquipmentCharacterParam" baseClass="XPLiteObject" userFileName="device_EquipmentCharacterParam" designerFileName="device_EquipmentCharacterParam.Designer" className="device_EquipmentCharacterParam" virtualBaseClass="XPLiteObject" persistent="device.EquipmentCharacterParam" virtualName="device_EquipmentCharacterParam">
+        <fields>
+          <generalXpObjectHasFields Id="fb22df34-da44-4dfc-930e-12563ad7a9ab">
+            <field Id="f3d56ad9-ac05-4877-a265-f90c94ce181a" name="GUID" columnType="Guid" key="true" isIdentity="true" persistent="GUID" virtualColumnType="Guid" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="0e81a5c9-ad81-40c6-8181-a642e0e511eb">
+            <field Id="0cbdbf2e-2b66-4ff0-abfa-4410a4bd7656" name="EquipmentCharacterGUID" columnType="Guid" persistent="EquipmentCharacterGUID" virtualColumnType="device_EquipmentCharacter" logicalType="device_EquipmentCharacter" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="86ccd073-9482-469f-9340-12960591408a">
+            <field Id="6bcc63ff-a109-4d2a-91bf-05c1ef90bbb8" name="EquipmentGUID" columnType="Guid" persistent="EquipmentGUID" virtualColumnType="device_Equipment" logicalType="device_Equipment" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3b796527-9208-4fd4-a786-fb446295d4ea">
+            <field Id="eda987f4-1a91-42b2-904d-a2d3fbdc77e1" name="IntParam" columnType="Int64" persistent="IntParam" virtualColumnType="Int64" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="de57f642-3976-4f0a-aaf0-b5144e8bff5d">
+            <field Id="bd7812f5-151e-459d-bfea-061f2d2d4905" name="StrParam" persistent="StrParam" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="Unlimited" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="d183ec8d-67fa-4da5-95d4-2f034fe12788">
+            <field Id="a285fa86-3ea6-430c-85c4-d3bacd1b99df" name="DataParam" columnType="DateTime" persistent="DataParam" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="c71074ae-7652-4df7-9731-8eff9fb4a0dd">
+            <field Id="21c7e483-dc0e-4d98-9edc-5dc76ad84a25" name="BoolParam" columnType="Boolean" persistent="BoolParam" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="84d1f8c3-f3b3-4e68-be24-ff01d46682d5">
+            <field Id="9eb34315-c6ee-42ed-bcc2-627df20386f6" name="NumericParam" columnType="Int64" persistent="NumericParam" virtualColumnType="Int64" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="d2bc711a-5f72-47d1-8322-796b072e8c12">
+            <field Id="963271a5-345b-41ce-938f-cf043b542c2a" name="NumericParam2" columnType="Double" persistent="NumericParam2" virtualColumnType="Double" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="13539acd-24f6-42fe-8ff5-c42acadf1faf">
+      <xpObject Id="e2d26e1d-9fb0-4068-a5da-6eb7a92d6985" name="device_EquipmentError" baseClass="XPLiteObject" userFileName="device_EquipmentError" designerFileName="device_EquipmentError.Designer" className="device_EquipmentError" virtualBaseClass="XPLiteObject" persistent="device.EquipmentError" virtualName="device_EquipmentError">
+        <fields>
+          <generalXpObjectHasFields Id="37a21d37-b191-4301-8211-bc80a8969615">
+            <field Id="736c3a04-9d5b-4cd5-9e96-5dd88f4d8803" name="GUID" columnType="Guid" key="true" isIdentity="true" persistent="GUID" virtualColumnType="Guid" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="fdfefd31-96b5-4b89-a152-a1b878b02b09">
+            <field Id="08fec32e-0578-4608-8c5a-3d24b47d4fef" name="MeasurandGUID" columnType="Guid" persistent="MeasurandGUID" virtualColumnType="device_Measurand" logicalType="device_Measurand" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="76ddba89-1778-4552-b098-1df0ab77d17b">
+            <field Id="48600ab1-65e3-40a5-8ab5-82f77000ec64" name="EquipmentID" columnType="Int64" persistent="EquipmentID" virtualColumnType="Int64" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="7fc403e7-1d31-44e4-bdb5-719ff48dacce">
+            <field Id="001260b9-a335-4a83-b064-70fb51c66d85" name="EquipmentGUID" columnType="Guid" persistent="EquipmentGUID" virtualColumnType="device_Equipment" logicalType="device_Equipment" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e7eb9173-c62f-412c-ac63-0457528e0179">
+            <field Id="77024066-af87-4190-898b-e2ed460c736a" name="DiapasonBegin" columnType="Decimal" persistent="DiapasonBegin" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="6cb5c905-681b-432b-ba67-d9b73958554f">
+            <field Id="9fcbd725-1812-494f-aa04-8e4544f50533" name="DiapasonEnd" columnType="Decimal" persistent="DiapasonEnd" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="b8837c46-632c-4896-9d44-3907d2f92e8d">
+            <field Id="0e33e564-e5fa-422a-a5d9-5005f093459f" name="DeltaType" columnType="Int16" persistent="DeltaType" virtualColumnType="Int16" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="a41ff151-4d7d-4495-ac4d-b5649e549fa1">
+            <field Id="8a574731-7444-44d9-b6f2-1a7d73910ed6" name="DeltaValue" columnType="Decimal" persistent="DeltaValue" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="b1b4d4bd-6cd3-4f83-b001-0e5137cf2ec9">
+      <xpObject Id="3c30f946-3d36-4bce-a1da-9c0362e2fa68" name="device_EquipmentKind" baseClass="XPLiteObject" userFileName="device_EquipmentKind" designerFileName="device_EquipmentKind.Designer" className="device_EquipmentKind" virtualBaseClass="XPLiteObject" persistent="device.EquipmentKind" virtualName="device_EquipmentKind">
+        <fields>
+          <generalXpObjectHasFields Id="2f50fe84-866b-4ce0-b478-b7d9de79578e">
+            <field Id="cd8f4721-6594-485f-bf06-d2f83f4dd5a4" name="GUID" columnType="Guid" key="true" isIdentity="true" persistent="GUID" virtualColumnType="Guid" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="f94d14ee-7e63-46ec-a7aa-1380797b1180">
+            <field Id="649e90c5-6d8f-46bb-9ef5-5d069845dc9e" name="Name" persistent="Name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="200" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="6d313a61-65e7-4fe1-b804-4a1d763d262d">
+            <field Id="8d36b5e6-c72d-4567-9476-0f7648a6f1c4" name="ParentGUID" columnType="Guid" persistent="ParentGUID" virtualColumnType="device_EquipmentKind" logicalType="device_EquipmentKind" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="99a58635-2722-487d-b522-e986131f1766">
+            <field Id="312c8e54-b64c-4a11-b4cf-96a83f3e7615" name="DateOfChange" columnType="DateTime" persistent="DateOfChange" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="03852a6c-4615-4565-a8f9-606cf36b99de" sourceCollectionName="device_EquipmentKindCollection" name="device_EquipmentKindReferencesdevice_EquipmentKind" targetFieldName="ParentGUID">
+            <xpObjectMoniker Id="3c30f946-3d36-4bce-a1da-9c0362e2fa68" />
+          </simpleAssociation>
+          <simpleAssociation Id="10f84767-cf78-48ea-8913-f7aa16f49966" sourceCollectionName="device_EquipmentTypes" name="device_EquipmentTypeReferencesdevice_EquipmentKind" targetFieldName="EquipmentKindGUID">
+            <xpObjectMoniker Id="9b13c093-64c3-4e08-a21b-11960a21e367" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="883576b6-ce15-4baf-b134-315c2192f883">
+            <collectionField Id="80fcd038-b078-4846-8298-85bc00ab65dc" name="device_EquipmentKindCollection" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="c3c191a5-90e3-44a6-8948-1dd8d03fe88f">
+            <collectionField Id="8f68257a-9051-4378-9d91-d58b71baa5a6" name="device_EquipmentTypes" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="e58c9837-4c69-4368-9ac2-29b10b064655">
+      <xpObject Id="7b421e79-5df8-403a-92ae-1ef770a8c61c" name="device_EquipmentState" baseClass="XPLiteObject" userFileName="device_EquipmentState" designerFileName="device_EquipmentState.Designer" className="device_EquipmentState" virtualBaseClass="XPLiteObject" persistent="device.EquipmentState" virtualName="device_EquipmentState">
+        <fields>
+          <generalXpObjectHasFields Id="6e2761b2-b78d-4033-a210-766616482aa1">
+            <field Id="b5a9d523-f7dc-4794-8a31-ac176cc7000b" name="GUID" columnType="Guid" key="true" isIdentity="true" persistent="GUID" virtualColumnType="Guid" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="70ea8826-908f-4d1a-9bee-90da4c5c9bdc">
+            <field Id="dac7c84a-df88-4815-a2d7-2b5fbeb704b0" name="StateName" persistent="StateName" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="64" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="31c3290c-8acc-46fc-990d-16c7ddc9b2d3">
+      <xpObject Id="9b13c093-64c3-4e08-a21b-11960a21e367" name="device_EquipmentType" baseClass="XPLiteObject" userFileName="device_EquipmentType" designerFileName="device_EquipmentType.Designer" className="device_EquipmentType" virtualBaseClass="XPLiteObject" persistent="device.EquipmentType" virtualName="device_EquipmentType">
+        <fields>
+          <generalXpObjectHasFields Id="912855f7-da3c-4f56-bb6a-b20601baa46e">
+            <field Id="f7823dbd-b885-4bf9-9e56-8d9a55782308" name="GUID" columnType="Guid" key="true" isIdentity="true" persistent="GUID" virtualColumnType="Guid" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="233af8ea-1750-4133-9cf0-915b5d36ed1a">
+            <field Id="a7a1d432-f2de-4b2b-843c-5fa07168069d" name="EquipmentKindGUID" columnType="Guid" persistent="EquipmentKindGUID" virtualColumnType="device_EquipmentKind" logicalType="device_EquipmentKind" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="f673f273-0dd9-4c64-aac3-3d8d5b61d5b3">
+            <field Id="afaf2fb4-8057-4164-acfe-12094ea37c2f" name="EquipmentVendorGUID" columnType="Guid" persistent="EquipmentVendorGUID" virtualColumnType="list_Vendor" logicalType="list_Vendor" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="82dd78c4-0f6e-472b-8218-286f20519c44">
+            <field Id="3fd00f2b-9ec2-4e92-ae14-8368ac378cfc" name="Name" persistent="Name" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="60027ec9-4b33-4245-8de2-8a36679c231d">
+            <field Id="d6e6674b-eadf-409d-846e-72cf265aeed5" name="Description" persistent="Description" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="dc2a5027-22ab-442d-9ea9-dbea4272faf8">
+            <field Id="a1002922-9f68-42d3-baef-0e0b8749293f" name="FullName" persistent="FullName" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="Unlimited" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="dd28fef5-b7be-4ac0-8209-b7386ec57634">
+            <field Id="5d182261-c73b-4223-8f02-adf2ecada659" name="DeletedDate" columnType="DateTime" persistent="DeletedDate" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="cb5d3ea1-2531-49e4-9017-272aecb82916">
+            <field Id="8e6a2a45-3ae2-4f27-beb6-a678fd0a40e5" name="DateCreate" columnType="DateTime" persistent="DateCreate" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="925ad876-c6a6-4400-bfc6-ebdb77e11f95">
+            <field Id="4c1ccde0-3b56-45aa-b057-c54e519949bf" name="DateModify" columnType="DateTime" persistent="DateModify" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="de292551-3e4f-4730-8456-9ff3f8b07c75">
+            <field Id="3d4f16a9-fc9e-4fae-ba8a-76f23e907081" name="ChangedUserID" columnType="Int32" persistent="ChangedUserID" virtualColumnType="auth_Users" logicalType="auth_Users" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="b9cdc637-65fd-4c9f-856d-0ed7176821b5" sourceCollectionName="device_Equipments" name="device_EquipmentReferencesdevice_EquipmentType" targetFieldName="EquipmentTypeGUID">
+            <xpObjectMoniker Id="9a62020f-39f9-4db9-9319-bae3ebe8418c" />
+          </simpleAssociation>
+          <simpleAssociation Id="f10653bb-63bf-4365-8340-fedb28fd7765" sourceCollectionName="device_EquipmentCharacterEquipmentTypes" name="device_EquipmentCharacterEquipmentTypeReferencesdevice_EquipmentType" targetFieldName="EquipmentTypeGUID">
+            <xpObjectMoniker Id="3e0ae0b9-4de0-40f0-9891-eee225dcbeb5" />
+          </simpleAssociation>
+          <simpleAssociation Id="c2172625-3334-41b9-9022-1f14735b323c" sourceCollectionName="device_EquipmentTypeErrors" name="device_EquipmentTypeErrorReferencesdevice_EquipmentType" targetFieldName="EquipmentTypeGUID">
+            <xpObjectMoniker Id="1cf9572e-3ba3-452d-b059-0308a0876090" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="d4e876f9-60ab-4d51-bd18-82d4de8aeb23">
+            <collectionField Id="110ba338-3083-4168-b507-08bada3e5039" name="device_Equipments" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="6022c380-0786-4613-a017-97fb26f1612e">
+            <collectionField Id="2c09bb2c-391a-4be5-8399-d226eb2cecc7" name="device_EquipmentCharacterEquipmentTypes" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="3b6440f7-9cb5-4bb9-bd2e-6a2bfee7473b">
+            <collectionField Id="a4b763f6-4947-4333-af3f-9ef23f3cadb5" name="device_EquipmentTypeErrors" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="c4856f43-2782-4c63-8bf0-eca224ea16d7">
+      <xpObject Id="1cf9572e-3ba3-452d-b059-0308a0876090" name="device_EquipmentTypeError" baseClass="XPLiteObject" userFileName="device_EquipmentTypeError" designerFileName="device_EquipmentTypeError.Designer" className="device_EquipmentTypeError" virtualBaseClass="XPLiteObject" persistent="device.EquipmentTypeError" virtualName="device_EquipmentTypeError">
+        <fields>
+          <generalXpObjectHasFields Id="8dc8e884-5f24-42c5-bb74-be18f1522e60">
+            <field Id="dfde6bfe-498c-41a9-a8ad-85205fc9ef6e" name="GUID" columnType="Guid" key="true" isIdentity="true" persistent="GUID" virtualColumnType="Guid" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="7678db98-5bfc-4f31-9890-3149f4f0e00e">
+            <field Id="fb3420b2-c62c-4945-b2a0-f287a13d46d2" name="MeasurandGUID" columnType="Guid" persistent="MeasurandGUID" virtualColumnType="device_Measurand" logicalType="device_Measurand" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="2a200c97-add4-41ea-a365-bee40359cb70">
+            <field Id="f462b78c-5122-4cb6-8546-bbc8ea4f21b5" name="EquipmentTypeGUID" columnType="Guid" persistent="EquipmentTypeGUID" virtualColumnType="device_EquipmentType" logicalType="device_EquipmentType" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3b32a3b3-3354-4778-a5e4-e31c85aa6a21">
+            <field Id="2f6b73d4-f5d7-43c0-b86d-186cbee19394" name="DiapasonBegin" columnType="Decimal" persistent="DiapasonBegin" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="5981efb9-0dc3-48d9-8df8-a9a0b295ff22">
+            <field Id="9ae5ad32-7329-43bf-991c-7e60ae6bae61" name="DiapasonEnd" columnType="Decimal" persistent="DiapasonEnd" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="44e777f1-e325-40c5-acd1-28222e0fcfbf">
+            <field Id="8f50f379-16c8-4491-bf8a-4c63dd643f78" name="DeltaType" columnType="Int16" persistent="DeltaType" virtualColumnType="Int16" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="c583d74e-5923-4466-8bfd-bebfaa1ec7b1">
+            <field Id="8dc7f3e6-3106-4f6b-adda-ae882a0d9637" name="DeltaValue" columnType="Decimal" persistent="DeltaValue" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="4903f9eb-de4b-4686-8709-bdaa30aa398d">
+      <xpObject Id="12742ae1-4ce3-40fd-9d65-ed5a175a6fba" name="device_Measurand" baseClass="XPLiteObject" userFileName="device_Measurand" designerFileName="device_Measurand.Designer" className="device_Measurand" virtualBaseClass="XPLiteObject" persistent="device.Measurand" virtualName="device_Measurand">
+        <fields>
+          <generalXpObjectHasFields Id="384e3362-e90f-4e54-8acd-f0897f91526e">
+            <field Id="b5845da1-50f2-4216-8a68-1873d5242d57" name="GUID" columnType="Guid" key="true" isIdentity="true" persistent="GUID" virtualColumnType="Guid" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1dd33927-bce0-4ffe-98f6-3bfadb4b8a37">
+            <field Id="684ed743-3c6e-4f66-90ec-f803b6bacf96" name="DimensionID" columnType="Int64" persistent="DimensionID" virtualColumnType="Int64" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e86ebddb-48f3-44ce-8702-ffc1c2a9119c">
+            <field Id="81fdd092-ef54-4a7d-a61e-0c18e14e5f11" name="ValueName" persistent="ValueName" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="64" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="77cdcbf9-80f9-4934-8d4a-a41c9b2898c0">
+            <field Id="3c64a98f-7f24-4ecb-adf2-ff215ee84ac7" name="DimensionGUID" columnType="Guid" persistent="DimensionGUID" virtualColumnType="list_Dimension" logicalType="list_Dimension" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="f0320b54-9b07-4fd4-933a-6fb9b74bb163" sourceCollectionName="device_EquipmentErrors" name="device_EquipmentErrorReferencesdevice_Measurand" targetFieldName="MeasurandGUID">
+            <xpObjectMoniker Id="e2d26e1d-9fb0-4068-a5da-6eb7a92d6985" />
+          </simpleAssociation>
+          <simpleAssociation Id="9af65e2c-ccc6-4260-8f91-46f31a3a0687" sourceCollectionName="device_EquipmentTypeErrors" name="device_EquipmentTypeErrorReferencesdevice_Measurand" targetFieldName="MeasurandGUID">
+            <xpObjectMoniker Id="1cf9572e-3ba3-452d-b059-0308a0876090" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="1ce97ce0-52f8-41ff-84fe-15faa7c711c0">
+            <collectionField Id="466908be-81eb-4718-95ff-005f7274d2b2" name="device_EquipmentErrors" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="613c5fc1-2cc5-40b2-9c12-6114d2a64ed2">
+            <collectionField Id="03e8190d-047f-4c8f-bb93-5286cd7ed680" name="device_EquipmentTypeErrors" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="ac3da4f8-bd5c-4bba-9537-968f95ff5230">
+      <xpObject Id="2b4fbeee-5eb3-4e70-bab2-4e0191f8d721" name="list_Dimension" baseClass="XPLiteObject" userFileName="list_Dimension" designerFileName="list_Dimension.Designer" className="list_Dimension" virtualBaseClass="XPLiteObject" persistent="list.Dimension" virtualName="list_Dimension">
+        <fields>
+          <generalXpObjectHasFields Id="e75085a6-e35b-4127-886d-c16f0f7e5a98">
+            <field Id="3f98b3c5-4aa4-4e32-ae8a-d73d24b904eb" name="GUID" columnType="Guid" key="true" isIdentity="true" persistent="GUID" virtualColumnType="Guid" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3a25df19-28de-48d9-9589-fa232810eab1">
+            <field Id="9306507d-c4c7-4352-8678-32bbb6f6e28f" name="Name" persistent="Name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="200" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="16857b78-db67-4405-9555-117e89d4da0d">
+            <field Id="16c78462-5813-465c-8c17-e15f27d9761d" name="NameEn" persistent="NameEn" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="200" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="2b224796-fe78-41f9-b7de-876f72398d85">
+            <field Id="e9ad7399-e07e-4ef0-a945-6337a08b23a0" name="ParentGUID" columnType="Guid" persistent="ParentGUID" virtualColumnType="list_Dimension" logicalType="list_Dimension" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="53699b8b-f2b6-4f63-8fd8-6bf248f7e98d">
+            <field Id="a37f619e-b91e-4517-aa08-cffa165f816f" name="Koef" columnType="Decimal" persistent="Koef" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="64aee053-f5bf-4cee-b006-63d5bbdb0dd3">
+            <field Id="e3fe7811-648f-4025-9228-0786700656ac" name="ShowInInterface" columnType="Boolean" persistent="ShowInInterface" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="2baf1e60-99c1-4e73-966c-f0fbdfbe7892">
+            <field Id="7c30139e-30d4-4dc9-922c-af0b16c6b796" name="DateOfChange" columnType="DateTime" persistent="DateOfChange" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="ac54235f-e6de-42bb-94a7-70188d8d9325">
+            <field Id="a7f6927a-252b-43bc-a370-967ebb96690e" name="Digits" columnType="Int16" persistent="Digits" virtualColumnType="Int16" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="4a6fc547-157e-41bb-9eb8-3683c9737864">
+            <field Id="f89d6524-3683-4978-90fa-e584b2a0f67f" name="DeletedDate" columnType="DateTime" persistent="DeletedDate" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="c903fcc5-2221-4c70-b5b6-5d1a9a3d368b" sourceCollectionName="device_EquipmentCharacters" name="device_EquipmentCharacterReferenceslist_Dimension" targetFieldName="DimensionGUID">
+            <xpObjectMoniker Id="790def7a-c919-46f9-b297-79203b95cc7a" />
+          </simpleAssociation>
+          <simpleAssociation Id="f52a0821-ef02-451c-bfb7-ced20ccd00c0" sourceCollectionName="device_Measurands" name="device_MeasurandReferenceslist_Dimension" targetFieldName="DimensionGUID">
+            <xpObjectMoniker Id="12742ae1-4ce3-40fd-9d65-ed5a175a6fba" />
+          </simpleAssociation>
+          <simpleAssociation Id="3296c8b0-e6b0-49c8-9a8d-4b0f9b5b3781" sourceCollectionName="list_DimensionCollection" name="list_DimensionReferenceslist_Dimension" targetFieldName="ParentGUID">
+            <xpObjectMoniker Id="2b4fbeee-5eb3-4e70-bab2-4e0191f8d721" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="6411473d-02f2-4731-a335-46f091e19d21">
+            <collectionField Id="b8ff3e4f-297c-465e-a348-6937f5376998" name="device_EquipmentCharacters" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="947ce46e-fa5c-4ca9-9640-d58faca527ff">
+            <collectionField Id="19a152af-d965-46e6-b518-b9d96bfa78be" name="device_Measurands" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="bb498ab2-a7e3-4423-afee-0755e0496c20">
+            <collectionField Id="c02b36cb-78fd-4230-9875-1aeb0a8f74f9" name="list_DimensionCollection" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="4cd0b001-95b0-4705-8bcd-f9b1f2511ed8">
+      <xpObject Id="fd828794-869b-41a9-bb00-bde050350360" name="list_Vendor" baseClass="XPLiteObject" userFileName="list_Vendor" designerFileName="list_Vendor.Designer" className="list_Vendor" virtualBaseClass="XPLiteObject" persistent="list.Vendor" virtualName="list_Vendor">
+        <fields>
+          <generalXpObjectHasFields Id="007e66bc-15fb-4bed-bebc-c119cfb540ea">
+            <field Id="fda783fa-90af-4fef-921e-4a4d0cc9e42f" name="GUID" columnType="Guid" key="true" isIdentity="true" persistent="GUID" virtualColumnType="Guid" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="c3a3b006-b224-4fe2-b9f9-b2ba5aa39542">
+            <field Id="1e92f9e4-44dc-42a0-9345-7daf0baf3c73" name="Name" persistent="Name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="128" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3ea76019-203f-409d-a681-3b4749c2a7fe">
+            <field Id="4ce73171-cc13-4660-ba83-e88135fd5e91" name="CountryName" persistent="CountryName" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="64" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="712beac7-2161-4383-8601-68d7bddf7156" sourceCollectionName="device_EquipmentTypes" name="device_EquipmentTypeReferenceslist_Vendor" targetFieldName="EquipmentVendorGUID">
+            <xpObjectMoniker Id="9b13c093-64c3-4e08-a21b-11960a21e367" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="0936670b-2763-44f5-8e2b-4c66d0e5786c">
+            <collectionField Id="0ca033e9-8974-46ac-84f7-aa1a36116544" name="device_EquipmentTypes" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+  </classes>
+</dataBaseObjectModel>
