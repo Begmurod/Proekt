@@ -72,7 +72,7 @@ namespace SensorSet.UI.Equipment
                  currentEquipment.ManufacturingDate, currentEquipment.StartUseDate, currentEquipment.IpAddress,
                  currentEquipment.Port, currentEquipment.BalanceCost,
                  currentEquipment.UseMonths, currentEquipment.RemainingBalance, currentEquipment.GarantyPeriod);
-                EquipmentCategoryGUIDlookUpEdit.ReadOnly = true;
+               
                 EquipmentTypeGUIDLookUpEdit.ReadOnly = true;
                 ParentGUIDlookUpEdit.ReadOnly = true;
                 inventoryNumberTextEdit.ReadOnly = true;
@@ -110,8 +110,7 @@ namespace SensorSet.UI.Equipment
 
             if (edit)
             {
-                EquipmentCategoryGUIDlookUpEdit.EditValue = currentEquipment.EquipmentCategoryGUID;
-                EquipmentTypeGUIDLookUpEdit.EditValue = currentEquipment.EquipmentTypeGUID;
+                EquipmentTypeGUIDLookUpEdit.EditValue = currentEquipment.EquipmentTypeGUID.GUID;
                 ParentGUIDlookUpEdit.EditValue = currentEquipment.ParentGUID;
                 inventoryNumberTextEdit.Text = currentEquipment.InventoryNumber;
                 ipAddresstextEdit.Text = currentEquipment.IpAddress;
@@ -135,30 +134,36 @@ namespace SensorSet.UI.Equipment
             SaveDimension();
             uow.CommitChanges();//Сохранение объекта в БД       
             Close();
+
         }
         private void validForm()
         {
-            //formValid = false;
-            //decimal balanceCost = 1;
-            //int useMonth = -1;
-            //decimal remainingBalance = -1;
-            //string inventoryNumber = null;
-            //try
-            //{
-            //    balanceCost = Convert.ToDecimal(balanceCostatextEdit.Text);
-            //    useMonth = Convert.ToInt32(useMonthstextEdit.Text);
-            //    remainingBalance = Convert.ToDecimal(remainingBalancetextEdit.Text);
-            //    inventoryNumber = ipAddresstextEdit.Text;
-            //}
-            //catch (Exception e)
-            //{
-            //    MessageBox.Show("ошибка");
-            //}
-            //finally
-            //{
-            //    if (balanceCost > -1 && useMonth > -1 && remainingBalance >= 1 && inventoryNumber!= null)
-            //    { formValid = true; }
-            //}
+        //    formValid = false;
+
+        //    decimal balanceCost = 1;
+        //    int useMonth = -1;
+        //    decimal remainingBalance = -1;
+        //    string inventoryNumber = null;
+        //    string serialNumber = null;
+        //    try
+        //    {
+        //        balanceCost = Convert.ToDecimal(balanceCostatextEdit.Text);
+        //        useMonth = Convert.ToInt32(useMonthstextEdit.Text);
+        //        remainingBalance = Convert.ToDecimal(remainingBalancetextEdit.Text);
+        //        inventoryNumber = ipAddresstextEdit.Text;
+        //        serialNumber = serialNumberTextEdit.Text;
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        MessageBox.Show("ошибка");
+        //    }
+        //    finally
+        //    {
+        //        if (balanceCost > -1 && useMonth > -1 && remainingBalance >= 1 && inventoryNumber != null)
+        //        { formValid = true; }
+        //    }
+        //    uow.CommitChanges();//Сохранение объекта в БД       
+        //    Close();
         }
         /// <summary>
         /// Заполнение текущей единицы данными с формы
@@ -167,7 +172,6 @@ namespace SensorSet.UI.Equipment
         {
             if (formValid)
             {
-                currentEquipment.EquipmentCategoryGUID= uow.GetObjectByKey<device_EquipmentCategory>(EquipmentCategoryGUIDlookUpEdit.EditValue);
                 currentEquipment.EquipmentTypeGUID = uow.GetObjectByKey<device_EquipmentType>(EquipmentTypeGUIDLookUpEdit.EditValue);
                 currentEquipment.ParentGUID = uow.GetObjectByKey<device_Equipment>(ParentGUIDlookUpEdit.EditValue);
                 currentEquipment.InventoryNumber = inventoryNumberTextEdit.Text;
@@ -186,6 +190,7 @@ namespace SensorSet.UI.Equipment
                     currentEquipment.DateOfChange = DateTime.Now;
                     currentEquipment.Save();
                 }
+                Close();
             }
 
         }
@@ -195,5 +200,19 @@ namespace SensorSet.UI.Equipment
             uow.Dispose();
             Close();
         }
+
+        private void balanceCostatextEdit_TextChanged(object sender, EventArgs e)
+        {
+            number();
+        }
+        void number()
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(balanceCostatextEdit.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Поле нужно ввести только числовое значение.");
+                balanceCostatextEdit.Text = balanceCostatextEdit.Text.Remove(balanceCostatextEdit.Text.Length - 1);
+            }
+        }
+
     }
 }

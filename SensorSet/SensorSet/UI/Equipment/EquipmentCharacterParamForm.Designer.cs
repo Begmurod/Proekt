@@ -148,8 +148,7 @@
             this.equipmentGUIDLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.equipmentGUIDLookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Обозначение"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NameEng", "Международное обозначение")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SerialNumber", "Серийный номер", 76, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
             this.equipmentGUIDLookUpEdit.Properties.DataSource = this.EquipmentGUIDDataView;
             this.equipmentGUIDLookUpEdit.Properties.DisplayMember = "SerialNumber";
             this.equipmentGUIDLookUpEdit.Properties.ValueMember = "GUID";
@@ -182,8 +181,7 @@
             this.equipmentCharacterGUIDlookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.equipmentCharacterGUIDlookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Обозначение"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NameEng", "Международное обозначение")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CharacterName", "Название характеристики")});
             this.equipmentCharacterGUIDlookUpEdit.Properties.DataSource = this.EquipmentCharacterGUIDDataView;
             this.equipmentCharacterGUIDlookUpEdit.Properties.DisplayMember = "CharacterName";
             this.equipmentCharacterGUIDlookUpEdit.Properties.ValueMember = "GUID";

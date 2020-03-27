@@ -2,6 +2,11 @@
 using System;
 using SensorSet.Model.SensorSet;
 using DevExpress.Xpo.DB;
+using System.Collections.Generic;
+using System.Web.UI;
+using DevExpress.XtraEditors;
+using System.Windows.Forms;
+using DevExpress.XtraEditors.DXErrorProvider;
 
 namespace SensorSet.UI.Equipment
 {
@@ -88,17 +93,36 @@ namespace SensorSet.UI.Equipment
 
         }
 
-        //private void addButton_Click(object sender, EventArgs e)
-        //{
-        //    validForm();
-        //    SaveDimension();
-        //    uow.CommitChanges();//Сохранение объекта в БД       
-        //    Close();
-        //}
+        
 
         private void validForm()
         {
             //TODO  Сделать валидацию формы!!!
+            formValid = false;
+
+            List<string> notExistData = new List<string>();
+
+            formValid = dxValidationProvider.Validate();
+            foreach (System.Windows.Forms.Control c in dxValidationProvider.GetInvalidControls())
+            {
+                notExistData.Add(dxValidationProvider.GetValidationRule(c).ErrorText);
+            }
+            if (!formValid && notExistData.Count != 0)
+            {
+                int i = 1;
+                string str = string.Empty;
+                foreach (string s in notExistData)
+                {
+                    if (i == 1)
+                        str = string.Format("\n{0}. {1}", i, s);
+                    else
+                        str = string.Format("{0}\n{1}. {2}", str, i, s);
+                    i++;
+                }
+                str = string.Format("Для сохранения записи не хватает данных: {0}", str);
+                XtraMessageBox.Show(str, "Ввод недостающих данных", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            
         }
         /// <summary>
         /// Заполнение текущей единицы данными с формы
@@ -119,17 +143,12 @@ namespace SensorSet.UI.Equipment
                     currentDimension.DateOfChange = DateTime.Now;
                     currentDimension.Save();
                 }
+                uow.CommitChanges();//Сохранение объекта в БД  
+                Close();
             }
 
         }
 
-        //private void simpleButton2_Click(object sender, EventArgs e)
-        //{
-        //    validForm();
-        //    SaveDimension();
-        //    uow.CommitChanges();//Сохранение объекта в БД       
-        //    Close();
-        //}
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
@@ -140,9 +159,7 @@ namespace SensorSet.UI.Equipment
         private void addButton_Click(object sender, EventArgs e)
         {
             validForm();
-            SaveDimension();
-            uow.CommitChanges();//Сохранение объекта в БД       
-            Close();
+            SaveDimension();                            
         }
 
         private void cancelButton_Click(object sender, EventArgs e)

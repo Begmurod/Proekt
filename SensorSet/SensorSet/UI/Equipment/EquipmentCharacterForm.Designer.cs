@@ -126,8 +126,7 @@
             this.dimensionGUIDLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dimensionGUIDLookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Обозначение"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NameEng", "Международное обозначение")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Обозначение")});
             this.dimensionGUIDLookUpEdit.Properties.DataSource = this.dimensionGUIDDataView;
             this.dimensionGUIDLookUpEdit.Properties.DisplayMember = "Name";
             this.dimensionGUIDLookUpEdit.Properties.ValueMember = "GUID";

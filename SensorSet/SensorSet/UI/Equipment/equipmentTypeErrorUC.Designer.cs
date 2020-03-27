@@ -29,17 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.Xpo.DataViewProperty dataViewProperty8 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty9 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty10 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty11 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty12 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty13 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty14 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty15 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty16 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty17 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty18 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty19 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty20 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty21 = new DevExpress.Xpo.DataViewProperty();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(equipmentTypeErrorUC));
             this.equipmentTypeErrorDataView = new DevExpress.Xpo.XPDataView(this.components);
             this.dimensionRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barButtonItemAdd = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItemEdit = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItemDelete = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItemView = new DevExpress.XtraBars.BarButtonItem();
@@ -54,6 +53,10 @@
             this.colDiapasonEnd = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDeltaType = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDeltaValue = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.barButtonItemAdd = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonGalleryBarItem1 = new DevExpress.XtraBars.RibbonGalleryBarItem();
+            this.barButtonItemAd = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentTypeErrorDataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dimensionRibbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentTypeErrorUCGridControl)).BeginInit();
@@ -62,53 +65,45 @@
             // 
             // equipmentTypeErrorDataView
             // 
-            dataViewProperty8.Name = "GUID";
-            dataViewProperty8.ValueType = typeof(object);
-            dataViewProperty9.Name = "EquipmentTypeGUID";
-            dataViewProperty9.ValueType = typeof(string);
-            dataViewProperty10.Name = "MeasurandGUID";
-            dataViewProperty10.ValueType = typeof(string);
-            dataViewProperty11.Name = "DiapasonBegin";
-            dataViewProperty11.ValueType = typeof(decimal);
-            dataViewProperty12.Name = "DiapasonEnd";
-            dataViewProperty12.ValueType = typeof(decimal);
-            dataViewProperty13.Name = "DeltaType";
-            dataViewProperty13.ValueType = typeof(short);
-            dataViewProperty14.Name = "DeltaValue";
-            dataViewProperty14.ValueType = typeof(decimal);
+            dataViewProperty15.Name = "GUID";
+            dataViewProperty15.ValueType = typeof(object);
+            dataViewProperty16.Name = "EquipmentTypeGUID";
+            dataViewProperty16.ValueType = typeof(string);
+            dataViewProperty17.Name = "MeasurandGUID";
+            dataViewProperty17.ValueType = typeof(string);
+            dataViewProperty18.Name = "DiapasonBegin";
+            dataViewProperty18.ValueType = typeof(decimal);
+            dataViewProperty19.Name = "DiapasonEnd";
+            dataViewProperty19.ValueType = typeof(decimal);
+            dataViewProperty20.Name = "DeltaType";
+            dataViewProperty20.ValueType = typeof(short);
+            dataViewProperty21.Name = "DeltaValue";
+            dataViewProperty21.ValueType = typeof(decimal);
             this.equipmentTypeErrorDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
-            dataViewProperty8,
-            dataViewProperty9,
-            dataViewProperty10,
-            dataViewProperty11,
-            dataViewProperty12,
-            dataViewProperty13,
-            dataViewProperty14});
+            dataViewProperty15,
+            dataViewProperty16,
+            dataViewProperty17,
+            dataViewProperty18,
+            dataViewProperty19,
+            dataViewProperty20,
+            dataViewProperty21});
             // 
             // dimensionRibbonControl
             // 
             this.dimensionRibbonControl.ExpandCollapseItem.Id = 0;
             this.dimensionRibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.dimensionRibbonControl.ExpandCollapseItem,
-            this.barButtonItemAdd,
             this.barButtonItemEdit,
             this.barButtonItemDelete,
-            this.barButtonItemView});
+            this.barButtonItemView,
+            this.ribbonGalleryBarItem1,
+            this.barButtonItemAd});
             this.dimensionRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.dimensionRibbonControl.MaxItemId = 7;
+            this.dimensionRibbonControl.MaxItemId = 9;
             this.dimensionRibbonControl.Name = "dimensionRibbonControl";
             this.dimensionRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.dimensionRibbonControl.Size = new System.Drawing.Size(1019, 141);
-            // 
-            // barButtonItemAdd
-            // 
-            this.barButtonItemAdd.Caption = "Добавить";
-            this.barButtonItemAdd.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemAdd.Glyph")));
-            this.barButtonItemAdd.Id = 3;
-            this.barButtonItemAdd.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemAdd.LargeGlyph")));
-            this.barButtonItemAdd.Name = "barButtonItemAdd";
-            this.barButtonItemAdd.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemAdd_ItemClick);
             // 
             // barButtonItemEdit
             // 
@@ -147,7 +142,7 @@
             // 
             // ribbonPageGroup1
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemAdd);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemAd);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemView);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemEdit);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemDelete);
@@ -232,6 +227,38 @@
             this.colDeltaValue.Visible = true;
             this.colDeltaValue.VisibleIndex = 4;
             // 
+            // barButtonItemAdd
+            // 
+            this.barButtonItemAdd.Caption = "Добавить";
+            this.barButtonItemAdd.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemAdd.Glyph")));
+            this.barButtonItemAdd.Id = 3;
+            this.barButtonItemAdd.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemAdd.LargeGlyph")));
+            this.barButtonItemAdd.Name = "barButtonItemAdd";
+            this.barButtonItemAdd.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemAdd_ItemClick);
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Добавить";
+            this.barButtonItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.Glyph")));
+            this.barButtonItem1.Id = 3;
+            this.barButtonItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.LargeGlyph")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
+            // ribbonGalleryBarItem1
+            // 
+            this.ribbonGalleryBarItem1.Caption = "ribbonGalleryBarItem1";
+            this.ribbonGalleryBarItem1.Id = 7;
+            this.ribbonGalleryBarItem1.Name = "ribbonGalleryBarItem1";
+            // 
+            // barButtonItemAd
+            // 
+            this.barButtonItemAd.Caption = "Добавить";
+            this.barButtonItemAd.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemAd.Glyph")));
+            this.barButtonItemAd.Id = 8;
+            this.barButtonItemAd.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemAd.LargeGlyph")));
+            this.barButtonItemAd.Name = "barButtonItemAd";
+            this.barButtonItemAd.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemAd_ItemClick);
+            // 
             // equipmentTypeErrorUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -262,11 +289,14 @@
         private DevExpress.XtraGrid.Columns.GridColumn colDiapasonEnd;
         private DevExpress.XtraGrid.Columns.GridColumn colDeltaType;
         private DevExpress.XtraGrid.Columns.GridColumn colDeltaValue;
-        private DevExpress.XtraBars.BarButtonItem barButtonItemAdd;
         private DevExpress.XtraBars.BarButtonItem barButtonItemEdit;
         private DevExpress.XtraBars.BarButtonItem barButtonItemDelete;
         public DevExpress.XtraBars.Ribbon.RibbonControl dimensionRibbonControl;
         private DevExpress.XtraBars.BarButtonItem barButtonItemView;
         private DevExpress.XtraGrid.Columns.GridColumn colEquipmentKindGUID;
+        private DevExpress.XtraBars.BarButtonItem barButtonItemAdd;
+        private DevExpress.XtraBars.RibbonGalleryBarItem ribbonGalleryBarItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItemAd;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
     }
 }

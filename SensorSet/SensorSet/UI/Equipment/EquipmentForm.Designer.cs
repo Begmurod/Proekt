@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EquipmentForm));
-            DevExpress.Xpo.DataViewProperty dataViewProperty7 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty8 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty9 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty10 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty11 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty12 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty1 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty2 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty3 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty4 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty5 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty6 = new DevExpress.Xpo.DataViewProperty();
             this.inventoryNumberTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.startUseDatedateEdit = new DevExpress.XtraEditors.DateEdit();
@@ -44,8 +44,6 @@
             this.EquipmentTypeGUIDLookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
             this.EquipmentTypeGUIDDataView = new DevExpress.Xpo.XPDataView(this.components);
             this.serialNumberTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.EquipmentCategoryGUIDlookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
-            this.EquipmentCategoryGUIDDataView = new DevExpress.Xpo.XPDataView(this.components);
             this.ipAddresstextEdit = new DevExpress.XtraEditors.TextEdit();
             this.porttextEdit = new DevExpress.XtraEditors.TextEdit();
             this.ParentGUIDlookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
@@ -59,7 +57,6 @@
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -73,6 +70,7 @@
             this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.EquipmentCategoryGUIDDataView = new DevExpress.Xpo.XPDataView(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.inventoryNumberTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -81,8 +79,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.EquipmentTypeGUIDLookUpEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EquipmentTypeGUIDDataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.serialNumberTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EquipmentCategoryGUIDlookUpEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EquipmentCategoryGUIDDataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ipAddresstextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.porttextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ParentGUIDlookUpEdit.Properties)).BeginInit();
@@ -98,7 +94,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
@@ -112,11 +107,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EquipmentCategoryGUIDDataView)).BeginInit();
             this.SuspendLayout();
             // 
             // inventoryNumberTextEdit
             // 
-            this.inventoryNumberTextEdit.Location = new System.Drawing.Point(192, 84);
+            this.inventoryNumberTextEdit.Location = new System.Drawing.Point(192, 60);
             this.inventoryNumberTextEdit.Name = "inventoryNumberTextEdit";
             this.inventoryNumberTextEdit.Size = new System.Drawing.Size(333, 20);
             this.inventoryNumberTextEdit.StyleController = this.layoutControl1;
@@ -130,7 +126,6 @@
             this.layoutControl1.Controls.Add(this.EquipmentTypeGUIDLookUpEdit);
             this.layoutControl1.Controls.Add(this.serialNumberTextEdit);
             this.layoutControl1.Controls.Add(this.inventoryNumberTextEdit);
-            this.layoutControl1.Controls.Add(this.EquipmentCategoryGUIDlookUpEdit);
             this.layoutControl1.Controls.Add(this.ipAddresstextEdit);
             this.layoutControl1.Controls.Add(this.porttextEdit);
             this.layoutControl1.Controls.Add(this.ParentGUIDlookUpEdit);
@@ -145,14 +140,14 @@
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(597, 225, 358, 350);
             this.layoutControl1.OptionsView.UseDefaultDragAndDropRendering = false;
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(539, 363);
+            this.layoutControl1.Size = new System.Drawing.Size(539, 339);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // startUseDatedateEdit
             // 
             this.startUseDatedateEdit.EditValue = null;
-            this.startUseDatedateEdit.Location = new System.Drawing.Point(192, 300);
+            this.startUseDatedateEdit.Location = new System.Drawing.Point(192, 276);
             this.startUseDatedateEdit.Name = "startUseDatedateEdit";
             this.startUseDatedateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -165,7 +160,7 @@
             // cancelButton
             // 
             this.cancelButton.Image = ((System.Drawing.Image)(resources.GetObject("cancelButton.Image")));
-            this.cancelButton.Location = new System.Drawing.Point(400, 324);
+            this.cancelButton.Location = new System.Drawing.Point(400, 300);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(125, 22);
             this.cancelButton.StyleController = this.layoutControl1;
@@ -176,7 +171,7 @@
             // addButton
             // 
             this.addButton.Image = ((System.Drawing.Image)(resources.GetObject("addButton.Image")));
-            this.addButton.Location = new System.Drawing.Point(270, 324);
+            this.addButton.Location = new System.Drawing.Point(270, 300);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(126, 22);
             this.addButton.StyleController = this.layoutControl1;
@@ -186,13 +181,12 @@
             // 
             // EquipmentTypeGUIDLookUpEdit
             // 
-            this.EquipmentTypeGUIDLookUpEdit.Location = new System.Drawing.Point(192, 36);
+            this.EquipmentTypeGUIDLookUpEdit.Location = new System.Drawing.Point(192, 12);
             this.EquipmentTypeGUIDLookUpEdit.Name = "EquipmentTypeGUIDLookUpEdit";
             this.EquipmentTypeGUIDLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.EquipmentTypeGUIDLookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Обозначение"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NameEng", "Международное обозначение")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("FullName", "Полное наименование типа")});
             this.EquipmentTypeGUIDLookUpEdit.Properties.DataSource = this.EquipmentTypeGUIDDataView;
             this.EquipmentTypeGUIDLookUpEdit.Properties.DisplayMember = "FullName";
             this.EquipmentTypeGUIDLookUpEdit.Properties.ValueMember = "GUID";
@@ -202,51 +196,25 @@
             // 
             // EquipmentTypeGUIDDataView
             // 
-            dataViewProperty7.Name = "GUID";
-            dataViewProperty7.ValueType = typeof(object);
-            dataViewProperty8.Name = "FullName";
-            dataViewProperty8.ValueType = typeof(string);
+            dataViewProperty1.Name = "GUID";
+            dataViewProperty1.ValueType = typeof(object);
+            dataViewProperty2.Name = "FullName";
+            dataViewProperty2.ValueType = typeof(string);
             this.EquipmentTypeGUIDDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
-            dataViewProperty7,
-            dataViewProperty8});
+            dataViewProperty1,
+            dataViewProperty2});
             // 
             // serialNumberTextEdit
             // 
-            this.serialNumberTextEdit.Location = new System.Drawing.Point(192, 108);
+            this.serialNumberTextEdit.Location = new System.Drawing.Point(192, 84);
             this.serialNumberTextEdit.Name = "serialNumberTextEdit";
             this.serialNumberTextEdit.Size = new System.Drawing.Size(333, 20);
             this.serialNumberTextEdit.StyleController = this.layoutControl1;
             this.serialNumberTextEdit.TabIndex = 5;
             // 
-            // EquipmentCategoryGUIDlookUpEdit
-            // 
-            this.EquipmentCategoryGUIDlookUpEdit.Location = new System.Drawing.Point(192, 12);
-            this.EquipmentCategoryGUIDlookUpEdit.Name = "EquipmentCategoryGUIDlookUpEdit";
-            this.EquipmentCategoryGUIDlookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.EquipmentCategoryGUIDlookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Обозначение"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NameEng", "Международное обозначение")});
-            this.EquipmentCategoryGUIDlookUpEdit.Properties.DataSource = this.EquipmentCategoryGUIDDataView;
-            this.EquipmentCategoryGUIDlookUpEdit.Properties.DisplayMember = "Name";
-            this.EquipmentCategoryGUIDlookUpEdit.Properties.ValueMember = "GUID";
-            this.EquipmentCategoryGUIDlookUpEdit.Size = new System.Drawing.Size(333, 20);
-            this.EquipmentCategoryGUIDlookUpEdit.StyleController = this.layoutControl1;
-            this.EquipmentCategoryGUIDlookUpEdit.TabIndex = 6;
-            // 
-            // EquipmentCategoryGUIDDataView
-            // 
-            dataViewProperty9.Name = "GUID";
-            dataViewProperty9.ValueType = typeof(object);
-            dataViewProperty10.Name = "Name";
-            dataViewProperty10.ValueType = typeof(string);
-            this.EquipmentCategoryGUIDDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
-            dataViewProperty9,
-            dataViewProperty10});
-            // 
             // ipAddresstextEdit
             // 
-            this.ipAddresstextEdit.Location = new System.Drawing.Point(192, 132);
+            this.ipAddresstextEdit.Location = new System.Drawing.Point(192, 108);
             this.ipAddresstextEdit.Name = "ipAddresstextEdit";
             this.ipAddresstextEdit.Size = new System.Drawing.Size(333, 20);
             this.ipAddresstextEdit.StyleController = this.layoutControl1;
@@ -254,7 +222,7 @@
             // 
             // porttextEdit
             // 
-            this.porttextEdit.Location = new System.Drawing.Point(192, 156);
+            this.porttextEdit.Location = new System.Drawing.Point(192, 132);
             this.porttextEdit.Name = "porttextEdit";
             this.porttextEdit.Size = new System.Drawing.Size(333, 20);
             this.porttextEdit.StyleController = this.layoutControl1;
@@ -262,13 +230,12 @@
             // 
             // ParentGUIDlookUpEdit
             // 
-            this.ParentGUIDlookUpEdit.Location = new System.Drawing.Point(192, 60);
+            this.ParentGUIDlookUpEdit.Location = new System.Drawing.Point(192, 36);
             this.ParentGUIDlookUpEdit.Name = "ParentGUIDlookUpEdit";
             this.ParentGUIDlookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.ParentGUIDlookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Обозначение"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NameEng", "Международное обозначение")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Обозначение")});
             this.ParentGUIDlookUpEdit.Properties.DataSource = this.ParentGUIDDataView;
             this.ParentGUIDlookUpEdit.Properties.DisplayMember = "Name";
             this.ParentGUIDlookUpEdit.Properties.ValueMember = "GUID";
@@ -278,18 +245,18 @@
             // 
             // ParentGUIDDataView
             // 
-            dataViewProperty11.Name = "GUID";
-            dataViewProperty11.ValueType = typeof(object);
-            dataViewProperty12.Name = "Name";
-            dataViewProperty12.ValueType = typeof(string);
+            dataViewProperty3.Name = "GUID";
+            dataViewProperty3.ValueType = typeof(object);
+            dataViewProperty4.Name = "Name";
+            dataViewProperty4.ValueType = typeof(string);
             this.ParentGUIDDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
-            dataViewProperty11,
-            dataViewProperty12});
+            dataViewProperty3,
+            dataViewProperty4});
             // 
             // manufacturingDatedateEdit
             // 
             this.manufacturingDatedateEdit.EditValue = null;
-            this.manufacturingDatedateEdit.Location = new System.Drawing.Point(192, 276);
+            this.manufacturingDatedateEdit.Location = new System.Drawing.Point(192, 252);
             this.manufacturingDatedateEdit.Name = "manufacturingDatedateEdit";
             this.manufacturingDatedateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -301,15 +268,16 @@
             // 
             // balanceCostatextEdit
             // 
-            this.balanceCostatextEdit.Location = new System.Drawing.Point(192, 180);
+            this.balanceCostatextEdit.Location = new System.Drawing.Point(192, 156);
             this.balanceCostatextEdit.Name = "balanceCostatextEdit";
             this.balanceCostatextEdit.Size = new System.Drawing.Size(333, 20);
             this.balanceCostatextEdit.StyleController = this.layoutControl1;
             this.balanceCostatextEdit.TabIndex = 4;
+            this.balanceCostatextEdit.TextChanged += new System.EventHandler(this.balanceCostatextEdit_TextChanged);
             // 
             // useMonthstextEdit
             // 
-            this.useMonthstextEdit.Location = new System.Drawing.Point(192, 204);
+            this.useMonthstextEdit.Location = new System.Drawing.Point(192, 180);
             this.useMonthstextEdit.Name = "useMonthstextEdit";
             this.useMonthstextEdit.Size = new System.Drawing.Size(333, 20);
             this.useMonthstextEdit.StyleController = this.layoutControl1;
@@ -317,7 +285,7 @@
             // 
             // remainingBalancetextEdit
             // 
-            this.remainingBalancetextEdit.Location = new System.Drawing.Point(192, 228);
+            this.remainingBalancetextEdit.Location = new System.Drawing.Point(192, 204);
             this.remainingBalancetextEdit.Name = "remainingBalancetextEdit";
             this.remainingBalancetextEdit.Size = new System.Drawing.Size(333, 20);
             this.remainingBalancetextEdit.StyleController = this.layoutControl1;
@@ -326,7 +294,7 @@
             // garantyPerioddateEdit
             // 
             this.garantyPerioddateEdit.EditValue = null;
-            this.garantyPerioddateEdit.Location = new System.Drawing.Point(192, 252);
+            this.garantyPerioddateEdit.Location = new System.Drawing.Point(192, 228);
             this.garantyPerioddateEdit.Name = "garantyPerioddateEdit";
             this.garantyPerioddateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -344,7 +312,6 @@
             this.layoutControlItem1,
             this.layoutControlItem2,
             this.emptySpaceItem1,
-            this.layoutControlItem9,
             this.layoutControlItem3,
             this.layoutControlItem4,
             this.layoutControlItem6,
@@ -360,14 +327,14 @@
             this.layoutControlItem16});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(539, 363);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(539, 339);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.inventoryNumberTextEdit;
             this.layoutControlItem1.CustomizationFormText = "Инвентарный номер";
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 72);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(517, 24);
             this.layoutControlItem1.Text = "Инвентарный номер";
@@ -377,7 +344,7 @@
             // 
             this.layoutControlItem2.Control = this.serialNumberTextEdit;
             this.layoutControlItem2.CustomizationFormText = "Заводской/серийный номер";
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 96);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(517, 24);
             this.layoutControlItem2.Text = "Заводской/серийный номер";
@@ -386,26 +353,16 @@
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 312);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 288);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
             this.emptySpaceItem1.Size = new System.Drawing.Size(258, 31);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // layoutControlItem9
-            // 
-            this.layoutControlItem9.Control = this.EquipmentCategoryGUIDlookUpEdit;
-            this.layoutControlItem9.CustomizationFormText = "Идентификатор характеристики";
-            this.layoutControlItem9.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(517, 24);
-            this.layoutControlItem9.Text = "Характеристика";
-            this.layoutControlItem9.TextSize = new System.Drawing.Size(177, 13);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.EquipmentTypeGUIDLookUpEdit;
             this.layoutControlItem3.CustomizationFormText = "Тип оборудования";
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 24);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(517, 24);
             this.layoutControlItem3.Text = "Тип оборудования";
@@ -415,7 +372,7 @@
             // 
             this.layoutControlItem4.Control = this.ipAddresstextEdit;
             this.layoutControlItem4.CustomizationFormText = "IP-адрес оборудования";
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 120);
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 96);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(517, 24);
             this.layoutControlItem4.Text = "IP-адрес оборудования";
@@ -425,7 +382,7 @@
             // 
             this.layoutControlItem6.Control = this.porttextEdit;
             this.layoutControlItem6.CustomizationFormText = "Порт";
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 144);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 120);
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Size = new System.Drawing.Size(517, 24);
             this.layoutControlItem6.Text = "Порт";
@@ -435,7 +392,7 @@
             // 
             this.layoutControlItem10.Control = this.ParentGUIDlookUpEdit;
             this.layoutControlItem10.CustomizationFormText = "Наименование вида оборудования";
-            this.layoutControlItem10.Location = new System.Drawing.Point(0, 48);
+            this.layoutControlItem10.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem10.Name = "layoutControlItem10";
             this.layoutControlItem10.Size = new System.Drawing.Size(517, 24);
             this.layoutControlItem10.Text = "Наименование вида оборудования";
@@ -444,7 +401,7 @@
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.startUseDatedateEdit;
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 288);
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 264);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Size = new System.Drawing.Size(517, 24);
             this.layoutControlItem5.Text = "Дата ввода в эксплуатацию";
@@ -453,7 +410,7 @@
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.cancelButton;
-            this.layoutControlItem8.Location = new System.Drawing.Point(388, 312);
+            this.layoutControlItem8.Location = new System.Drawing.Point(388, 288);
             this.layoutControlItem8.Name = "layoutControlItem8";
             this.layoutControlItem8.Size = new System.Drawing.Size(129, 31);
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
@@ -462,7 +419,7 @@
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.addButton;
-            this.layoutControlItem7.Location = new System.Drawing.Point(258, 312);
+            this.layoutControlItem7.Location = new System.Drawing.Point(258, 288);
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.Size = new System.Drawing.Size(130, 31);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
@@ -472,7 +429,7 @@
             // 
             this.layoutControlItem11.Control = this.manufacturingDatedateEdit;
             this.layoutControlItem11.CustomizationFormText = "Дата выпуска";
-            this.layoutControlItem11.Location = new System.Drawing.Point(0, 264);
+            this.layoutControlItem11.Location = new System.Drawing.Point(0, 240);
             this.layoutControlItem11.Name = "layoutControlItem11";
             this.layoutControlItem11.Size = new System.Drawing.Size(517, 24);
             this.layoutControlItem11.Text = "Дата выпуска";
@@ -483,13 +440,13 @@
             this.simpleSeparator1.AllowHotTrack = false;
             this.simpleSeparator1.Location = new System.Drawing.Point(517, 0);
             this.simpleSeparator1.Name = "simpleSeparator1";
-            this.simpleSeparator1.Size = new System.Drawing.Size(2, 343);
+            this.simpleSeparator1.Size = new System.Drawing.Size(2, 319);
             // 
             // layoutControlItem12
             // 
             this.layoutControlItem12.Control = this.balanceCostatextEdit;
             this.layoutControlItem12.CustomizationFormText = "Балансовая стоимость";
-            this.layoutControlItem12.Location = new System.Drawing.Point(0, 168);
+            this.layoutControlItem12.Location = new System.Drawing.Point(0, 144);
             this.layoutControlItem12.Name = "layoutControlItem12";
             this.layoutControlItem12.Size = new System.Drawing.Size(517, 24);
             this.layoutControlItem12.Text = "Балансовая стоимость";
@@ -499,7 +456,7 @@
             // 
             this.layoutControlItem14.Control = this.useMonthstextEdit;
             this.layoutControlItem14.CustomizationFormText = "Срок полезного использования";
-            this.layoutControlItem14.Location = new System.Drawing.Point(0, 192);
+            this.layoutControlItem14.Location = new System.Drawing.Point(0, 168);
             this.layoutControlItem14.Name = "layoutControlItem14";
             this.layoutControlItem14.Size = new System.Drawing.Size(517, 24);
             this.layoutControlItem14.Text = "Срок полезного использования";
@@ -509,7 +466,7 @@
             // 
             this.layoutControlItem15.Control = this.remainingBalancetextEdit;
             this.layoutControlItem15.CustomizationFormText = "Остаточная стоимость";
-            this.layoutControlItem15.Location = new System.Drawing.Point(0, 216);
+            this.layoutControlItem15.Location = new System.Drawing.Point(0, 192);
             this.layoutControlItem15.Name = "layoutControlItem15";
             this.layoutControlItem15.Size = new System.Drawing.Size(517, 24);
             this.layoutControlItem15.Text = "Остаточная стоимость";
@@ -519,17 +476,27 @@
             // 
             this.layoutControlItem16.Control = this.garantyPerioddateEdit;
             this.layoutControlItem16.CustomizationFormText = "Срок гарантии";
-            this.layoutControlItem16.Location = new System.Drawing.Point(0, 240);
+            this.layoutControlItem16.Location = new System.Drawing.Point(0, 216);
             this.layoutControlItem16.Name = "layoutControlItem16";
             this.layoutControlItem16.Size = new System.Drawing.Size(517, 24);
             this.layoutControlItem16.Text = "Срок гарантии";
             this.layoutControlItem16.TextSize = new System.Drawing.Size(177, 13);
             // 
+            // EquipmentCategoryGUIDDataView
+            // 
+            dataViewProperty5.Name = "GUID";
+            dataViewProperty5.ValueType = typeof(object);
+            dataViewProperty6.Name = "Name";
+            dataViewProperty6.ValueType = typeof(string);
+            this.EquipmentCategoryGUIDDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
+            dataViewProperty5,
+            dataViewProperty6});
+            // 
             // EquipmentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(539, 363);
+            this.ClientSize = new System.Drawing.Size(539, 339);
             this.Controls.Add(this.layoutControl1);
             this.Name = "EquipmentForm";
             this.Text = "Экземпляры оборудования";
@@ -542,8 +509,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.EquipmentTypeGUIDLookUpEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EquipmentTypeGUIDDataView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.serialNumberTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EquipmentCategoryGUIDlookUpEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EquipmentCategoryGUIDDataView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ipAddresstextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.porttextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ParentGUIDlookUpEdit.Properties)).EndInit();
@@ -559,7 +524,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
@@ -573,6 +537,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EquipmentCategoryGUIDDataView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -591,8 +556,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
-        private DevExpress.XtraEditors.LookUpEdit EquipmentCategoryGUIDlookUpEdit;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private DevExpress.Xpo.XPDataView EquipmentCategoryGUIDDataView;
         private DevExpress.XtraEditors.TextEdit ipAddresstextEdit;
         private DevExpress.XtraEditors.TextEdit porttextEdit;

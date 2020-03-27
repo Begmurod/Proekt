@@ -86,7 +86,7 @@ namespace SensorSet.UI.Equipment
             {
                 characterNameTextEdit.Text = currentEquipmentCharacter.CharacterName;
                 fieldNameTextEdit.Text = currentEquipmentCharacter.FieldName;
-                dimensionGUIDLookUpEdit.EditValue = currentEquipmentCharacter.DimensionGUID;
+                dimensionGUIDLookUpEdit.EditValue = currentEquipmentCharacter.DimensionGUID.GUID;
                 if (currentEquipmentCharacter.IsSystem)
                     checkEdit.Checked = true;
                 paramTypeTextEdit.Text = currentEquipmentCharacter.ParamType.ToString();

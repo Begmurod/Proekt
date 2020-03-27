@@ -69,7 +69,7 @@ namespace SensorSet.UI.Equipment
 
             if (view)
             {
-                Text = string.Format("Просмотр погрешность оборудования {0} ({1}) ({2}) ({3}) ({4}) ({5}) ({6})", currentEquipmentError.MeasurandGUID,  currentEquipmentError.EquipmentGUID, currentEquipmentError.DiapasonBegin, currentEquipmentError.DiapasonEnd, currentEquipmentError.DeltaType, currentEquipmentError.DeltaValue);
+                Text = string.Format("Просмотр погрешность оборудования {0} ({1}) ({2}) ({3}) ({4}) ({5}) ", currentEquipmentError.MeasurandGUID,  currentEquipmentError.EquipmentGUID, currentEquipmentError.DiapasonBegin, currentEquipmentError.DiapasonEnd, currentEquipmentError.DeltaType, currentEquipmentError.DeltaValue);
                 measurandGUIDlookUpEdit.Properties.ReadOnly = true;
                 equipmentGUIDlookUpEdit.Properties.ReadOnly = true;
                 diapasonBegintextEdit.ReadOnly = true;

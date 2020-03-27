@@ -134,8 +134,7 @@
             this.equipmentTypeGUIDLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.equipmentTypeGUIDLookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Обозначение"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NameEng", "Международное обозначение")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("FullName", "Полное наименование типа")});
             this.equipmentTypeGUIDLookUpEdit.Properties.DataSource = this.EquipmentTypeGUIDDataView;
             this.equipmentTypeGUIDLookUpEdit.Properties.DisplayMember = "FullName";
             this.equipmentTypeGUIDLookUpEdit.Properties.ValueMember = "GUID";
@@ -193,8 +192,7 @@
             this.measurandGUIDlookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.measurandGUIDlookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Обозначение"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NameEng", "Международное обозначение")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ValueName", "Наименование измеряемой величины")});
             this.measurandGUIDlookUpEdit.Properties.DataSource = this.MeasurandGUIDDataView;
             this.measurandGUIDlookUpEdit.Properties.DisplayMember = "ValueName";
             this.measurandGUIDlookUpEdit.Properties.ValueMember = "GUID";

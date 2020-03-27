@@ -89,6 +89,24 @@ namespace SensorSet.UI.Equipment
             }
             GC.Collect();
         }
+        private void loadequipmentCharacter()
+        {
+            using (UnitOfWork u = new UnitOfWork())
+            {
+                //TODO сделать фильтр по критериям
+                DevExpress.Xpo.DB.SelectedData _measuresData = u.ExecuteQuery(string.Format(@"
+                SELECT [GUID]
+      ,[CharacterName]
+      ,[FieldName]
+      ,[ParamType]
+      ,[IsSystem]
+      ,[DimensionGUID]
+  FROM [dbo].[EquipmentCharacterView] Where DeletedDate is null"
+                ));
+                equipmentCharacterDataView.LoadData(_measuresData);
+            }
+            GC.Collect();
+        }
 
         private void barButtonItemAdd_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -150,6 +168,60 @@ namespace SensorSet.UI.Equipment
             {
                 fireUnlockButtons(new EventArgs());
             }
+
+
+        }
+
+        private void equipmentUC_Load(object sender, EventArgs e)
+        {
+            loadData();
+            loadequipmentCharacter();
+        }
+
+        private void ButtonItemAdd_Click(object sender, EventArgs e)
+        {
+            using (EquipmentCharacterForm addForm = new EquipmentCharacterForm())
+            {
+                addForm.ShowDialog();
+                addForm.Dispose();
+            }
+            loadData();
+        }
+
+        private void ButtonItemView_Click(object sender, EventArgs e)
+        {
+            EquipmentCharacterForm viewForm = new EquipmentCharacterForm();
+            viewForm.currentEquipmentCharacterGuid = (Guid)equipmentCharacterGridView.GetFocusedRowCellValue("GUID");
+            viewForm.edit = true;
+            viewForm.view = true;
+            viewForm.ShowDialog();
+        }
+
+        private void ButtonItemEdit_Click(object sender, EventArgs e)
+        {
+            using (EquipmentCharacterForm editForm = new EquipmentCharacterForm())
+            {
+                editForm.currentEquipmentCharacterGuid = (Guid)equipmentCharacterGridView.GetFocusedRowCellValue("GUID");
+                editForm.edit = true;
+                editForm.ShowDialog();
+            }
+            loadData();
+        }
+
+        private void ButtonItemDelete_Click(object sender, EventArgs e)
+        {
+            using (UnitOfWork u = new UnitOfWork())
+            {
+                device_EquipmentCharacter currentEquipmentCharacter = u.GetObjectByKey<device_EquipmentCharacter>((Guid)equipmentCharacterGridView.GetFocusedRowCellValue("GUID"));
+                DialogResult d = XtraMessageBox.Show(string.Format("Удалитьхрактеристики оборудования {0} ({1})", currentEquipmentCharacter.CharacterName, currentEquipmentCharacter.FieldName), "Подтверждение действия", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (d == DialogResult.Yes)
+                {
+                    currentEquipmentCharacter.DeletedDate = DateTime.Now;
+                    currentEquipmentCharacter.Save();
+                    u.CommitChanges();
+                }
+            }
+            loadData();
         }
     }
 }

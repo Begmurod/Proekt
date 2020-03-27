@@ -174,8 +174,7 @@
             this.measurandGUIDlookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.measurandGUIDlookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Обозначение"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NameEng", "Международное обозначение")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ValueName", "Наименование измеряемой величины", 66, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
             this.measurandGUIDlookUpEdit.Properties.DataSource = this.MeasurandGUIDDataView;
             this.measurandGUIDlookUpEdit.Properties.DisplayMember = "ValueName";
             this.measurandGUIDlookUpEdit.Properties.ValueMember = "GUID";
@@ -200,8 +199,8 @@
             this.equipmentGUIDlookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.equipmentGUIDlookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Обозначение"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NameEng", "Международное обозначение")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SerialNumber", "Серейний номер"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("InventoryNumber", "Интервальный номер")});
             this.equipmentGUIDlookUpEdit.Properties.DataSource = this.EquipmentGUIDDataView;
             this.equipmentGUIDlookUpEdit.Properties.DisplayMember = "SerialNumber";
             this.equipmentGUIDlookUpEdit.Properties.ValueMember = "GUID";

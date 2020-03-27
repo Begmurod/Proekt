@@ -30,9 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DimensionForm));
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule2 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.Xpo.DataViewProperty dataViewProperty1 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty2 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty3 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.XtraEditors.DXErrorProvider.CompareAgainstControlValidationRule compareAgainstControlValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.CompareAgainstControlValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule3 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule4 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.cancelButton = new DevExpress.XtraEditors.SimpleButton();
             this.addButton = new DevExpress.XtraEditors.SimpleButton();
@@ -53,6 +58,7 @@
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.dxValidationProvider = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit.Properties)).BeginInit();
@@ -72,6 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dxValidationProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -132,6 +139,9 @@
             this.koefTextEdit.Size = new System.Drawing.Size(214, 20);
             this.koefTextEdit.StyleController = this.layoutControl1;
             this.koefTextEdit.TabIndex = 7;
+            conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule1.ErrorText = "Поле не должно быть пустым";
+            this.dxValidationProvider.SetValidationRule(this.koefTextEdit, conditionValidationRule1);
             // 
             // baseNameLookUpEdit
             // 
@@ -148,6 +158,9 @@
             this.baseNameLookUpEdit.Size = new System.Drawing.Size(214, 20);
             this.baseNameLookUpEdit.StyleController = this.layoutControl1;
             this.baseNameLookUpEdit.TabIndex = 6;
+            conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.NotEquals;
+            conditionValidationRule2.ErrorText = "Поле не должно быть пустым";
+            this.dxValidationProvider.SetValidationRule(this.baseNameLookUpEdit, conditionValidationRule2);
             // 
             // dimensionDataView
             // 
@@ -169,6 +182,9 @@
             this.nameEngTextEdit.Size = new System.Drawing.Size(214, 20);
             this.nameEngTextEdit.StyleController = this.layoutControl1;
             this.nameEngTextEdit.TabIndex = 5;
+            compareAgainstControlValidationRule1.CompareControlOperator = DevExpress.XtraEditors.DXErrorProvider.CompareControlOperator.NotEquals;
+            compareAgainstControlValidationRule1.ErrorText = "Поле не должно быть пустым";
+            this.dxValidationProvider.SetValidationRule(this.nameEngTextEdit, compareAgainstControlValidationRule1);
             // 
             // nameTextEdit
             // 
@@ -177,6 +193,10 @@
             this.nameTextEdit.Size = new System.Drawing.Size(214, 20);
             this.nameTextEdit.StyleController = this.layoutControl1;
             this.nameTextEdit.TabIndex = 4;
+            conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.NotEquals;
+            conditionValidationRule3.ErrorText = "Поле Обозначение не должно быть пустым";
+            conditionValidationRule3.ErrorType = DevExpress.XtraEditors.DXErrorProvider.ErrorType.Warning;
+            this.dxValidationProvider.SetValidationRule(this.nameTextEdit, conditionValidationRule3);
             // 
             // digitTextEdit
             // 
@@ -194,6 +214,9 @@
             this.digitTextEdit.Size = new System.Drawing.Size(214, 20);
             this.digitTextEdit.StyleController = this.layoutControl1;
             this.digitTextEdit.TabIndex = 9;
+            conditionValidationRule4.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.NotEquals;
+            conditionValidationRule4.ErrorText = "Поле не должно быть пустым";
+            this.dxValidationProvider.SetValidationRule(this.digitTextEdit, conditionValidationRule4);
             // 
             // layoutControlGroup1
             // 
@@ -322,6 +345,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dxValidationProvider)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -348,5 +372,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.Xpo.XPDataView dimensionDataView;
+        private DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider dxValidationProvider;
     }
 }

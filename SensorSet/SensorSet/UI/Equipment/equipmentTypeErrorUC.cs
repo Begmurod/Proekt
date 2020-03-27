@@ -136,5 +136,15 @@ namespace SensorSet.UI.Equipment
                 fireUnlockButtons(new EventArgs());
             }
         }
+
+        private void barButtonItemAd_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            using (EquipmentTypeErrorForm addForm = new EquipmentTypeErrorForm())
+            {
+                addForm.ShowDialog();
+                addForm.Dispose();
+            }
+            loadData();
+        }
     }
 }
