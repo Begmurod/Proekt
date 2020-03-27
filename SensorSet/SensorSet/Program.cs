@@ -30,10 +30,10 @@ namespace SensorSet
             try
             {
                 XpoDefault.Session = null;
-                //XpoDefault.DataLayer = new SimpleDataLayer(new DataCacheNode(new DataCacheRoot(XpoDefault.GetConnectionProvider(@"XpoProvider=MSSqlServer;data source=DESKTOP-4RTHTBS\SQLEXPRESS;
-                //    integrated security=false;initial catalog=SensorSet;User Id=bek;Password=1", AutoCreateOption.None))));
-                XpoDefault.DataLayer = new SimpleDataLayer(new DataCacheNode(new DataCacheRoot(XpoDefault.GetConnectionProvider(@"XpoProvider=MSSqlServer;data source=.\SQLEXPRESS;
-                    integrated security=true;initial catalog=SensorSet", AutoCreateOption.None))));
+                XpoDefault.DataLayer = new SimpleDataLayer(new DataCacheNode(new DataCacheRoot(XpoDefault.GetConnectionProvider(@"XpoProvider=MSSqlServer;data source=DESKTOP-4RTHTBS\SQLEXPRESS;
+                    integrated security=false;initial catalog=SensorSet;User Id=begmurod;Password=1", AutoCreateOption.None))));
+                //XpoDefault.DataLayer = new SimpleDataLayer(new DataCacheNode(new DataCacheRoot(XpoDefault.GetConnectionProvider(@"XpoProvider=MSSqlServer;data source=.\SQLEXPRESS;user id=begmurod;password=1;
+                //    integrated security=true;initial catalog=SensorSet", AutoCreateOption.None))));
             }
             catch(Exception e)
             {

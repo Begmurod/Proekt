@@ -44,6 +44,7 @@
             this.equipmentState = new DevExpress.XtraNavBar.NavBarItem();
             this.equipmentTypeError = new DevExpress.XtraNavBar.NavBarItem();
             this.equipmentCharacterParam = new DevExpress.XtraNavBar.NavBarItem();
+            this.equipmentError = new DevExpress.XtraNavBar.NavBarItem();
             this.planGroup = new DevExpress.XtraNavBar.NavBarGroup();
             this.monthPlanNavItem = new DevExpress.XtraNavBar.NavBarItem();
             this.yearPlanItem = new DevExpress.XtraNavBar.NavBarItem();
@@ -67,7 +68,7 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.navBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem2 = new DevExpress.XtraNavBar.NavBarItem();
-            this.equipmentError = new DevExpress.XtraNavBar.NavBarItem();
+            this.equipmentCharacterEquipmentType = new DevExpress.XtraNavBar.NavBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl)).BeginInit();
             this.splitContainerControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).BeginInit();
@@ -121,7 +122,8 @@
             this.equipmentState,
             this.equipmentTypeError,
             this.equipmentCharacterParam,
-            this.equipmentError});
+            this.equipmentError,
+            this.equipmentCharacterEquipmentType});
             this.navBarControl.Location = new System.Drawing.Point(0, 0);
             this.navBarControl.Name = "navBarControl";
             this.navBarControl.OptionsNavPane.ExpandedWidth = 235;
@@ -149,11 +151,12 @@
             new DevExpress.XtraNavBar.NavBarItemLink(this.equipmentState),
             new DevExpress.XtraNavBar.NavBarItemLink(this.equipmentTypeError),
             new DevExpress.XtraNavBar.NavBarItemLink(this.equipmentCharacterParam),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.equipmentError)});
+            new DevExpress.XtraNavBar.NavBarItemLink(this.equipmentError),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.equipmentCharacterEquipmentType)});
             this.equipmentGroup.LargeImage = ((System.Drawing.Image)(resources.GetObject("equipmentGroup.LargeImage")));
             this.equipmentGroup.Name = "equipmentGroup";
             this.equipmentGroup.SmallImage = ((System.Drawing.Image)(resources.GetObject("equipmentGroup.SmallImage")));
-            this.equipmentGroup.TopVisibleLinkIndex = 5;
+            this.equipmentGroup.TopVisibleLinkIndex = 6;
             // 
             // equipmentItem
             // 
@@ -203,6 +206,7 @@
             this.measurandItem.Caption = "Показания";
             this.measurandItem.Name = "measurandItem";
             this.measurandItem.SmallImage = ((System.Drawing.Image)(resources.GetObject("measurandItem.SmallImage")));
+            this.measurandItem.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.measurandItem_LinkClicked);
             // 
             // dimensionItem
             // 
@@ -238,6 +242,13 @@
             this.equipmentCharacterParam.Name = "equipmentCharacterParam";
             this.equipmentCharacterParam.SmallImage = ((System.Drawing.Image)(resources.GetObject("equipmentCharacterParam.SmallImage")));
             this.equipmentCharacterParam.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.equipmentCharacterParam_LinkClicked);
+            // 
+            // equipmentError
+            // 
+            this.equipmentError.Caption = "Погрешность оборудования";
+            this.equipmentError.Name = "equipmentError";
+            this.equipmentError.SmallImage = ((System.Drawing.Image)(resources.GetObject("equipmentError.SmallImage")));
+            this.equipmentError.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.equipmentError_LinkClicked);
             // 
             // planGroup
             // 
@@ -419,12 +430,12 @@
             this.navBarItem2.Name = "navBarItem2";
             this.navBarItem2.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarItem2.SmallImage")));
             // 
-            // equipmentError
+            // equipmentCharacterEquipmentType
             // 
-            this.equipmentError.Caption = "Погрешность оборудования";
-            this.equipmentError.Name = "equipmentError";
-            this.equipmentError.SmallImage = ((System.Drawing.Image)(resources.GetObject("equipmentError.SmallImage")));
-            this.equipmentError.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.equipmentError_LinkClicked);
+            this.equipmentCharacterEquipmentType.Caption = "Набор характеристик типового оборудования";
+            this.equipmentCharacterEquipmentType.Name = "equipmentCharacterEquipmentType";
+            this.equipmentCharacterEquipmentType.SmallImage = ((System.Drawing.Image)(resources.GetObject("equipmentCharacterEquipmentType.SmallImage")));
+            this.equipmentCharacterEquipmentType.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.equipmentCharacterEquipmentType_LinkClicked);
             // 
             // mainForm
             // 
@@ -492,6 +503,7 @@
         private DevExpress.XtraNavBar.NavBarItem equipmentTypeError;
         private DevExpress.XtraNavBar.NavBarItem equipmentCharacterParam;
         private DevExpress.XtraNavBar.NavBarItem equipmentError;
+        private DevExpress.XtraNavBar.NavBarItem equipmentCharacterEquipmentType;
     }
 }
 

@@ -366,7 +366,7 @@
             this.colDateModify.FieldName = "DateModify";
             this.colDateModify.Name = "colDateModify";
             this.colDateModify.Visible = true;
-            this.colDateModify.VisibleIndex = 14;
+            this.colDateModify.VisibleIndex = 13;
             this.colDateModify.Width = 48;
             // 
             // colInventoryNumber
@@ -383,8 +383,6 @@
             this.colDateCreate.Caption = "Дата внесения записи";
             this.colDateCreate.FieldName = "DateCreate";
             this.colDateCreate.Name = "colDateCreate";
-            this.colDateCreate.Visible = true;
-            this.colDateCreate.VisibleIndex = 13;
             this.colDateCreate.Width = 72;
             // 
             // colDeletedDate
@@ -443,8 +441,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn colRemainingBalance;
         private DevExpress.XtraGrid.Columns.GridColumn colGarantyPeriod;
         private DevExpress.XtraGrid.Columns.GridColumn colDateCreate;
-        private DevExpress.XtraGrid.Columns.GridColumn colDeletedDate;
         private DevExpress.XtraGrid.Columns.GridColumn colDateModify;
         private DevExpress.XtraGrid.Columns.GridColumn colEquipmentKindGUID;
+        private DevExpress.XtraGrid.Columns.GridColumn colDeletedDate;
     }
 }

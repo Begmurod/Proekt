@@ -81,14 +81,6 @@ namespace SensorSet.UI.Equipment
             #endregion
 
 
-            #region Заполнение выпадающего списка данными
-            //using (Session u = new Session())
-            //{
-            //    SelectedData dimensionParentData = u.ExecuteQuery(@"SELECT GUID, Name, NameEn FROM [list].[Dimension] WHERE[DeletedDate] is null");
-            //    currentEquipmentTypeGuid.LoadData(dimensionParentData);
-
-            //}
-            #endregion
 
             if (edit)
             {

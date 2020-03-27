@@ -70,12 +70,14 @@ namespace SensorSet.UI.Equipment
       ,[EquipmentGUID]
       ,[IntParam]
       ,[StrParam]
+      ,[DataParam]
       ,[BoolParam]
       ,[NumericParam]
       ,[NumericParam2]
+      ,[DeletedDate]
   FROM [dbo].[EquipmentCharacterParamView] Where DeletedDate is null"
                 ));
-                equipmentCharacterParamDataView.LoadData(_measuresData);
+                 equipmentCharacterParamDataView.LoadData(_measuresData);
             }
             GC.Collect();
         }

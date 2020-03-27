@@ -37,6 +37,8 @@
             DevExpress.Xpo.DataViewProperty dataViewProperty6 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty7 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty8 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty9 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty10 = new DevExpress.Xpo.DataViewProperty();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(equipmentCharacterParamUC));
             this.equipmentCharacterParamDataView = new DevExpress.Xpo.XPDataView(this.components);
             this.equipmentCharacterParamRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
@@ -81,6 +83,10 @@
             dataViewProperty7.ValueType = typeof(long);
             dataViewProperty8.Name = "NumericParam2";
             dataViewProperty8.ValueType = typeof(double);
+            dataViewProperty9.Name = "DataParam";
+            dataViewProperty9.ValueType = typeof(System.DateTime);
+            dataViewProperty10.Name = "DeletedDate";
+            dataViewProperty10.ValueType = typeof(System.DateTime);
             this.equipmentCharacterParamDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
             dataViewProperty1,
             dataViewProperty2,
@@ -89,7 +95,9 @@
             dataViewProperty5,
             dataViewProperty6,
             dataViewProperty7,
-            dataViewProperty8});
+            dataViewProperty8,
+            dataViewProperty9,
+            dataViewProperty10});
             // 
             // equipmentCharacterParamRibbonControl
             // 
@@ -235,6 +243,8 @@
             this.colDataParam.Caption = "Датированное значение характеристики";
             this.colDataParam.FieldName = "DataParam";
             this.colDataParam.Name = "colDataParam";
+            this.colDataParam.Visible = true;
+            this.colDataParam.VisibleIndex = 7;
             this.colDataParam.Width = 99;
             // 
             // colBoolParam

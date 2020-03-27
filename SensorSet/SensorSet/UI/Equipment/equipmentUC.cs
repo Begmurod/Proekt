@@ -64,7 +64,7 @@ namespace SensorSet.UI.Equipment
             {
                 //TODO сделать фильтр по критериям
                 DevExpress.Xpo.DB.SelectedData _measuresData = u.ExecuteQuery(string.Format(@"
-               SELECT  GUID]
+               SELECT  [GUID]
       ,[EquipmentTypeGUID]
       ,[EquipmentCategoryGUID]
       ,[InventoryNumber]

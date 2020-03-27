@@ -72,7 +72,6 @@ namespace SensorSet.UI.Equipment
                  currentEquipment.ManufacturingDate, currentEquipment.StartUseDate, currentEquipment.IpAddress,
                  currentEquipment.Port, currentEquipment.BalanceCost,
                  currentEquipment.UseMonths, currentEquipment.RemainingBalance, currentEquipment.GarantyPeriod);
-
                 EquipmentCategoryGUIDlookUpEdit.ReadOnly = true;
                 EquipmentTypeGUIDLookUpEdit.ReadOnly = true;
                 ParentGUIDlookUpEdit.ReadOnly = true;
@@ -139,7 +138,27 @@ namespace SensorSet.UI.Equipment
         }
         private void validForm()
         {
-            //TODO  Сделать валидацию формы!!!
+            //formValid = false;
+            //decimal balanceCost = 1;
+            //int useMonth = -1;
+            //decimal remainingBalance = -1;
+            //string inventoryNumber = null;
+            //try
+            //{
+            //    balanceCost = Convert.ToDecimal(balanceCostatextEdit.Text);
+            //    useMonth = Convert.ToInt32(useMonthstextEdit.Text);
+            //    remainingBalance = Convert.ToDecimal(remainingBalancetextEdit.Text);
+            //    inventoryNumber = ipAddresstextEdit.Text;
+            //}
+            //catch (Exception e)
+            //{
+            //    MessageBox.Show("ошибка");
+            //}
+            //finally
+            //{
+            //    if (balanceCost > -1 && useMonth > -1 && remainingBalance >= 1 && inventoryNumber!= null)
+            //    { formValid = true; }
+            //}
         }
         /// <summary>
         /// Заполнение текущей единицы данными с формы

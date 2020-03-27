@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.Xpo.DataViewProperty dataViewProperty1 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty2 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty3 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty4 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty5 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty1 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty2 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty6 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty7 = new DevExpress.Xpo.DataViewProperty();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.cancelButton = new DevExpress.XtraEditors.SimpleButton();
             this.addButton = new DevExpress.XtraEditors.SimpleButton();
             this.diapasonEndTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.EquipmentGUIDDataView = new DevExpress.Xpo.XPDataView(this.components);
             this.deltaTypeTextEdit = new DevExpress.XtraEditors.SpinEdit();
             this.deltaValuetextEdit = new DevExpress.XtraEditors.TextEdit();
             this.diapasonBegintextEdit = new DevExpress.XtraEditors.TextEdit();
             this.measurandGUIDlookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
             this.MeasurandGUIDDataView = new DevExpress.Xpo.XPDataView(this.components);
             this.equipmentGUIDlookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
+            this.EquipmentGUIDDataView = new DevExpress.Xpo.XPDataView(this.components);
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -61,13 +61,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.diapasonEndTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EquipmentGUIDDataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deltaTypeTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deltaValuetextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diapasonBegintextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.measurandGUIDlookUpEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MeasurandGUIDDataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentGUIDlookUpEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EquipmentGUIDDataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
@@ -128,19 +128,6 @@
             this.diapasonEndTextEdit.Size = new System.Drawing.Size(240, 20);
             this.diapasonEndTextEdit.StyleController = this.layoutControl1;
             this.diapasonEndTextEdit.TabIndex = 7;
-            // 
-            // EquipmentGUIDDataView
-            // 
-            dataViewProperty3.Name = "GUID";
-            dataViewProperty3.ValueType = typeof(object);
-            dataViewProperty4.Name = "SerialNumber";
-            dataViewProperty4.ValueType = typeof(string);
-            dataViewProperty5.Name = "InventoryNumber";
-            dataViewProperty5.ValueType = typeof(string);
-            this.EquipmentGUIDDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
-            dataViewProperty3,
-            dataViewProperty4,
-            dataViewProperty5});
             // 
             // deltaTypeTextEdit
             // 
@@ -221,6 +208,19 @@
             this.equipmentGUIDlookUpEdit.Size = new System.Drawing.Size(240, 20);
             this.equipmentGUIDlookUpEdit.StyleController = this.layoutControl1;
             this.equipmentGUIDlookUpEdit.TabIndex = 6;
+            // 
+            // EquipmentGUIDDataView
+            // 
+            dataViewProperty3.Name = "GUID";
+            dataViewProperty3.ValueType = typeof(object);
+            dataViewProperty4.Name = "SerialNumber";
+            dataViewProperty4.ValueType = typeof(string);
+            dataViewProperty5.Name = "InventoryNumber";
+            dataViewProperty5.ValueType = typeof(string);
+            this.EquipmentGUIDDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
+            dataViewProperty3,
+            dataViewProperty4,
+            dataViewProperty5});
             // 
             // layoutControlGroup1
             // 
@@ -349,13 +349,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.diapasonEndTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EquipmentGUIDDataView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.deltaTypeTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.deltaValuetextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diapasonBegintextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.measurandGUIDlookUpEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MeasurandGUIDDataView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentGUIDlookUpEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EquipmentGUIDDataView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();

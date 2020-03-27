@@ -113,7 +113,7 @@ namespace SensorSet.UI.Equipment
                 currentDimension.Koef = Convert.ToDecimal(koefTextEdit.Text);
                 currentDimension.ShowInInterface = checkEdit.Checked;
                 currentDimension.Digits = Convert.ToInt16(digitTextEdit.Text);
-                
+
                 if (edit)
                 {
                     currentDimension.DateOfChange = DateTime.Now;
@@ -123,7 +123,21 @@ namespace SensorSet.UI.Equipment
 
         }
 
-        private void simpleButton2_Click(object sender, EventArgs e)
+        //private void simpleButton2_Click(object sender, EventArgs e)
+        //{
+        //    validForm();
+        //    SaveDimension();
+        //    uow.CommitChanges();//Сохранение объекта в БД       
+        //    Close();
+        //}
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            uow.Dispose();
+            Close();
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
         {
             validForm();
             SaveDimension();
@@ -131,7 +145,7 @@ namespace SensorSet.UI.Equipment
             Close();
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
+        private void cancelButton_Click(object sender, EventArgs e)
         {
             uow.Dispose();
             Close();

@@ -90,8 +90,8 @@ namespace SensorSet.UI.Equipment
 
             if (edit)
             {
-                equipmentCharacterGUIDlookUpEdit.EditValue = currentEquipmentCharacterParam.EquipmentCharacterGUID;
-                equipmentGUIDLookUpEdit.EditValue = currentEquipmentCharacterParam.EquipmentGUID;
+                equipmentCharacterGUIDlookUpEdit.EditValue = currentEquipmentCharacterParam.EquipmentCharacterGUID.GUID;
+                equipmentGUIDLookUpEdit.EditValue = currentEquipmentCharacterParam.EquipmentGUID.GUID;
                 intParamTextEdit.Text = currentEquipmentCharacterParam.IntParam.ToString();
                 strParamTextEdit.Text = currentEquipmentCharacterParam.StrParam;
                 if (currentEquipmentCharacterParam.BoolParam)

@@ -25,6 +25,8 @@ namespace SensorSet
         private Lazy<UI.Equipment.equipmentErrorUC> equipmentErrorUC;
         private Lazy<UI.Equipment.equipmentCharacterParamUC> equipmentCharacterParamUC;
         private Lazy<UI.Equipment.equipmentCharacterUC> equipmentCharacterUC;
+        private Lazy<UI.Equipment.deviceMeasurandUC> deviceMeasurandUC;
+        private Lazy<UI.Equipment.equipmentCharacterEquipmentTypeUC> equipmentCharacterEquipmentTypeUC;
 
         private void hideAllContainerControls(Control container)
         {
@@ -172,13 +174,13 @@ namespace SensorSet
                 equipmentCharacterParamUC = new Lazy<UI.Equipment.equipmentCharacterParamUC>(() => new UI.Equipment.equipmentCharacterParamUC(mainContainer));
                 equipmentCharacterParamUC.Value.Dock = DockStyle.Fill;
             }
-            Text = "SensorSet - Параметры характеристик";
+            Text = "SensorSet - Параметры(значения) характеристик";
             equipmentCharacterParamUC.Value.Show();
             ribbonControl.MergeRibbon(equipmentCharacterParamUC.Value.equipmentCharacterParamRibbonControl);
             ribbonControl.SelectedPage = equipmentCharacterParamUC.Value.equipmentCharacterParamRibbonControl.SelectedPage;
             SplashScreenManager.CloseForm();
         }
-        void iniequipmentCharacterUC()
+        void initequipmentCharacterUC()
         {
             hideAllContainerControls(mainContainer);
             ribbonControl.UnMergeRibbon();
@@ -188,7 +190,7 @@ namespace SensorSet
                 equipmentCharacterUC = new Lazy<UI.Equipment.equipmentCharacterUC>(() => new UI.Equipment.equipmentCharacterUC(mainContainer));
                 equipmentCharacterUC.Value.Dock = DockStyle.Fill;
             }
-            Text = "SensorSet - Параметры характеристик";
+            Text = "SensorSet - Характеристики оборудования";
             equipmentCharacterUC.Value.Show();
             ribbonControl.MergeRibbon(equipmentCharacterUC.Value.equipmentCharacterRibbonControl);
             ribbonControl.SelectedPage = equipmentCharacterUC.Value.equipmentCharacterRibbonControl.SelectedPage;
@@ -209,6 +211,38 @@ namespace SensorSet
             equipmentErrorUC.Value.Show();
             ribbonControl.MergeRibbon(equipmentErrorUC.Value.equipmentErrorRibbonControl);
             ribbonControl.SelectedPage = equipmentErrorUC.Value.equipmentErrorRibbonControl.SelectedPage;
+            SplashScreenManager.CloseForm();
+        }
+        void initdeviceMeasurandUC()
+        {
+            hideAllContainerControls(mainContainer);
+            ribbonControl.UnMergeRibbon();
+            SplashScreenManager.ShowForm(typeof(UI.Common.LoadingIndicator));
+            if (equipmentErrorUC == null)
+            {
+                equipmentErrorUC = new Lazy<UI.Equipment.equipmentErrorUC>(() => new UI.Equipment.equipmentErrorUC(mainContainer));
+                equipmentErrorUC.Value.Dock = DockStyle.Fill;
+            }
+            Text = "SensorSet - Измеряемые величины";
+            equipmentErrorUC.Value.Show();
+            ribbonControl.MergeRibbon(equipmentErrorUC.Value.equipmentErrorRibbonControl);
+            ribbonControl.SelectedPage = equipmentErrorUC.Value.equipmentErrorRibbonControl.SelectedPage;
+            SplashScreenManager.CloseForm();
+        }
+        void initequipmentCharacterEquipmentTypeUC()
+        {
+            hideAllContainerControls(mainContainer);
+            ribbonControl.UnMergeRibbon();
+            SplashScreenManager.ShowForm(typeof(UI.Common.LoadingIndicator));
+            if (equipmentCharacterEquipmentTypeUC == null)
+            {
+                equipmentCharacterEquipmentTypeUC = new Lazy<UI.Equipment.equipmentCharacterEquipmentTypeUC>(() => new UI.Equipment.equipmentCharacterEquipmentTypeUC(mainContainer));
+                equipmentCharacterEquipmentTypeUC.Value.Dock = DockStyle.Fill;
+            }
+            Text = "SensorSet - Измеряемые величины";
+            equipmentCharacterEquipmentTypeUC.Value.Show();
+            ribbonControl.MergeRibbon(equipmentCharacterEquipmentTypeUC.Value.equipmentCharacterEquipmentTypeRibbonControl);
+            ribbonControl.SelectedPage = equipmentCharacterEquipmentTypeUC.Value.equipmentCharacterEquipmentTypeRibbonControl.SelectedPage;
             SplashScreenManager.CloseForm();
         }
 
@@ -272,12 +306,22 @@ namespace SensorSet
 
         private void characterItem_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
-            iniequipmentCharacterUC();
+            initequipmentCharacterUC();
         }
 
         private void equipmentError_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
             initequipmentErrorUC();
+        }
+
+        private void measurandItem_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            initdeviceMeasurandUC();
+        }
+
+        private void equipmentCharacterEquipmentType_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            initequipmentCharacterEquipmentTypeUC();
         }
     }
 }

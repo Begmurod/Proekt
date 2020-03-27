@@ -30,14 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EquipmentForm));
-            DevExpress.Xpo.DataViewProperty dataViewProperty31 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty32 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty33 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty34 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty35 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty36 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty7 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty8 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty9 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty10 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty11 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty12 = new DevExpress.Xpo.DataViewProperty();
             this.inventoryNumberTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.startUseDatedateEdit = new DevExpress.XtraEditors.DateEdit();
             this.cancelButton = new DevExpress.XtraEditors.SimpleButton();
             this.addButton = new DevExpress.XtraEditors.SimpleButton();
             this.EquipmentTypeGUIDLookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
@@ -63,6 +64,7 @@
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -71,11 +73,11 @@
             this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.startUseDatedateEdit = new DevExpress.XtraEditors.DateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.inventoryNumberTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.startUseDatedateEdit.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.startUseDatedateEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EquipmentTypeGUIDLookUpEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EquipmentTypeGUIDDataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.serialNumberTextEdit.Properties)).BeginInit();
@@ -101,6 +103,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
@@ -109,9 +112,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.startUseDatedateEdit.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.startUseDatedateEdit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // inventoryNumberTextEdit
@@ -148,6 +148,19 @@
             this.layoutControl1.Size = new System.Drawing.Size(539, 363);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // startUseDatedateEdit
+            // 
+            this.startUseDatedateEdit.EditValue = null;
+            this.startUseDatedateEdit.Location = new System.Drawing.Point(192, 300);
+            this.startUseDatedateEdit.Name = "startUseDatedateEdit";
+            this.startUseDatedateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.startUseDatedateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.startUseDatedateEdit.Size = new System.Drawing.Size(333, 20);
+            this.startUseDatedateEdit.StyleController = this.layoutControl1;
+            this.startUseDatedateEdit.TabIndex = 12;
             // 
             // cancelButton
             // 
@@ -189,13 +202,13 @@
             // 
             // EquipmentTypeGUIDDataView
             // 
-            dataViewProperty31.Name = "GUID";
-            dataViewProperty31.ValueType = typeof(object);
-            dataViewProperty32.Name = "FullName";
-            dataViewProperty32.ValueType = typeof(string);
+            dataViewProperty7.Name = "GUID";
+            dataViewProperty7.ValueType = typeof(object);
+            dataViewProperty8.Name = "FullName";
+            dataViewProperty8.ValueType = typeof(string);
             this.EquipmentTypeGUIDDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
-            dataViewProperty31,
-            dataViewProperty32});
+            dataViewProperty7,
+            dataViewProperty8});
             // 
             // serialNumberTextEdit
             // 
@@ -223,13 +236,13 @@
             // 
             // EquipmentCategoryGUIDDataView
             // 
-            dataViewProperty33.Name = "GUID";
-            dataViewProperty33.ValueType = typeof(object);
-            dataViewProperty34.Name = "Name";
-            dataViewProperty34.ValueType = typeof(string);
+            dataViewProperty9.Name = "GUID";
+            dataViewProperty9.ValueType = typeof(object);
+            dataViewProperty10.Name = "Name";
+            dataViewProperty10.ValueType = typeof(string);
             this.EquipmentCategoryGUIDDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
-            dataViewProperty33,
-            dataViewProperty34});
+            dataViewProperty9,
+            dataViewProperty10});
             // 
             // ipAddresstextEdit
             // 
@@ -265,13 +278,13 @@
             // 
             // ParentGUIDDataView
             // 
-            dataViewProperty35.Name = "GUID";
-            dataViewProperty35.ValueType = typeof(object);
-            dataViewProperty36.Name = "Name";
-            dataViewProperty36.ValueType = typeof(string);
+            dataViewProperty11.Name = "GUID";
+            dataViewProperty11.ValueType = typeof(object);
+            dataViewProperty12.Name = "Name";
+            dataViewProperty12.ValueType = typeof(string);
             this.ParentGUIDDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
-            dataViewProperty35,
-            dataViewProperty36});
+            dataViewProperty11,
+            dataViewProperty12});
             // 
             // manufacturingDatedateEdit
             // 
@@ -428,6 +441,15 @@
             this.layoutControlItem10.Text = "Наименование вида оборудования";
             this.layoutControlItem10.TextSize = new System.Drawing.Size(177, 13);
             // 
+            // layoutControlItem5
+            // 
+            this.layoutControlItem5.Control = this.startUseDatedateEdit;
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 288);
+            this.layoutControlItem5.Name = "layoutControlItem5";
+            this.layoutControlItem5.Size = new System.Drawing.Size(517, 24);
+            this.layoutControlItem5.Text = "Дата ввода в эксплуатацию";
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(177, 13);
+            // 
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.cancelButton;
@@ -503,28 +525,6 @@
             this.layoutControlItem16.Text = "Срок гарантии";
             this.layoutControlItem16.TextSize = new System.Drawing.Size(177, 13);
             // 
-            // layoutControlItem5
-            // 
-            this.layoutControlItem5.Control = this.startUseDatedateEdit;
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 288);
-            this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(517, 24);
-            this.layoutControlItem5.Text = "Дата ввода в эксплуатацию";
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(177, 13);
-            // 
-            // startUseDatedateEdit
-            // 
-            this.startUseDatedateEdit.EditValue = null;
-            this.startUseDatedateEdit.Location = new System.Drawing.Point(192, 300);
-            this.startUseDatedateEdit.Name = "startUseDatedateEdit";
-            this.startUseDatedateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.startUseDatedateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.startUseDatedateEdit.Size = new System.Drawing.Size(333, 20);
-            this.startUseDatedateEdit.StyleController = this.layoutControl1;
-            this.startUseDatedateEdit.TabIndex = 12;
-            // 
             // EquipmentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -537,6 +537,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.inventoryNumberTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.startUseDatedateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.startUseDatedateEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EquipmentTypeGUIDLookUpEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EquipmentTypeGUIDDataView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.serialNumberTextEdit.Properties)).EndInit();
@@ -562,6 +564,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
@@ -570,9 +573,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.startUseDatedateEdit.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.startUseDatedateEdit.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

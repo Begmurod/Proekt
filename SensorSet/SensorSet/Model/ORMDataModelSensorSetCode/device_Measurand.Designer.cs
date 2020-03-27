@@ -44,6 +44,18 @@ namespace SensorSet.Model.SensorSet
             get { return fDimensionGUID; }
             set { SetPropertyValue<list_Dimension>("DimensionGUID", ref fDimensionGUID, value); }
         }
+        DateTime fDateOfChange;
+        public DateTime DateOfChange
+        {
+            get { return fDateOfChange; }
+            set { SetPropertyValue<DateTime>("DateOfChange", ref fDateOfChange, value); }
+        }
+        DateTime fDeletedDate;
+        public DateTime DeletedDate
+        {
+            get { return fDeletedDate; }
+            set { SetPropertyValue<DateTime>("DeletedDate", ref fDeletedDate, value); }
+        }
         [Association(@"device_EquipmentErrorReferencesdevice_Measurand")]
         public XPCollection<device_EquipmentError> device_EquipmentErrors { get { return GetCollection<device_EquipmentError>("device_EquipmentErrors"); } }
         [Association(@"device_EquipmentTypeErrorReferencesdevice_Measurand")]

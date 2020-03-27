@@ -189,12 +189,6 @@
     <Compile Include="UI\Equipment\deviceEquipmentKindUC.Designer.cs">
       <DependentUpon>deviceEquipmentKindUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Equipment\DeviceMeasurandForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Equipment\DeviceMeasurandForm.Designer.cs">
-      <DependentUpon>DeviceMeasurandForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\Equipment\deviceMeasurandUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -309,6 +303,18 @@
     <Compile Include="UI\Equipment\equipmentUC.Designer.cs">
       <DependentUpon>equipmentUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Equipment\MeasurandForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Equipment\MeasurandForm.Designer.cs">
+      <DependentUpon>MeasurandForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Equipment\MeasurandFormForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Equipment\MeasurandFormForm.Designer.cs">
+      <DependentUpon>MeasurandFormForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Equipment\VendorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -349,9 +355,6 @@
     <EmbeddedResource Include="UI\Equipment\deviceEquipmentKindUC.resx">
       <DependentUpon>deviceEquipmentKindUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Equipment\DeviceMeasurandForm.resx">
-      <DependentUpon>DeviceMeasurandForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\Equipment\deviceMeasurandUC.resx">
       <DependentUpon>deviceMeasurandUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -360,6 +363,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Equipment\dimensionUC.resx">
       <DependentUpon>dimensionUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Equipment\EquipmentCharacterEquipmentTypeForm.resx">
+      <DependentUpon>EquipmentCharacterEquipmentTypeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Equipment\equipmentCharacterEquipmentTypeUC.resx">
       <DependentUpon>equipmentCharacterEquipmentTypeUC.cs</DependentUpon>
@@ -405,6 +411,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Equipment\equipmentUC.resx">
       <DependentUpon>equipmentUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Equipment\MeasurandForm.resx">
+      <DependentUpon>MeasurandForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Equipment\MeasurandFormForm.resx">
+      <DependentUpon>MeasurandFormForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Equipment\VendorForm.resx">
       <DependentUpon>VendorForm.cs</DependentUpon>

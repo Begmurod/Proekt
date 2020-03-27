@@ -64,17 +64,19 @@ namespace SensorSet.UI.Equipment
             {
                 //TODO сделать фильтр по критериям
                 DevExpress.Xpo.DB.SelectedData _measuresData = u.ExecuteQuery(string.Format(@"
-               SELECT GUID]
+             SELECT   [GUID]
+      ,[MeasurandGUID]
       ,[EquipmentGUID]
+      ,[EquipmentTypeGUID]
       ,[DiapasonBegin]
       ,[DiapasonEnd]
       ,[DeltaType]
       ,[DeltaValue]
-      ,[EquipmentTypeGUID]
-      ,[MeasurandGUID]
-      ,[DeletedDate]
       ,[DateOfChange]
-  FROM [dbo].[EquipmentErrorView] Where DeletedDate is null"
+      ,[DeletedDate]
+      ,[EquipmentID]
+  FROM [dbo].[EquipmentErrorView]
+  WHERE [DeletedDate] is null"
                 ));
                 equipmentErrorDataView.LoadData(_measuresData);
             }
@@ -116,7 +118,7 @@ namespace SensorSet.UI.Equipment
             using (UnitOfWork u = new UnitOfWork())
             {
                 device_EquipmentError currentEquipmentError = u.GetObjectByKey<device_EquipmentError>((Guid)equipmentErrorGridView.GetFocusedRowCellValue("GUID"));
-                DialogResult d = XtraMessageBox.Show(string.Format("Удалить  погрешность оборудования {0} ({1}) ({2}) ({3}) ({4}) ({5}) ({6})?", currentEquipmentError.MeasurandGUID, currentEquipmentError.EquipmentID, currentEquipmentError.EquipmentGUID, currentEquipmentError.DiapasonBegin, currentEquipmentError.DiapasonEnd, currentEquipmentError.DeltaType, currentEquipmentError.DeltaValue), "Подтверждение действия", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult d = XtraMessageBox.Show(string.Format("Удалить  погрешность оборудования {0} ({1}) ({2}) ({3}) ({4}) ({5}) ({6})?", currentEquipmentError.MeasurandGUID, currentEquipmentError.EquipmentGUID, currentEquipmentError.DiapasonBegin, currentEquipmentError.DiapasonEnd, currentEquipmentError.DeltaType, currentEquipmentError.DeltaValue), "Подтверждение действия", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (d == DialogResult.Yes)
                 {
                     currentEquipmentError.DeletedDate = DateTime.Now;
@@ -125,6 +127,19 @@ namespace SensorSet.UI.Equipment
                 }
             }
             loadData();
+        }
+
+        private void equipmentErrorGridView_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+
+            if (e.FocusedRowHandle < 0)
+            {
+                fireLockButtons(new EventArgs());
+            }
+            else
+            {
+                fireUnlockButtons(new EventArgs());
+            }
         }
     }
 }

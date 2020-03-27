@@ -15,7 +15,7 @@ namespace SensorSet.Model.SensorSet
 {
     public static class ConnectionHelper
     {
-        public const string ConnectionString = @"XpoProvider=MSSqlServer;data source=.\SQLEXPRESS;initial catalog=SensorSet;Persist Security Info=true";
+        public const string ConnectionString = @"XpoProvider=MSSqlServer;data source=DESKTOP-4RTHTBS\SQLEXPRESS;user id=begmurod;password=1; catalog=SensorSet;Persist Security Info=true";
         public static void Connect(DevExpress.Xpo.DB.AutoCreateOption autoCreateOption)
         {
             XpoDefault.DataLayer = XpoDefault.GetDataLayer(ConnectionString, autoCreateOption);

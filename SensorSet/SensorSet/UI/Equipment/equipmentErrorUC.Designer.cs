@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraGrid.Columns.GridColumn colEquipmentID;
             DevExpress.Xpo.DataViewProperty dataViewProperty1 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty2 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty3 = new DevExpress.Xpo.DataViewProperty();
@@ -37,6 +38,9 @@
             DevExpress.Xpo.DataViewProperty dataViewProperty6 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty7 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty8 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty9 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty10 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty11 = new DevExpress.Xpo.DataViewProperty();
             this.equipmentErrorDataView = new DevExpress.Xpo.XPDataView(this.components);
             this.equipmentErrorRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItemAdd = new DevExpress.XtraBars.BarButtonItem();
@@ -49,17 +53,23 @@
             this.equipmentErrorGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colGUID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMeasurandGUID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colEquipmentID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEquipmentGUID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDiapasonBegin = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDiapasonEnd = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDeltaType = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDeltaValue = new DevExpress.XtraGrid.Columns.GridColumn();
+            colEquipmentID = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentErrorDataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentErrorRibbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentErrorGridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentErrorGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // colEquipmentID
+            // 
+            colEquipmentID.Caption = "Средства измерения в АСРК";
+            colEquipmentID.FieldName = "EquipmentID";
+            colEquipmentID.Name = "colEquipmentID";
             // 
             // equipmentErrorDataView
             // 
@@ -67,18 +77,24 @@
             dataViewProperty1.ValueType = typeof(object);
             dataViewProperty2.Name = "MeasurandGUID";
             dataViewProperty2.ValueType = typeof(string);
-            dataViewProperty3.Name = "EquipmentID";
+            dataViewProperty3.Name = "EquipmentGUID";
             dataViewProperty3.ValueType = typeof(string);
-            dataViewProperty4.Name = "EquipmentGUID";
-            dataViewProperty4.ValueType = typeof(string);
-            dataViewProperty5.Name = "DiapasonBegin";
+            dataViewProperty4.Name = "DiapasonBegin";
+            dataViewProperty4.ValueType = typeof(decimal);
+            dataViewProperty5.Name = "DiapasonEnd";
             dataViewProperty5.ValueType = typeof(decimal);
-            dataViewProperty6.Name = "DiapasonEnd";
+            dataViewProperty6.Name = "DeltaValue";
             dataViewProperty6.ValueType = typeof(decimal);
             dataViewProperty7.Name = "DeltaType";
             dataViewProperty7.ValueType = typeof(short);
-            dataViewProperty8.Name = "DeltaValue";
-            dataViewProperty8.ValueType = typeof(decimal);
+            dataViewProperty8.Name = "EquipmentTypeGUID";
+            dataViewProperty8.ValueType = typeof(string);
+            dataViewProperty9.Name = "DeletedDate";
+            dataViewProperty9.ValueType = typeof(System.DateTime);
+            dataViewProperty10.Name = "DateOfChange";
+            dataViewProperty10.ValueType = typeof(System.DateTime);
+            dataViewProperty11.Name = "EquipmentID";
+            dataViewProperty11.ValueType = typeof(string);
             this.equipmentErrorDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
             dataViewProperty1,
             dataViewProperty2,
@@ -87,7 +103,10 @@
             dataViewProperty5,
             dataViewProperty6,
             dataViewProperty7,
-            dataViewProperty8});
+            dataViewProperty8,
+            dataViewProperty9,
+            dataViewProperty10,
+            dataViewProperty11});
             // 
             // equipmentErrorRibbonControl
             // 
@@ -169,15 +188,16 @@
             this.equipmentErrorGridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colGUID,
             this.colMeasurandGUID,
-            this.colEquipmentID,
             this.colEquipmentGUID,
             this.colDiapasonBegin,
             this.colDiapasonEnd,
+            this.colDeltaValue,
             this.colDeltaType,
-            this.colDeltaValue});
+            colEquipmentID});
             this.equipmentErrorGridView.GridControl = this.equipmentErrorGridControl;
             this.equipmentErrorGridView.Name = "equipmentErrorGridView";
             this.equipmentErrorGridView.OptionsView.ShowFooter = true;
+            this.equipmentErrorGridView.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.equipmentErrorGridView_FocusedRowChanged);
             // 
             // colGUID
             // 
@@ -190,15 +210,7 @@
             this.colMeasurandGUID.FieldName = "MeasurandGUID";
             this.colMeasurandGUID.Name = "colMeasurandGUID";
             this.colMeasurandGUID.Visible = true;
-            this.colMeasurandGUID.VisibleIndex = 1;
-            // 
-            // colEquipmentID
-            // 
-            this.colEquipmentID.Caption = "Средства измерения в АСРК";
-            this.colEquipmentID.FieldName = "EquipmentID";
-            this.colEquipmentID.Name = "colEquipmentID";
-            this.colEquipmentID.Visible = true;
-            this.colEquipmentID.VisibleIndex = 0;
+            this.colMeasurandGUID.VisibleIndex = 0;
             // 
             // colEquipmentGUID
             // 
@@ -206,7 +218,7 @@
             this.colEquipmentGUID.FieldName = "EquipmentGUID";
             this.colEquipmentGUID.Name = "colEquipmentGUID";
             this.colEquipmentGUID.Visible = true;
-            this.colEquipmentGUID.VisibleIndex = 2;
+            this.colEquipmentGUID.VisibleIndex = 1;
             // 
             // colDiapasonBegin
             // 
@@ -214,7 +226,7 @@
             this.colDiapasonBegin.FieldName = "DiapasonBegin";
             this.colDiapasonBegin.Name = "colDiapasonBegin";
             this.colDiapasonBegin.Visible = true;
-            this.colDiapasonBegin.VisibleIndex = 5;
+            this.colDiapasonBegin.VisibleIndex = 4;
             // 
             // colDiapasonEnd
             // 
@@ -222,13 +234,15 @@
             this.colDiapasonEnd.FieldName = "DiapasonEnd";
             this.colDiapasonEnd.Name = "colDiapasonEnd";
             this.colDiapasonEnd.Visible = true;
-            this.colDiapasonEnd.VisibleIndex = 3;
+            this.colDiapasonEnd.VisibleIndex = 2;
             // 
             // colDeltaType
             // 
             this.colDeltaType.Caption = "Тип погрешности: 1-абсолютная, 0-относительная";
             this.colDeltaType.FieldName = "DeltaType";
             this.colDeltaType.Name = "colDeltaType";
+            this.colDeltaType.Visible = true;
+            this.colDeltaType.VisibleIndex = 5;
             // 
             // colDeltaValue
             // 
@@ -236,7 +250,7 @@
             this.colDeltaValue.FieldName = "DeltaValue";
             this.colDeltaValue.Name = "colDeltaValue";
             this.colDeltaValue.Visible = true;
-            this.colDeltaValue.VisibleIndex = 4;
+            this.colDeltaValue.VisibleIndex = 3;
             // 
             // equipmentErrorUC
             // 
@@ -273,7 +287,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItemDelete;
         public DevExpress.XtraBars.Ribbon.RibbonControl equipmentErrorRibbonControl;
         private DevExpress.XtraBars.BarButtonItem barButtonItemView;
-        private DevExpress.XtraGrid.Columns.GridColumn colEquipmentID;
         private DevExpress.XtraGrid.Columns.GridColumn colDiapasonBegin;
     }
 }
