@@ -273,7 +273,6 @@
             this.balanceCostatextEdit.Size = new System.Drawing.Size(333, 20);
             this.balanceCostatextEdit.StyleController = this.layoutControl1;
             this.balanceCostatextEdit.TabIndex = 4;
-            this.balanceCostatextEdit.TextChanged += new System.EventHandler(this.balanceCostatextEdit_TextChanged);
             // 
             // useMonthstextEdit
             // 

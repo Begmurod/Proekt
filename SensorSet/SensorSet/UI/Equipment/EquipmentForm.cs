@@ -138,32 +138,37 @@ namespace SensorSet.UI.Equipment
         }
         private void validForm()
         {
-        //    formValid = false;
+            if (System.Text.RegularExpressions.Regex.IsMatch(balanceCostatextEdit.Text, "[^0-9]" ) && balanceCostatextEdit != null)
+            {
+                MessageBox.Show("Поле нужно ввести только числовое значение.");
+                balanceCostatextEdit.Text = balanceCostatextEdit.Text.Remove(balanceCostatextEdit.Text.Length - 1);
+            }
+            //    formValid = false;
 
-        //    decimal balanceCost = 1;
-        //    int useMonth = -1;
-        //    decimal remainingBalance = -1;
-        //    string inventoryNumber = null;
-        //    string serialNumber = null;
-        //    try
-        //    {
-        //        balanceCost = Convert.ToDecimal(balanceCostatextEdit.Text);
-        //        useMonth = Convert.ToInt32(useMonthstextEdit.Text);
-        //        remainingBalance = Convert.ToDecimal(remainingBalancetextEdit.Text);
-        //        inventoryNumber = ipAddresstextEdit.Text;
-        //        serialNumber = serialNumberTextEdit.Text;
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        MessageBox.Show("ошибка");
-        //    }
-        //    finally
-        //    {
-        //        if (balanceCost > -1 && useMonth > -1 && remainingBalance >= 1 && inventoryNumber != null)
-        //        { formValid = true; }
-        //    }
-        //    uow.CommitChanges();//Сохранение объекта в БД       
-        //    Close();
+            //    decimal balanceCost = 1;
+            //    int useMonth = -1;
+            //    decimal remainingBalance = -1;
+            //    string inventoryNumber = null;
+            //    string serialNumber = null;
+            //    try
+            //    {
+            //        balanceCost = Convert.ToDecimal(balanceCostatextEdit.Text);
+            //        useMonth = Convert.ToInt32(useMonthstextEdit.Text);
+            //        remainingBalance = Convert.ToDecimal(remainingBalancetextEdit.Text);
+            //        inventoryNumber = ipAddresstextEdit.Text;
+            //        serialNumber = serialNumberTextEdit.Text;
+            //    }
+            //    catch (Exception e)
+            //    {
+            //        MessageBox.Show("ошибка");
+            //    }
+            //    finally
+            //    {
+            //        if (balanceCost > -1 && useMonth > -1 && remainingBalance >= 1 && inventoryNumber != null)
+            //        { formValid = true; }
+            //    }
+            //    uow.CommitChanges();//Сохранение объекта в БД       
+            //    Close();
         }
         /// <summary>
         /// Заполнение текущей единицы данными с формы
@@ -201,18 +206,15 @@ namespace SensorSet.UI.Equipment
             Close();
         }
 
-        private void balanceCostatextEdit_TextChanged(object sender, EventArgs e)
-        {
-            number();
-        }
-        void number()
-        {
-            if (System.Text.RegularExpressions.Regex.IsMatch(balanceCostatextEdit.Text, "[^0-9]"))
-            {
-                MessageBox.Show("Поле нужно ввести только числовое значение.");
-                balanceCostatextEdit.Text = balanceCostatextEdit.Text.Remove(balanceCostatextEdit.Text.Length - 1);
-            }
-        }
+        
+        //void number()
+        //{
+        //    if (System.Text.RegularExpressions.Regex.IsMatch(balanceCostatextEdit.Text, "[^0-9]"))
+        //    {
+        //        MessageBox.Show("Поле нужно ввести только числовое значение.");
+        //        balanceCostatextEdit.Text = balanceCostatextEdit.Text.Remove(balanceCostatextEdit.Text.Length - 1);
+        //    }
+        //}
 
     }
 }

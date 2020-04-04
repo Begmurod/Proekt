@@ -98,7 +98,7 @@ namespace SensorSet.UI.Equipment
       ,[NumericParam2]
       ,[DeletedDate]
       ,[DateOfChange]
-  FROM [dbo].[EquipmentCharacterEquipmentTypeView] Where DeletedDate is null ", equipmentTypeGridView.GetFocusedRowCellValue("GUID")
+  FROM [dbo].[EquipmentCharacterEquipmentTypeView] Where DeletedDate is null  and  EquipmentTypeGUID = '{0}'", equipmentTypeGridView.GetFocusedRowCellValue("GUID")
                 ));
                 equipmentCharacterEquipmentTypeDataView.LoadData(_measuresData);
             }

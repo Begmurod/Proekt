@@ -195,7 +195,6 @@
             this.nameTextEdit.TabIndex = 4;
             conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.NotEquals;
             conditionValidationRule3.ErrorText = "Поле Обозначение не должно быть пустым";
-            conditionValidationRule3.ErrorType = DevExpress.XtraEditors.DXErrorProvider.ErrorType.Warning;
             this.dxValidationProvider.SetValidationRule(this.nameTextEdit, conditionValidationRule3);
             // 
             // digitTextEdit
