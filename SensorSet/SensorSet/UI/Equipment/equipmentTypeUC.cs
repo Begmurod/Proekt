@@ -74,8 +74,8 @@ namespace SensorSet.UI.Equipment
       ,[EquipmentKindGUID]
       ,[EquipmentVendorGUID]
       ,[Description]
-  FROM [dbo].[equipmentTypeView] Where DeletedDate is null"
-                ));
+  FROM [dbo].[equipmentTypeView] Where DeletedDate is null "
+            ));
                 equipmentTypeDataView.LoadData(_measuresData);
             }
             GC.Collect();
@@ -98,7 +98,7 @@ namespace SensorSet.UI.Equipment
       ,[NumericParam2]
       ,[DeletedDate]
       ,[DateOfChange]
-  FROM [dbo].[EquipmentCharacterEquipmentTypeView] Where DeletedDate is null  and  EquipmentTypeGUID = '{0}'", equipmentTypeGridView.GetFocusedRowCellValue("GUID")
+  FROM [dbo].[EquipmentCharacterEquipmentTypeView] Where DeletedDate is null and EquipmentTypeGUID = '{0}'", equipmentTypeGridView.GetFocusedRowCellValue("GUID")
                 ));
                 equipmentCharacterEquipmentTypeDataView.LoadData(_measuresData);
             }
