@@ -45,6 +45,7 @@
             this.equipmentTypeError = new DevExpress.XtraNavBar.NavBarItem();
             this.equipmentCharacterParam = new DevExpress.XtraNavBar.NavBarItem();
             this.equipmentError = new DevExpress.XtraNavBar.NavBarItem();
+            this.equipmentCharacterEquipmentType = new DevExpress.XtraNavBar.NavBarItem();
             this.planGroup = new DevExpress.XtraNavBar.NavBarGroup();
             this.monthPlanNavItem = new DevExpress.XtraNavBar.NavBarItem();
             this.yearPlanItem = new DevExpress.XtraNavBar.NavBarItem();
@@ -68,7 +69,6 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.navBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem2 = new DevExpress.XtraNavBar.NavBarItem();
-            this.equipmentCharacterEquipmentType = new DevExpress.XtraNavBar.NavBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl)).BeginInit();
             this.splitContainerControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).BeginInit();
@@ -145,18 +145,18 @@
             new DevExpress.XtraNavBar.NavBarItemLink(this.equipmentKindeItem),
             new DevExpress.XtraNavBar.NavBarItemLink(this.vendorItem),
             new DevExpress.XtraNavBar.NavBarItemLink(this.characterItem),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.equipmentCharacterParam),
             new DevExpress.XtraNavBar.NavBarItemLink(this.measurandItem),
             new DevExpress.XtraNavBar.NavBarItemLink(this.dimensionItem),
             new DevExpress.XtraNavBar.NavBarItemLink(this.equipmentCategory),
             new DevExpress.XtraNavBar.NavBarItemLink(this.equipmentState),
             new DevExpress.XtraNavBar.NavBarItemLink(this.equipmentTypeError),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.equipmentCharacterParam),
             new DevExpress.XtraNavBar.NavBarItemLink(this.equipmentError),
             new DevExpress.XtraNavBar.NavBarItemLink(this.equipmentCharacterEquipmentType)});
             this.equipmentGroup.LargeImage = ((System.Drawing.Image)(resources.GetObject("equipmentGroup.LargeImage")));
             this.equipmentGroup.Name = "equipmentGroup";
             this.equipmentGroup.SmallImage = ((System.Drawing.Image)(resources.GetObject("equipmentGroup.SmallImage")));
-            this.equipmentGroup.TopVisibleLinkIndex = 6;
+            this.equipmentGroup.TopVisibleLinkIndex = 5;
             // 
             // equipmentItem
             // 
@@ -217,23 +217,24 @@
             // 
             // equipmentCategory
             // 
-            this.equipmentCategory.Caption = "Категория оборудования";
+            this.equipmentCategory.Caption = "Категория";
             this.equipmentCategory.Name = "equipmentCategory";
             this.equipmentCategory.SmallImage = ((System.Drawing.Image)(resources.GetObject("equipmentCategory.SmallImage")));
             this.equipmentCategory.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.equipmentCategory_LinkClicked);
             // 
             // equipmentState
             // 
-            this.equipmentState.Caption = "Состояние оборудования";
+            this.equipmentState.Caption = "Состояние";
             this.equipmentState.Name = "equipmentState";
             this.equipmentState.SmallImage = ((System.Drawing.Image)(resources.GetObject("equipmentState.SmallImage")));
             this.equipmentState.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.equipmentState_LinkClicked);
             // 
             // equipmentTypeError
             // 
-            this.equipmentTypeError.Caption = "Погрешность типа оборудования";
+            this.equipmentTypeError.Caption = "Погрешности типов";
             this.equipmentTypeError.Name = "equipmentTypeError";
             this.equipmentTypeError.SmallImage = ((System.Drawing.Image)(resources.GetObject("equipmentTypeError.SmallImage")));
+            this.equipmentTypeError.Visible = false;
             this.equipmentTypeError.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.EquipmentTypeError_LinkClicked);
             // 
             // equipmentCharacterParam
@@ -245,10 +246,19 @@
             // 
             // equipmentError
             // 
-            this.equipmentError.Caption = "Погрешность оборудования";
+            this.equipmentError.Caption = "Погрешность устройств";
             this.equipmentError.Name = "equipmentError";
             this.equipmentError.SmallImage = ((System.Drawing.Image)(resources.GetObject("equipmentError.SmallImage")));
+            this.equipmentError.Visible = false;
             this.equipmentError.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.equipmentError_LinkClicked);
+            // 
+            // equipmentCharacterEquipmentType
+            // 
+            this.equipmentCharacterEquipmentType.Caption = "Характеристики типов";
+            this.equipmentCharacterEquipmentType.Name = "equipmentCharacterEquipmentType";
+            this.equipmentCharacterEquipmentType.SmallImage = ((System.Drawing.Image)(resources.GetObject("equipmentCharacterEquipmentType.SmallImage")));
+            this.equipmentCharacterEquipmentType.Visible = false;
+            this.equipmentCharacterEquipmentType.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.equipmentCharacterEquipmentType_LinkClicked);
             // 
             // planGroup
             // 
@@ -429,13 +439,6 @@
             this.navBarItem2.Caption = "Единицы";
             this.navBarItem2.Name = "navBarItem2";
             this.navBarItem2.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarItem2.SmallImage")));
-            // 
-            // equipmentCharacterEquipmentType
-            // 
-            this.equipmentCharacterEquipmentType.Caption = "Набор характеристик типового оборудования";
-            this.equipmentCharacterEquipmentType.Name = "equipmentCharacterEquipmentType";
-            this.equipmentCharacterEquipmentType.SmallImage = ((System.Drawing.Image)(resources.GetObject("equipmentCharacterEquipmentType.SmallImage")));
-            this.equipmentCharacterEquipmentType.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.equipmentCharacterEquipmentType_LinkClicked);
             // 
             // mainForm
             // 

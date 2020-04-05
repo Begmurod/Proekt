@@ -76,13 +76,6 @@ namespace SensorSet.Model.SensorSet
             get { return fDateModify; }
             set { SetPropertyValue<DateTime>("DateModify", ref fDateModify, value); }
         }
-        DateTime fDateOfChange;
-        public DateTime DateOfChange
-        {
-            get { return fDateOfChange; }
-            set { SetPropertyValue<DateTime>("DateOfChange", ref fDateOfChange, value); }
-        }
-       
         auth_Users fChangedUserID;
         [Association(@"device_EquipmentTypeReferencesauth_Users")]
         public auth_Users ChangedUserID

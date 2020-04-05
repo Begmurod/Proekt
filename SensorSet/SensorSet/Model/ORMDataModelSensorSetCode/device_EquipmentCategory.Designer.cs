@@ -31,18 +31,6 @@ namespace SensorSet.Model.SensorSet
             get { return fName; }
             set { SetPropertyValue<string>("Name", ref fName, value); }
         }
-        DateTime fDateOfChange;
-        public DateTime DateOfChange
-        {
-            get { return fDateOfChange; }
-            set { SetPropertyValue<DateTime>("DateOfChange", ref fDateOfChange, value); }
-        }
-        DateTime fDeletedDate;
-        public DateTime DeletedDate
-        {
-            get { return fDeletedDate; }
-            set { SetPropertyValue<DateTime>("DeletedDate", ref fDeletedDate, value); }
-        }
         [Association(@"device_EquipmentReferencesdevice_EquipmentCategory")]
         public XPCollection<device_Equipment> device_Equipments { get { return GetCollection<device_Equipment>("device_Equipments"); } }
     }

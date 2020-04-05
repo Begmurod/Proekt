@@ -8,6 +8,8 @@ using DevExpress.LookAndFeel;
 using System.Globalization;
 using DevExpress.Xpo;
 using DevExpress.Xpo.DB;
+using SensorSet.UI.Common.exceptionHandling;
+using System.Threading;
 
 namespace SensorSet
 {
@@ -19,6 +21,10 @@ namespace SensorSet
         [STAThread]
         static void Main()
         {
+            globalExceptionHandler eh = new globalExceptionHandler();
+            // Adds the event handler to to the event.
+            Application.ThreadException += new ThreadExceptionEventHandler(eh.OnThreadException);
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.CurrentCulture = new CultureInfo("ru-RU");
@@ -30,10 +36,7 @@ namespace SensorSet
             try
             {
                 XpoDefault.Session = null;
-                XpoDefault.DataLayer = new SimpleDataLayer(new DataCacheNode(new DataCacheRoot(XpoDefault.GetConnectionProvider(@"XpoProvider=MSSqlServer;data source=DESKTOP-QP6F70H;
-                    integrated security=false;initial catalog=SensorSet;User Id=begmurod;Password=1", AutoCreateOption.None))));
-                //XpoDefault.DataLayer = new SimpleDataLayer(new DataCacheNode(new DataCacheRoot(XpoDefault.GetConnectionProvider(@"XpoProvider=MSSqlServer;data source=.\SQLEXPRESS;user id=begmurod;password=1;
-                //    integrated security=true;initial catalog=SensorSet", AutoCreateOption.None))));
+                XpoDefault.DataLayer = new SimpleDataLayer(new DataCacheNode(new DataCacheRoot(XpoDefault.GetConnectionProvider(Properties.Settings.Default.ConnectionString, AutoCreateOption.None))));
             }
             catch(Exception e)
             {

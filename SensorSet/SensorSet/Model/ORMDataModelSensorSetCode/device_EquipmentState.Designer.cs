@@ -31,18 +31,6 @@ namespace SensorSet.Model.SensorSet
             get { return fStateName; }
             set { SetPropertyValue<string>("StateName", ref fStateName, value); }
         }
-        DateTime fDateOfChange;
-        public DateTime DateOfChange
-        {
-            get { return fDateOfChange; }
-            set { SetPropertyValue<DateTime>("DateOfChange", ref fDateOfChange, value); }
-        }
-        DateTime fDeletedDate;
-        public DateTime DeletedDate
-        {
-            get { return fDeletedDate; }
-            set { SetPropertyValue<DateTime>("DeletedDate", ref fDeletedDate, value); }
-        }
     }
 
 }
