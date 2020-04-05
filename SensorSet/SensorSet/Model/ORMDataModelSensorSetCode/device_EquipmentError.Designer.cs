@@ -31,12 +31,12 @@ namespace SensorSet.Model.SensorSet
             get { return fMeasurandGUID; }
             set { SetPropertyValue<device_Measurand>("MeasurandGUID", ref fMeasurandGUID, value); }
         }
-        long fEquipmentID;
-        public long EquipmentID
-        {
-            get { return fEquipmentID; }
-            set { SetPropertyValue<long>("EquipmentID", ref fEquipmentID, value); }
-        }
+        //long fEquipmentID;
+        //public long EquipmentID
+        //{
+        //    get { return fEquipmentID; }
+        //    set { SetPropertyValue<long>("EquipmentID", ref fEquipmentID, value); }
+        //}
         device_Equipment fEquipmentGUID;
         [Association(@"device_EquipmentErrorReferencesdevice_Equipment")]
         public device_Equipment EquipmentGUID
