@@ -14,29 +14,28 @@ using System.ComponentModel;
 namespace SensorSet.Model.SensorSet
 {
 
-    [Persistent(@"device.EquipmentCharacterEquipmentType")]
-    public partial class device_EquipmentCharacterEquipmentType : XPLiteObject
+    [Persistent(@"measure.Metering")]
+    public partial class measure_Metering : XPLiteObject
     {
-        Guid fGUID;
-        [Key(true)]
-        public Guid GUID
+        DateTime fDateCreated;
+        [Key]
+        public DateTime DateCreated
         {
-            get { return fGUID; }
-            set { SetPropertyValue<Guid>("GUID", ref fGUID, value); }
+            get { return fDateCreated; }
+            set { SetPropertyValue<DateTime>("DateCreated", ref fDateCreated, value); }
         }
-        device_EquipmentType fEquipmentTypeGUID;
-        [Association(@"device_EquipmentCharacterEquipmentTypeReferencesdevice_EquipmentType")]
-        public device_EquipmentType EquipmentTypeGUID
+        DateTime fDate;
+        public DateTime Date
         {
-            get { return fEquipmentTypeGUID; }
-            set { SetPropertyValue<device_EquipmentType>("EquipmentTypeGUID", ref fEquipmentTypeGUID, value); }
+            get { return fDate; }
+            set { SetPropertyValue<DateTime>("Date", ref fDate, value); }
         }
-        device_EquipmentCharacter fEquipmentCharacterGUID;
-        [Association(@"device_EquipmentCharacterEquipmentTypeReferencesdevice_EquipmentCharacter")]
-        public device_EquipmentCharacter EquipmentCharacterGUID
+        device_Equipment fEquipmentGUID;
+        [Association(@"measure_MeteringReferencesdevice_Equipment")]
+        public device_Equipment EquipmentGUID
         {
-            get { return fEquipmentCharacterGUID; }
-            set { SetPropertyValue<device_EquipmentCharacter>("EquipmentCharacterGUID", ref fEquipmentCharacterGUID, value); }
+            get { return fEquipmentGUID; }
+            set { SetPropertyValue<device_Equipment>("EquipmentGUID", ref fEquipmentGUID, value); }
         }
         long fIntParam;
         public long IntParam
@@ -51,11 +50,11 @@ namespace SensorSet.Model.SensorSet
             get { return fStrParam; }
             set { SetPropertyValue<string>("StrParam", ref fStrParam, value); }
         }
-        DateTime fDataParam;
-        public DateTime DataParam
+        DateTime fDateParam;
+        public DateTime DateParam
         {
-            get { return fDataParam; }
-            set { SetPropertyValue<DateTime>("DataParam", ref fDataParam, value); }
+            get { return fDateParam; }
+            set { SetPropertyValue<DateTime>("DateParam", ref fDateParam, value); }
         }
         bool fBoolParam;
         public bool BoolParam
@@ -74,6 +73,13 @@ namespace SensorSet.Model.SensorSet
         {
             get { return fNumericParam2; }
             set { SetPropertyValue<double>("NumericParam2", ref fNumericParam2, value); }
+        }
+        device_EquipmentCharacter fEquipmentCharacterGUID;
+        [Association(@"measure_MeteringReferencesdevice_EquipmentCharacter")]
+        public device_EquipmentCharacter EquipmentCharacterGUID
+        {
+            get { return fEquipmentCharacterGUID; }
+            set { SetPropertyValue<device_EquipmentCharacter>("EquipmentCharacterGUID", ref fEquipmentCharacterGUID, value); }
         }
     }
 
