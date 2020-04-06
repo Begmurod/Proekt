@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.Xpo.DataViewProperty dataViewProperty35 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty36 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty37 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty38 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty39 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty40 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty41 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty42 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty43 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty44 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty45 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty46 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty47 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty48 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty49 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty50 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty51 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty1 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty2 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty3 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty4 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty5 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty6 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty7 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty8 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty9 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty10 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty11 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty12 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty13 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty14 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty15 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty16 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty17 = new DevExpress.Xpo.DataViewProperty();
             this.equipmentTypeDataView = new DevExpress.Xpo.XPDataView(this.components);
             this.dimensionRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItemAdd = new DevExpress.XtraBars.BarButtonItem();
@@ -99,6 +99,9 @@
             this.simpleSeparator6 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator7 = new DevExpress.XtraLayout.SimpleSeparator();
             this.splitterItem1 = new DevExpress.XtraLayout.SplitterItem();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentTypeDataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dimensionRibbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentTypeGridControl)).BeginInit();
@@ -130,25 +133,25 @@
             // 
             // equipmentTypeDataView
             // 
-            dataViewProperty35.Name = "GUID";
-            dataViewProperty35.ValueType = typeof(object);
-            dataViewProperty36.Name = "Name";
-            dataViewProperty36.ValueType = typeof(string);
-            dataViewProperty37.Name = "EquipmentKindGUID";
-            dataViewProperty37.ValueType = typeof(string);
-            dataViewProperty38.Name = "EquipmentVendorGUID";
-            dataViewProperty38.ValueType = typeof(string);
-            dataViewProperty39.Name = "FullName";
-            dataViewProperty39.ValueType = typeof(string);
-            dataViewProperty40.Name = "Description";
-            dataViewProperty40.ValueType = typeof(string);
+            dataViewProperty1.Name = "GUID";
+            dataViewProperty1.ValueType = typeof(object);
+            dataViewProperty2.Name = "Name";
+            dataViewProperty2.ValueType = typeof(string);
+            dataViewProperty3.Name = "EquipmentKindGUID";
+            dataViewProperty3.ValueType = typeof(string);
+            dataViewProperty4.Name = "EquipmentVendorGUID";
+            dataViewProperty4.ValueType = typeof(string);
+            dataViewProperty5.Name = "FullName";
+            dataViewProperty5.ValueType = typeof(string);
+            dataViewProperty6.Name = "Description";
+            dataViewProperty6.ValueType = typeof(string);
             this.equipmentTypeDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
-            dataViewProperty35,
-            dataViewProperty36,
-            dataViewProperty37,
-            dataViewProperty38,
-            dataViewProperty39,
-            dataViewProperty40});
+            dataViewProperty1,
+            dataViewProperty2,
+            dataViewProperty3,
+            dataViewProperty4,
+            dataViewProperty5,
+            dataViewProperty6});
             // 
             // dimensionRibbonControl
             // 
@@ -158,9 +161,11 @@
             this.barButtonItemAdd,
             this.barButtonItemEdit,
             this.barButtonItemDelete,
-            this.barButtonItemView});
+            this.barButtonItemView,
+            this.barButtonItem1,
+            this.barButtonItem2});
             this.dimensionRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.dimensionRibbonControl.MaxItemId = 7;
+            this.dimensionRibbonControl.MaxItemId = 9;
             this.dimensionRibbonControl.Name = "dimensionRibbonControl";
             this.dimensionRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -200,6 +205,7 @@
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup2,
             this.ribbonPageGroup1});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "Главная";
@@ -313,40 +319,40 @@
             // 
             // equipmentCharacterEquipmentTypeDataView
             // 
-            dataViewProperty41.Name = "GUID";
-            dataViewProperty41.ValueType = typeof(object);
-            dataViewProperty42.Name = "EquipmentCharacterGUID";
-            dataViewProperty42.ValueType = typeof(string);
-            dataViewProperty43.Name = "EquipmentTypeGUID";
-            dataViewProperty43.ValueType = typeof(string);
-            dataViewProperty44.Name = "IntParam";
-            dataViewProperty44.ValueType = typeof(long);
-            dataViewProperty45.Name = "StrParam";
-            dataViewProperty45.ValueType = typeof(string);
-            dataViewProperty46.Name = "DataParam";
-            dataViewProperty46.ValueType = typeof(System.DateTime);
-            dataViewProperty47.Name = "BoolParam";
-            dataViewProperty47.ValueType = typeof(bool);
-            dataViewProperty48.Name = "NumericParam";
-            dataViewProperty48.ValueType = typeof(long);
-            dataViewProperty49.Name = "NumericParam2";
-            dataViewProperty49.ValueType = typeof(double);
-            dataViewProperty50.Name = "DeletedDate";
-            dataViewProperty50.ValueType = typeof(System.DateTime);
-            dataViewProperty51.Name = "DateOfChange";
-            dataViewProperty51.ValueType = typeof(System.DateTime);
+            dataViewProperty7.Name = "GUID";
+            dataViewProperty7.ValueType = typeof(object);
+            dataViewProperty8.Name = "EquipmentCharacterGUID";
+            dataViewProperty8.ValueType = typeof(string);
+            dataViewProperty9.Name = "EquipmentTypeGUID";
+            dataViewProperty9.ValueType = typeof(string);
+            dataViewProperty10.Name = "IntParam";
+            dataViewProperty10.ValueType = typeof(long);
+            dataViewProperty11.Name = "StrParam";
+            dataViewProperty11.ValueType = typeof(string);
+            dataViewProperty12.Name = "DataParam";
+            dataViewProperty12.ValueType = typeof(System.DateTime);
+            dataViewProperty13.Name = "BoolParam";
+            dataViewProperty13.ValueType = typeof(bool);
+            dataViewProperty14.Name = "NumericParam";
+            dataViewProperty14.ValueType = typeof(long);
+            dataViewProperty15.Name = "NumericParam2";
+            dataViewProperty15.ValueType = typeof(double);
+            dataViewProperty16.Name = "DeletedDate";
+            dataViewProperty16.ValueType = typeof(System.DateTime);
+            dataViewProperty17.Name = "DateOfChange";
+            dataViewProperty17.ValueType = typeof(System.DateTime);
             this.equipmentCharacterEquipmentTypeDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
-            dataViewProperty41,
-            dataViewProperty42,
-            dataViewProperty43,
-            dataViewProperty44,
-            dataViewProperty45,
-            dataViewProperty46,
-            dataViewProperty47,
-            dataViewProperty48,
-            dataViewProperty49,
-            dataViewProperty50,
-            dataViewProperty51});
+            dataViewProperty7,
+            dataViewProperty8,
+            dataViewProperty9,
+            dataViewProperty10,
+            dataViewProperty11,
+            dataViewProperty12,
+            dataViewProperty13,
+            dataViewProperty14,
+            dataViewProperty15,
+            dataViewProperty16,
+            dataViewProperty17});
             // 
             // equipmentCharacterEquipmentTypeGridView
             // 
@@ -680,6 +686,25 @@
             this.splitterItem1.Name = "splitterItem1";
             this.splitterItem1.Size = new System.Drawing.Size(999, 5);
             // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem2);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "barButtonItem1";
+            this.barButtonItem1.Id = 7;
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "barButtonItem2";
+            this.barButtonItem2.Id = 8;
+            this.barButtonItem2.Name = "barButtonItem2";
+            // 
             // equipmentTypeUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -775,5 +800,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn colDeletedDate;
         private DevExpress.XtraGrid.Columns.GridColumn colDateOfChange;
         private DevExpress.XtraLayout.SplitterItem splitterItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
     }
 }
