@@ -29,17 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.Xpo.DataViewProperty dataViewProperty9 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty10 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty11 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty12 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty13 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty14 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty15 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty16 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty1 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty2 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty3 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty4 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty5 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty6 = new DevExpress.Xpo.DataViewProperty();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(deviceMeasurandUC));
             this.measurandDataView = new DevExpress.Xpo.XPDataView(this.components);
-            this.dimensionRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.deviceMeasurandRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItemAdd = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItemEdit = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItemDelete = new DevExpress.XtraBars.BarButtonItem();
@@ -50,15 +48,13 @@
             this.dimensionGridControl = new DevExpress.XtraGrid.GridControl();
             this.measurandGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colGUID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDimensionID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colVolueName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDimensionGUID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDimensionID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNameEn = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDateOfChange = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDeletedDate = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colName = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.measurandDataView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dimensionRibbonControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deviceMeasurandRibbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCalcEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dimensionGridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.measurandGridView)).BeginInit();
@@ -66,49 +62,43 @@
             // 
             // measurandDataView
             // 
-            dataViewProperty9.Name = "GUID";
-            dataViewProperty9.ValueType = typeof(object);
-            dataViewProperty10.Name = "ValueName";
-            dataViewProperty10.ValueType = typeof(string);
-            dataViewProperty11.Name = "DimensionGUID";
-            dataViewProperty11.ValueType = typeof(string);
-            dataViewProperty12.Name = "DateOfChange";
-            dataViewProperty12.ValueType = typeof(System.DateTime);
-            dataViewProperty13.Name = "DeletedDate";
-            dataViewProperty13.ValueType = typeof(System.DateTime);
-            dataViewProperty14.Name = "Name";
-            dataViewProperty14.ValueType = typeof(string);
-            dataViewProperty15.Name = "NameEn";
-            dataViewProperty15.ValueType = typeof(string);
-            dataViewProperty16.Name = "DimensionID";
-            dataViewProperty16.ValueType = typeof(long);
+            dataViewProperty1.Name = "GUID";
+            dataViewProperty1.ValueType = typeof(object);
+            dataViewProperty2.Name = "ValueName";
+            dataViewProperty2.ValueType = typeof(string);
+            dataViewProperty3.Name = "DimensionGUID";
+            dataViewProperty3.ValueType = typeof(string);
+            dataViewProperty4.Name = "DimensionID";
+            dataViewProperty4.ValueType = typeof(long);
+            dataViewProperty5.Name = "DateOfChange";
+            dataViewProperty5.ValueType = typeof(System.DateTime);
+            dataViewProperty6.Name = "DeletedDate";
+            dataViewProperty6.ValueType = typeof(System.DateTime);
             this.measurandDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
-            dataViewProperty9,
-            dataViewProperty10,
-            dataViewProperty11,
-            dataViewProperty12,
-            dataViewProperty13,
-            dataViewProperty14,
-            dataViewProperty15,
-            dataViewProperty16});
+            dataViewProperty1,
+            dataViewProperty2,
+            dataViewProperty3,
+            dataViewProperty4,
+            dataViewProperty5,
+            dataViewProperty6});
             // 
-            // dimensionRibbonControl
+            // deviceMeasurandRibbonControl
             // 
-            this.dimensionRibbonControl.ExpandCollapseItem.Id = 0;
-            this.dimensionRibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.dimensionRibbonControl.ExpandCollapseItem,
+            this.deviceMeasurandRibbonControl.ExpandCollapseItem.Id = 0;
+            this.deviceMeasurandRibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.deviceMeasurandRibbonControl.ExpandCollapseItem,
             this.barButtonItemAdd,
             this.barButtonItemEdit,
             this.barButtonItemDelete,
             this.barButtonItemView});
-            this.dimensionRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.dimensionRibbonControl.MaxItemId = 8;
-            this.dimensionRibbonControl.Name = "dimensionRibbonControl";
-            this.dimensionRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.deviceMeasurandRibbonControl.Location = new System.Drawing.Point(0, 0);
+            this.deviceMeasurandRibbonControl.MaxItemId = 8;
+            this.deviceMeasurandRibbonControl.Name = "deviceMeasurandRibbonControl";
+            this.deviceMeasurandRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.dimensionRibbonControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.deviceMeasurandRibbonControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCalcEdit1});
-            this.dimensionRibbonControl.Size = new System.Drawing.Size(1019, 141);
+            this.deviceMeasurandRibbonControl.Size = new System.Drawing.Size(1019, 141);
             // 
             // barButtonItemAdd
             // 
@@ -175,7 +165,7 @@
             this.dimensionGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dimensionGridControl.Location = new System.Drawing.Point(0, 141);
             this.dimensionGridControl.MainView = this.measurandGridView;
-            this.dimensionGridControl.MenuManager = this.dimensionRibbonControl;
+            this.dimensionGridControl.MenuManager = this.deviceMeasurandRibbonControl;
             this.dimensionGridControl.Name = "dimensionGridControl";
             this.dimensionGridControl.Size = new System.Drawing.Size(1019, 474);
             this.dimensionGridControl.TabIndex = 1;
@@ -188,11 +178,9 @@
             this.colGUID,
             this.colVolueName,
             this.colDimensionGUID,
-            this.colDateOfChange,
-            this.colNameEn,
             this.colDimensionID,
-            this.colDeletedDate,
-            this.colName});
+            this.colDateOfChange,
+            this.colDeletedDate});
             this.measurandGridView.GridControl = this.dimensionGridControl;
             this.measurandGridView.Name = "measurandGridView";
             this.measurandGridView.OptionsView.ShowFooter = true;
@@ -202,6 +190,12 @@
             // 
             this.colGUID.FieldName = "GUID";
             this.colGUID.Name = "colGUID";
+            // 
+            // colDimensionID
+            // 
+            this.colDimensionID.Caption = "DimensionID";
+            this.colDimensionID.FieldName = "DimensionID";
+            this.colDimensionID.Name = "colDimensionID";
             // 
             // colVolueName
             // 
@@ -219,18 +213,6 @@
             this.colDimensionGUID.Visible = true;
             this.colDimensionGUID.VisibleIndex = 1;
             // 
-            // colDimensionID
-            // 
-            this.colDimensionID.Caption = "DimensionID";
-            this.colDimensionID.FieldName = "DimensionID";
-            this.colDimensionID.Name = "colDimensionID";
-            // 
-            // colNameEn
-            // 
-            this.colNameEn.Caption = "NameEn";
-            this.colNameEn.FieldName = "NameEn";
-            this.colNameEn.Name = "colNameEn";
-            // 
             // colDateOfChange
             // 
             this.colDateOfChange.Caption = "Дата ввода";
@@ -243,23 +225,17 @@
             this.colDeletedDate.FieldName = "DeletedDate";
             this.colDeletedDate.Name = "colDeletedDate";
             // 
-            // colName
-            // 
-            this.colName.Caption = "Краткое название";
-            this.colName.FieldName = "Name";
-            this.colName.Name = "colName";
-            // 
             // deviceMeasurandUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dimensionGridControl);
-            this.Controls.Add(this.dimensionRibbonControl);
+            this.Controls.Add(this.deviceMeasurandRibbonControl);
             this.Name = "deviceMeasurandUC";
             this.Size = new System.Drawing.Size(1019, 615);
             this.Load += new System.EventHandler(this.deviceMeasurandUC_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.measurandDataView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dimensionRibbonControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deviceMeasurandRibbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCalcEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dimensionGridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.measurandGridView)).EndInit();
@@ -278,15 +254,13 @@
         private DevExpress.XtraGrid.Columns.GridColumn colVolueName;
         private DevExpress.XtraGrid.Columns.GridColumn colDimensionGUID;
         private DevExpress.XtraGrid.Columns.GridColumn colDimensionID;
-        private DevExpress.XtraGrid.Columns.GridColumn colNameEn;
         private DevExpress.XtraGrid.Columns.GridColumn colDateOfChange;
         private DevExpress.XtraGrid.Columns.GridColumn colDeletedDate;
         private DevExpress.XtraBars.BarButtonItem barButtonItemAdd;
         private DevExpress.XtraBars.BarButtonItem barButtonItemEdit;
         private DevExpress.XtraBars.BarButtonItem barButtonItemDelete;
-        public DevExpress.XtraBars.Ribbon.RibbonControl dimensionRibbonControl;
+        public DevExpress.XtraBars.Ribbon.RibbonControl deviceMeasurandRibbonControl;
         private DevExpress.XtraBars.BarButtonItem barButtonItemView;
         private DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit repositoryItemCalcEdit1;
-        private DevExpress.XtraGrid.Columns.GridColumn colName;
     }
 }

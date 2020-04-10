@@ -73,7 +73,7 @@ namespace SensorSet.UI.Equipment
             using (UnitOfWork u = new UnitOfWork())
             {
                 //TODO сделать фильтр по критериям
-                DevExpress.Xpo.DB.SelectedData _measuresData = u.ExecuteQuery(string.Format(@"
+                DevExpress.Xpo.DB.SelectedData _dimensionData = u.ExecuteQuery(string.Format(@"
                 SELECT [GUID]
       ,[Name]
       ,[NameEn]
@@ -84,7 +84,7 @@ namespace SensorSet.UI.Equipment
   FROM [list].[Dimension] as d
   WHERE [DeletedDate] is null"
                 ));
-                deimensionDataView.LoadData(_measuresData);
+                deimensionDataView.LoadData(_dimensionData);
             }
             GC.Collect();
         }

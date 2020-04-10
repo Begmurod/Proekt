@@ -67,7 +67,7 @@ namespace SensorSet.UI.Equipment
             #region Заполнение выпадающего списка данными
             using (Session u = new Session())
             {
-                SelectedData DimensionGUIDData = u.ExecuteQuery(@"SELECT GUID, Name FROM [list].[Dimension] WHERE[DeletedDate] is null");
+                SelectedData DimensionGUIDData = u.ExecuteQuery(@"SELECT GUID, Name,NameEn FROM [list].[Dimension] WHERE[DeletedDate] is null");
                 dimensionGUIDDataView.LoadData(DimensionGUIDData);
 
             }

@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.Xpo.DataViewProperty dataViewProperty1 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty2 = new DevExpress.Xpo.DataViewProperty();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MeasurandFormForm));
+            DevExpress.Xpo.DataViewProperty dataViewProperty4 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty5 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty6 = new DevExpress.Xpo.DataViewProperty();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.cancelButton = new DevExpress.XtraEditors.SimpleButton();
             this.addButton = new DevExpress.XtraEditors.SimpleButton();
@@ -74,6 +76,7 @@
             // 
             // cancelButton
             // 
+            this.cancelButton.Image = ((System.Drawing.Image)(resources.GetObject("cancelButton.Image")));
             this.cancelButton.Location = new System.Drawing.Point(354, 60);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(99, 22);
@@ -83,6 +86,7 @@
             // 
             // addButton
             // 
+            this.addButton.Image = ((System.Drawing.Image)(resources.GetObject("addButton.Image")));
             this.addButton.Location = new System.Drawing.Point(244, 60);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(106, 22);
@@ -98,7 +102,8 @@
             this.DimensionGUIDLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.DimensionGUIDLookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Обозначение")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NameEn", "Название", 37, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NameEn", "Международное название", 52, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
             this.DimensionGUIDLookUpEdit.Properties.DataSource = this.dimensionGUIDDataView;
             this.DimensionGUIDLookUpEdit.Properties.DisplayMember = "Name";
             this.DimensionGUIDLookUpEdit.Properties.ValueMember = "GUID";
@@ -108,13 +113,16 @@
             // 
             // dimensionGUIDDataView
             // 
-            dataViewProperty1.Name = "GUID";
-            dataViewProperty1.ValueType = typeof(object);
-            dataViewProperty2.Name = "Name";
-            dataViewProperty2.ValueType = typeof(string);
+            dataViewProperty4.Name = "GUID";
+            dataViewProperty4.ValueType = typeof(object);
+            dataViewProperty5.Name = "Name";
+            dataViewProperty5.ValueType = typeof(string);
+            dataViewProperty6.Name = "NameEn";
+            dataViewProperty6.ValueType = typeof(string);
             this.dimensionGUIDDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
-            dataViewProperty1,
-            dataViewProperty2});
+            dataViewProperty4,
+            dataViewProperty5,
+            dataViewProperty6});
             // 
             // valueNameTextEdit
             // 

@@ -83,6 +83,12 @@ namespace SensorSet.Model.SensorSet
             get { return fChangedUserID; }
             set { SetPropertyValue<auth_Users>("ChangedUserID", ref fChangedUserID, value); }
         }
+        DateTime fDateOfChange;
+        public DateTime DateOfChange
+        {
+            get { return fDateOfChange; }
+            set { SetPropertyValue<DateTime>("DateOfChange", ref fDateOfChange, value); }
+        }
         [Association(@"device_EquipmentReferencesdevice_EquipmentType")]
         public XPCollection<device_Equipment> device_Equipments { get { return GetCollection<device_Equipment>("device_Equipments"); } }
         [Association(@"device_EquipmentCharacterEquipmentTypeReferencesdevice_EquipmentType")]

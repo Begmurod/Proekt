@@ -29,46 +29,50 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.Xpo.DataViewProperty dataViewProperty25 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty26 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty27 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty28 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty29 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty30 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty31 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty32 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty33 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty34 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty35 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty36 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty37 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty38 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty39 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty40 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty41 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty42 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty49 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty50 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty51 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty52 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty53 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty54 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty55 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty56 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty57 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty58 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty59 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty60 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty61 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty62 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty63 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty64 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty65 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty66 = new DevExpress.Xpo.DataViewProperty();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(equipmentUC));
-            DevExpress.Xpo.DataViewProperty dataViewProperty43 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty44 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty45 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty46 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty47 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty48 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty67 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty68 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty69 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty70 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty71 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty72 = new DevExpress.Xpo.DataViewProperty();
             this.equipmentDataView = new DevExpress.Xpo.XPDataView(this.components);
             this.equipmentRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItemAdd = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItemEdit = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItemDelete = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItemView = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItemAddСhar = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItemViewChar = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItemEditChar = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItemDeleteChar = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.equipmentGridControl = new DevExpress.XtraGrid.GridControl();
             this.equipmentGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colGUID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSerialNumber = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEquipmentTypeGUID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEquipmentCategoryGUID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colParentGUID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSerialNumber = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colManufacturingDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStartUseDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colIpAddress = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -82,6 +86,7 @@
             this.colDateCreate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDeletedDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEquipmentKindGUID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colParentGUID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.equipmentCharacterGridControl = new DevExpress.XtraGrid.GridControl();
             this.equipmentCharacterDataView = new DevExpress.Xpo.XPDataView(this.components);
@@ -92,10 +97,6 @@
             this.colParamType = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDimensionGUID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colIsSystem = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ButtonItemAdd = new DevExpress.XtraEditors.SimpleButton();
-            this.ButtonItemView = new DevExpress.XtraEditors.SimpleButton();
-            this.ButtonItemEdit = new DevExpress.XtraEditors.SimpleButton();
-            this.ButtonItemDelete = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
@@ -104,13 +105,8 @@
             this.simpleSeparator1 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator5 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator6 = new DevExpress.XtraLayout.SimpleSeparator();
-            this.simpleButtonLCI = new DevExpress.XtraLayout.LayoutControlItem();
-            this.simpleButtonLCI1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.simpleSeparator2 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator3 = new DevExpress.XtraLayout.SimpleSeparator();
-            this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.splitterItem4 = new DevExpress.XtraLayout.SplitterItem();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButtonLCI2 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -118,6 +114,7 @@
             this.simpleButtonLCI3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButtonLCI4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentDataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentRibbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentGridControl)).BeginInit();
@@ -135,13 +132,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleButtonLCI)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleButtonLCI1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleButtonLCI2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleButtonLCI3)).BeginInit();
@@ -150,61 +142,61 @@
             // 
             // equipmentDataView
             // 
-            dataViewProperty25.Name = "GUID";
-            dataViewProperty25.ValueType = typeof(object);
-            dataViewProperty26.Name = "EquipmentTypeGUID";
-            dataViewProperty26.ValueType = typeof(string);
-            dataViewProperty27.Name = "EquipmentCategoryGUID";
-            dataViewProperty27.ValueType = typeof(string);
-            dataViewProperty28.Name = "InventoryNumber";
-            dataViewProperty28.ValueType = typeof(string);
-            dataViewProperty29.Name = "SerialNumber";
-            dataViewProperty29.ValueType = typeof(string);
-            dataViewProperty30.Name = "ManufacturingDate";
-            dataViewProperty30.ValueType = typeof(System.DateTime);
-            dataViewProperty31.Name = "StartUseDate";
-            dataViewProperty31.ValueType = typeof(System.DateTime);
-            dataViewProperty32.Name = "IpAddress";
-            dataViewProperty32.ValueType = typeof(string);
-            dataViewProperty33.Name = "Port";
-            dataViewProperty33.ValueType = typeof(string);
-            dataViewProperty34.Name = "BalanceCosta";
-            dataViewProperty34.ValueType = typeof(decimal);
-            dataViewProperty35.Name = "UseMonths";
-            dataViewProperty35.ValueType = typeof(int);
-            dataViewProperty36.Name = "RemainingBalance";
-            dataViewProperty36.ValueType = typeof(decimal);
-            dataViewProperty37.Name = "GarantyPeriod";
-            dataViewProperty37.ValueType = typeof(System.DateTime);
-            dataViewProperty38.Name = "DateCreate";
-            dataViewProperty38.ValueType = typeof(System.DateTime);
-            dataViewProperty39.Name = "DateModify";
-            dataViewProperty39.ValueType = typeof(System.DateTime);
-            dataViewProperty40.Name = "DeletedData";
-            dataViewProperty40.ValueType = typeof(System.DateTime);
-            dataViewProperty41.Name = "EquipmentKindGUID";
-            dataViewProperty41.ValueType = typeof(string);
-            dataViewProperty42.Name = "ParentGUID";
-            dataViewProperty42.ValueType = typeof(string);
+            dataViewProperty49.Name = "GUID";
+            dataViewProperty49.ValueType = typeof(object);
+            dataViewProperty50.Name = "EquipmentTypeGUID";
+            dataViewProperty50.ValueType = typeof(string);
+            dataViewProperty51.Name = "EquipmentCategoryGUID";
+            dataViewProperty51.ValueType = typeof(string);
+            dataViewProperty52.Name = "InventoryNumber";
+            dataViewProperty52.ValueType = typeof(string);
+            dataViewProperty53.Name = "SerialNumber";
+            dataViewProperty53.ValueType = typeof(string);
+            dataViewProperty54.Name = "ManufacturingDate";
+            dataViewProperty54.ValueType = typeof(System.DateTime);
+            dataViewProperty55.Name = "StartUseDate";
+            dataViewProperty55.ValueType = typeof(System.DateTime);
+            dataViewProperty56.Name = "IpAddress";
+            dataViewProperty56.ValueType = typeof(string);
+            dataViewProperty57.Name = "Port";
+            dataViewProperty57.ValueType = typeof(string);
+            dataViewProperty58.Name = "BalanceCosta";
+            dataViewProperty58.ValueType = typeof(decimal);
+            dataViewProperty59.Name = "UseMonths";
+            dataViewProperty59.ValueType = typeof(int);
+            dataViewProperty60.Name = "RemainingBalance";
+            dataViewProperty60.ValueType = typeof(decimal);
+            dataViewProperty61.Name = "GarantyPeriod";
+            dataViewProperty61.ValueType = typeof(System.DateTime);
+            dataViewProperty62.Name = "DateCreate";
+            dataViewProperty62.ValueType = typeof(System.DateTime);
+            dataViewProperty63.Name = "DateModify";
+            dataViewProperty63.ValueType = typeof(System.DateTime);
+            dataViewProperty64.Name = "DeletedData";
+            dataViewProperty64.ValueType = typeof(System.DateTime);
+            dataViewProperty65.Name = "EquipmentKindGUID";
+            dataViewProperty65.ValueType = typeof(string);
+            dataViewProperty66.Name = "ParentGUID";
+            dataViewProperty66.ValueType = typeof(string);
             this.equipmentDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
-            dataViewProperty25,
-            dataViewProperty26,
-            dataViewProperty27,
-            dataViewProperty28,
-            dataViewProperty29,
-            dataViewProperty30,
-            dataViewProperty31,
-            dataViewProperty32,
-            dataViewProperty33,
-            dataViewProperty34,
-            dataViewProperty35,
-            dataViewProperty36,
-            dataViewProperty37,
-            dataViewProperty38,
-            dataViewProperty39,
-            dataViewProperty40,
-            dataViewProperty41,
-            dataViewProperty42});
+            dataViewProperty49,
+            dataViewProperty50,
+            dataViewProperty51,
+            dataViewProperty52,
+            dataViewProperty53,
+            dataViewProperty54,
+            dataViewProperty55,
+            dataViewProperty56,
+            dataViewProperty57,
+            dataViewProperty58,
+            dataViewProperty59,
+            dataViewProperty60,
+            dataViewProperty61,
+            dataViewProperty62,
+            dataViewProperty63,
+            dataViewProperty64,
+            dataViewProperty65,
+            dataViewProperty66});
             // 
             // equipmentRibbonControl
             // 
@@ -214,9 +206,13 @@
             this.barButtonItemAdd,
             this.barButtonItemEdit,
             this.barButtonItemDelete,
-            this.barButtonItemView});
+            this.barButtonItemView,
+            this.barButtonItemAddСhar,
+            this.barButtonItemViewChar,
+            this.barButtonItemEditChar,
+            this.barButtonItemDeleteChar});
             this.equipmentRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.equipmentRibbonControl.MaxItemId = 7;
+            this.equipmentRibbonControl.MaxItemId = 21;
             this.equipmentRibbonControl.Name = "equipmentRibbonControl";
             this.equipmentRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -252,17 +248,51 @@
             // barButtonItemView
             // 
             this.barButtonItemView.Caption = "Просмотр";
-            this.barButtonItemView.Enabled = false;
             this.barButtonItemView.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemView.Glyph")));
-            this.barButtonItemView.Id = 6;
+            this.barButtonItemView.Id = 16;
             this.barButtonItemView.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemView.LargeGlyph")));
             this.barButtonItemView.Name = "barButtonItemView";
-            this.barButtonItemView.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemView_ItemClick);
+            this.barButtonItemView.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemView_ItemClick_1);
+            // 
+            // barButtonItemAddСhar
+            // 
+            this.barButtonItemAddСhar.Caption = "Добавить";
+            this.barButtonItemAddСhar.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemAddСhar.Glyph")));
+            this.barButtonItemAddСhar.Id = 17;
+            this.barButtonItemAddСhar.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemAddСhar.LargeGlyph")));
+            this.barButtonItemAddСhar.Name = "barButtonItemAddСhar";
+            this.barButtonItemAddСhar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemAddСhar_ItemClick);
+            // 
+            // barButtonItemViewChar
+            // 
+            this.barButtonItemViewChar.Caption = "Просмотр";
+            this.barButtonItemViewChar.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemViewChar.Glyph")));
+            this.barButtonItemViewChar.Id = 18;
+            this.barButtonItemViewChar.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemViewChar.LargeGlyph")));
+            this.barButtonItemViewChar.Name = "barButtonItemViewChar";
+            this.barButtonItemViewChar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemViewChar_ItemClick);
+            // 
+            // barButtonItemEditChar
+            // 
+            this.barButtonItemEditChar.Caption = "Редактировать";
+            this.barButtonItemEditChar.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemEditChar.Glyph")));
+            this.barButtonItemEditChar.Id = 19;
+            this.barButtonItemEditChar.Name = "barButtonItemEditChar";
+            this.barButtonItemEditChar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemEditChar_ItemClick);
+            // 
+            // barButtonItemDeleteChar
+            // 
+            this.barButtonItemDeleteChar.Caption = "Удалить";
+            this.barButtonItemDeleteChar.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemDeleteChar.Glyph")));
+            this.barButtonItemDeleteChar.Id = 20;
+            this.barButtonItemDeleteChar.Name = "barButtonItemDeleteChar";
+            this.barButtonItemDeleteChar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemDeleteChar_ItemClick);
             // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
+            this.ribbonPageGroup1,
+            this.ribbonPageGroup3});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "Главная";
             // 
@@ -273,6 +303,16 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemEdit);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemDelete);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "Экземпляры оборудования";
+            // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItemAddСhar);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItemViewChar);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItemEditChar);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItemDeleteChar);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            this.ribbonPageGroup3.Text = "Характеристики оборудования";
             // 
             // equipmentGridControl
             // 
@@ -317,17 +357,6 @@
             this.colGUID.FieldName = "GUID";
             this.colGUID.Name = "colGUID";
             // 
-            // colSerialNumber
-            // 
-            this.colSerialNumber.Caption = "Заводской номер";
-            this.colSerialNumber.FieldName = "SerialNumber";
-            this.colSerialNumber.Name = "colSerialNumber";
-            this.colSerialNumber.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "SerialNumber", "{0}")});
-            this.colSerialNumber.Visible = true;
-            this.colSerialNumber.VisibleIndex = 0;
-            this.colSerialNumber.Width = 70;
-            // 
             // colEquipmentTypeGUID
             // 
             this.colEquipmentTypeGUID.Caption = "Тип";
@@ -344,12 +373,16 @@
             this.colEquipmentCategoryGUID.Name = "colEquipmentCategoryGUID";
             this.colEquipmentCategoryGUID.Width = 117;
             // 
-            // colParentGUID
+            // colSerialNumber
             // 
-            this.colParentGUID.Caption = "Вид";
-            this.colParentGUID.FieldName = "ParentGUID";
-            this.colParentGUID.Name = "colParentGUID";
-            this.colParentGUID.Width = 92;
+            this.colSerialNumber.Caption = "Заводской номер";
+            this.colSerialNumber.FieldName = "SerialNumber";
+            this.colSerialNumber.Name = "colSerialNumber";
+            this.colSerialNumber.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "SerialNumber", "{0}")});
+            this.colSerialNumber.Visible = true;
+            this.colSerialNumber.VisibleIndex = 0;
+            this.colSerialNumber.Width = 70;
             // 
             // colManufacturingDate
             // 
@@ -371,7 +404,7 @@
             this.colIpAddress.FieldName = "IpAddress";
             this.colIpAddress.Name = "colIpAddress";
             this.colIpAddress.Visible = true;
-            this.colIpAddress.VisibleIndex = 4;
+            this.colIpAddress.VisibleIndex = 3;
             this.colIpAddress.Width = 97;
             // 
             // colPort
@@ -380,7 +413,7 @@
             this.colPort.FieldName = "Port";
             this.colPort.Name = "colPort";
             this.colPort.Visible = true;
-            this.colPort.VisibleIndex = 5;
+            this.colPort.VisibleIndex = 4;
             this.colPort.Width = 48;
             // 
             // colBalanceCosta
@@ -424,7 +457,7 @@
             this.colInventoryNumber.FieldName = "InventoryNumber";
             this.colInventoryNumber.Name = "colInventoryNumber";
             this.colInventoryNumber.Visible = true;
-            this.colInventoryNumber.VisibleIndex = 3;
+            this.colInventoryNumber.VisibleIndex = 2;
             this.colInventoryNumber.Width = 59;
             // 
             // colDateCreate
@@ -447,14 +480,17 @@
             this.colEquipmentKindGUID.FieldName = "EquipmentKindGUID";
             this.colEquipmentKindGUID.Name = "colEquipmentKindGUID";
             // 
+            // colParentGUID
+            // 
+            this.colParentGUID.Caption = "Вид";
+            this.colParentGUID.FieldName = "ParentGUID";
+            this.colParentGUID.Name = "colParentGUID";
+            this.colParentGUID.Width = 92;
+            // 
             // layoutControl1
             // 
             this.layoutControl1.Controls.Add(this.equipmentCharacterGridControl);
             this.layoutControl1.Controls.Add(this.equipmentGridControl);
-            this.layoutControl1.Controls.Add(this.ButtonItemAdd);
-            this.layoutControl1.Controls.Add(this.ButtonItemView);
-            this.layoutControl1.Controls.Add(this.ButtonItemEdit);
-            this.layoutControl1.Controls.Add(this.ButtonItemDelete);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 141);
             this.layoutControl1.Name = "layoutControl1";
@@ -467,35 +503,35 @@
             // equipmentCharacterGridControl
             // 
             this.equipmentCharacterGridControl.DataSource = this.equipmentCharacterDataView;
-            this.equipmentCharacterGridControl.Location = new System.Drawing.Point(24, 308);
+            this.equipmentCharacterGridControl.Location = new System.Drawing.Point(24, 284);
             this.equipmentCharacterGridControl.MainView = this.equipmentCharacterGridView;
             this.equipmentCharacterGridControl.Name = "equipmentCharacterGridControl";
-            this.equipmentCharacterGridControl.Size = new System.Drawing.Size(971, 142);
+            this.equipmentCharacterGridControl.Size = new System.Drawing.Size(971, 166);
             this.equipmentCharacterGridControl.TabIndex = 4;
             this.equipmentCharacterGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.equipmentCharacterGridView});
             // 
             // equipmentCharacterDataView
             // 
-            dataViewProperty43.Name = "GUID";
-            dataViewProperty43.ValueType = typeof(object);
-            dataViewProperty44.Name = "CharacterName";
-            dataViewProperty44.ValueType = typeof(string);
-            dataViewProperty45.Name = "FieldName";
-            dataViewProperty45.ValueType = typeof(string);
-            dataViewProperty46.Name = "ParamType";
-            dataViewProperty46.ValueType = typeof(short);
-            dataViewProperty47.Name = "IsSystem";
-            dataViewProperty47.ValueType = typeof(bool);
-            dataViewProperty48.Name = "DimensionGUID";
-            dataViewProperty48.ValueType = typeof(string);
+            dataViewProperty67.Name = "GUID";
+            dataViewProperty67.ValueType = typeof(object);
+            dataViewProperty68.Name = "CharacterName";
+            dataViewProperty68.ValueType = typeof(string);
+            dataViewProperty69.Name = "FieldName";
+            dataViewProperty69.ValueType = typeof(string);
+            dataViewProperty70.Name = "ParamType";
+            dataViewProperty70.ValueType = typeof(short);
+            dataViewProperty71.Name = "IsSystem";
+            dataViewProperty71.ValueType = typeof(bool);
+            dataViewProperty72.Name = "DimensionGUID";
+            dataViewProperty72.ValueType = typeof(string);
             this.equipmentCharacterDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
-            dataViewProperty43,
-            dataViewProperty44,
-            dataViewProperty45,
-            dataViewProperty46,
-            dataViewProperty47,
-            dataViewProperty48});
+            dataViewProperty67,
+            dataViewProperty68,
+            dataViewProperty69,
+            dataViewProperty70,
+            dataViewProperty71,
+            dataViewProperty72});
             // 
             // equipmentCharacterGridView
             // 
@@ -509,6 +545,7 @@
             this.equipmentCharacterGridView.GridControl = this.equipmentCharacterGridControl;
             this.equipmentCharacterGridView.Name = "equipmentCharacterGridView";
             this.equipmentCharacterGridView.OptionsView.ShowGroupPanel = false;
+            this.equipmentCharacterGridView.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.equipmentCharacterGridView_FocusedRowChanged);
             // 
             // coGUID
             // 
@@ -555,50 +592,6 @@
             this.colIsSystem.FieldName = "IsSystem";
             this.colIsSystem.Name = "colIsSystem";
             // 
-            // ButtonItemAdd
-            // 
-            this.ButtonItemAdd.AutoWidthInLayoutControl = true;
-            this.ButtonItemAdd.Location = new System.Drawing.Point(24, 280);
-            this.ButtonItemAdd.Name = "ButtonItemAdd";
-            this.ButtonItemAdd.Size = new System.Drawing.Size(59, 22);
-            this.ButtonItemAdd.StyleController = this.layoutControl1;
-            this.ButtonItemAdd.TabIndex = 4;
-            this.ButtonItemAdd.Text = "Добавить";
-            this.ButtonItemAdd.Click += new System.EventHandler(this.ButtonItemAdd_Click);
-            // 
-            // ButtonItemView
-            // 
-            this.ButtonItemView.AutoWidthInLayoutControl = true;
-            this.ButtonItemView.Location = new System.Drawing.Point(89, 280);
-            this.ButtonItemView.Name = "ButtonItemView";
-            this.ButtonItemView.Size = new System.Drawing.Size(57, 22);
-            this.ButtonItemView.StyleController = this.layoutControl1;
-            this.ButtonItemView.TabIndex = 4;
-            this.ButtonItemView.Text = "Просмотр";
-            this.ButtonItemView.Click += new System.EventHandler(this.ButtonItemView_Click);
-            // 
-            // ButtonItemEdit
-            // 
-            this.ButtonItemEdit.AutoWidthInLayoutControl = true;
-            this.ButtonItemEdit.Location = new System.Drawing.Point(152, 280);
-            this.ButtonItemEdit.Name = "ButtonItemEdit";
-            this.ButtonItemEdit.Size = new System.Drawing.Size(88, 22);
-            this.ButtonItemEdit.StyleController = this.layoutControl1;
-            this.ButtonItemEdit.TabIndex = 4;
-            this.ButtonItemEdit.Text = "Редактировать";
-            this.ButtonItemEdit.Click += new System.EventHandler(this.ButtonItemEdit_Click);
-            // 
-            // ButtonItemDelete
-            // 
-            this.ButtonItemDelete.AutoWidthInLayoutControl = true;
-            this.ButtonItemDelete.Location = new System.Drawing.Point(246, 280);
-            this.ButtonItemDelete.Name = "ButtonItemDelete";
-            this.ButtonItemDelete.Size = new System.Drawing.Size(53, 22);
-            this.ButtonItemDelete.StyleController = this.layoutControl1;
-            this.ButtonItemDelete.TabIndex = 4;
-            this.ButtonItemDelete.Text = "Удалить";
-            this.ButtonItemDelete.Click += new System.EventHandler(this.ButtonItemDelete_Click);
-            // 
             // layoutControlGroup1
             // 
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -630,8 +623,7 @@
             this.tabbedControlGroup1.SelectedTabPageIndex = 0;
             this.tabbedControlGroup1.Size = new System.Drawing.Size(999, 220);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlGroup3,
-            this.layoutControlGroup4});
+            this.layoutControlGroup3});
             // 
             // layoutControlGroup3
             // 
@@ -641,10 +633,6 @@
             this.simpleSeparator1,
             this.simpleSeparator5,
             this.simpleSeparator6,
-            this.simpleButtonLCI,
-            this.simpleButtonLCI1,
-            this.layoutControlItem3,
-            this.layoutControlItem4,
             this.simpleSeparator2,
             this.simpleSeparator3});
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
@@ -655,109 +643,46 @@
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.equipmentCharacterGridControl;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 28);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 4);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(975, 146);
+            this.layoutControlItem2.Size = new System.Drawing.Size(975, 170);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // simpleSeparator1
             // 
             this.simpleSeparator1.AllowHotTrack = false;
-            this.simpleSeparator1.Location = new System.Drawing.Point(0, 26);
+            this.simpleSeparator1.Location = new System.Drawing.Point(0, 2);
             this.simpleSeparator1.Name = "simpleSeparator1";
             this.simpleSeparator1.Size = new System.Drawing.Size(975, 2);
             // 
             // simpleSeparator5
             // 
             this.simpleSeparator5.AllowHotTrack = false;
-            this.simpleSeparator5.Location = new System.Drawing.Point(126, 0);
+            this.simpleSeparator5.Location = new System.Drawing.Point(65, 0);
             this.simpleSeparator5.Name = "simpleSeparator5";
-            this.simpleSeparator5.Size = new System.Drawing.Size(2, 26);
+            this.simpleSeparator5.Size = new System.Drawing.Size(63, 2);
             // 
             // simpleSeparator6
             // 
             this.simpleSeparator6.AllowHotTrack = false;
-            this.simpleSeparator6.Location = new System.Drawing.Point(279, 0);
+            this.simpleSeparator6.Location = new System.Drawing.Point(222, 0);
             this.simpleSeparator6.Name = "simpleSeparator6";
-            this.simpleSeparator6.Size = new System.Drawing.Size(696, 26);
-            // 
-            // simpleButtonLCI
-            // 
-            this.simpleButtonLCI.Control = this.ButtonItemAdd;
-            this.simpleButtonLCI.ControlAlignment = System.Drawing.ContentAlignment.BottomCenter;
-            this.simpleButtonLCI.CustomizationFormText = "simpleButtonLCI";
-            this.simpleButtonLCI.Location = new System.Drawing.Point(0, 0);
-            this.simpleButtonLCI.Name = "simpleButtonLCI";
-            this.simpleButtonLCI.Size = new System.Drawing.Size(63, 26);
-            this.simpleButtonLCI.TextLocation = DevExpress.Utils.Locations.Left;
-            this.simpleButtonLCI.TextSize = new System.Drawing.Size(0, 0);
-            this.simpleButtonLCI.TextVisible = false;
-            this.simpleButtonLCI.TrimClientAreaToControl = false;
-            // 
-            // simpleButtonLCI1
-            // 
-            this.simpleButtonLCI1.Control = this.ButtonItemView;
-            this.simpleButtonLCI1.ControlAlignment = System.Drawing.ContentAlignment.BottomCenter;
-            this.simpleButtonLCI1.CustomizationFormText = "simpleButtonLCI";
-            this.simpleButtonLCI1.Location = new System.Drawing.Point(65, 0);
-            this.simpleButtonLCI1.Name = "simpleButtonLCI1";
-            this.simpleButtonLCI1.Size = new System.Drawing.Size(61, 26);
-            this.simpleButtonLCI1.Text = "simpleButtonLCI";
-            this.simpleButtonLCI1.TextLocation = DevExpress.Utils.Locations.Left;
-            this.simpleButtonLCI1.TextSize = new System.Drawing.Size(0, 0);
-            this.simpleButtonLCI1.TextVisible = false;
-            this.simpleButtonLCI1.TrimClientAreaToControl = false;
-            // 
-            // layoutControlItem3
-            // 
-            this.layoutControlItem3.Control = this.ButtonItemEdit;
-            this.layoutControlItem3.ControlAlignment = System.Drawing.ContentAlignment.BottomCenter;
-            this.layoutControlItem3.CustomizationFormText = "simpleButtonLCI";
-            this.layoutControlItem3.Location = new System.Drawing.Point(128, 0);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(92, 26);
-            this.layoutControlItem3.Text = "simpleButtonLCI";
-            this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem3.TextVisible = false;
-            this.layoutControlItem3.TrimClientAreaToControl = false;
-            // 
-            // layoutControlItem4
-            // 
-            this.layoutControlItem4.Control = this.ButtonItemDelete;
-            this.layoutControlItem4.ControlAlignment = System.Drawing.ContentAlignment.BottomCenter;
-            this.layoutControlItem4.CustomizationFormText = "simpleButtonLCI";
-            this.layoutControlItem4.Location = new System.Drawing.Point(222, 0);
-            this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(57, 26);
-            this.layoutControlItem4.Text = "simpleButtonLCI";
-            this.layoutControlItem4.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem4.TextVisible = false;
-            this.layoutControlItem4.TrimClientAreaToControl = false;
+            this.simpleSeparator6.Size = new System.Drawing.Size(753, 2);
             // 
             // simpleSeparator2
             // 
             this.simpleSeparator2.AllowHotTrack = false;
-            this.simpleSeparator2.Location = new System.Drawing.Point(63, 0);
+            this.simpleSeparator2.Location = new System.Drawing.Point(0, 0);
             this.simpleSeparator2.Name = "simpleSeparator2";
-            this.simpleSeparator2.Size = new System.Drawing.Size(2, 26);
+            this.simpleSeparator2.Size = new System.Drawing.Size(65, 2);
             // 
             // simpleSeparator3
             // 
             this.simpleSeparator3.AllowHotTrack = false;
-            this.simpleSeparator3.Location = new System.Drawing.Point(220, 0);
+            this.simpleSeparator3.Location = new System.Drawing.Point(128, 0);
             this.simpleSeparator3.Name = "simpleSeparator3";
-            this.simpleSeparator3.Size = new System.Drawing.Size(2, 26);
-            // 
-            // layoutControlGroup4
-            // 
-            this.layoutControlGroup4.CustomizationFormText = "Tab2";
-            this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup4.Name = "layoutControlGroup4";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(975, 174);
-            this.layoutControlGroup4.Text = "Tab2";
+            this.simpleSeparator3.Size = new System.Drawing.Size(94, 2);
             // 
             // splitterItem4
             // 
@@ -835,6 +760,11 @@
             this.simpleButtonLCI4.TextVisible = false;
             this.simpleButtonLCI4.TrimClientAreaToControl = false;
             // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
+            // 
             // equipmentUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -861,13 +791,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleButtonLCI)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleButtonLCI1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleButtonLCI2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleButtonLCI3)).EndInit();
@@ -893,7 +818,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItemEdit;
         private DevExpress.XtraBars.BarButtonItem barButtonItemDelete;
         public DevExpress.XtraBars.Ribbon.RibbonControl equipmentRibbonControl;
-        private DevExpress.XtraBars.BarButtonItem barButtonItemView;
         private DevExpress.XtraGrid.Columns.GridColumn colEquipmentCategoryGUID;
         private DevExpress.XtraGrid.Columns.GridColumn colStartUseDate;
         private DevExpress.XtraGrid.Columns.GridColumn colIpAddress;
@@ -911,7 +835,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.TabbedControlGroup tabbedControlGroup1;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
-        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup4;
         private DevExpress.XtraGrid.GridControl equipmentCharacterGridControl;
         private DevExpress.XtraGrid.Views.Grid.GridView equipmentCharacterGridView;
         private DevExpress.XtraGrid.Columns.GridColumn coGUID;
@@ -927,14 +850,6 @@
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator3;
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator5;
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator6;
-        private DevExpress.XtraEditors.SimpleButton ButtonItemAdd;
-        private DevExpress.XtraEditors.SimpleButton ButtonItemView;
-        private DevExpress.XtraEditors.SimpleButton ButtonItemEdit;
-        private DevExpress.XtraEditors.SimpleButton ButtonItemDelete;
-        private DevExpress.XtraLayout.LayoutControlItem simpleButtonLCI;
-        private DevExpress.XtraLayout.LayoutControlItem simpleButtonLCI1;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator2;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraLayout.LayoutControlItem simpleButtonLCI2;
@@ -942,5 +857,12 @@
         private DevExpress.XtraLayout.LayoutControlItem simpleButtonLCI3;
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private DevExpress.XtraLayout.LayoutControlItem simpleButtonLCI4;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItemView;
+        private DevExpress.XtraBars.BarButtonItem barButtonItemAddСhar;
+        private DevExpress.XtraBars.BarButtonItem barButtonItemViewChar;
+        private DevExpress.XtraBars.BarButtonItem barButtonItemEditChar;
+        private DevExpress.XtraBars.BarButtonItem barButtonItemDeleteChar;
     }
 }

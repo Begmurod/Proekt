@@ -64,7 +64,7 @@ namespace SensorSet.UI.Equipment
             using (UnitOfWork u = new UnitOfWork())
             {
                 //TODO сделать фильтр по критериям
-                DevExpress.Xpo.DB.SelectedData _measuresData = u.ExecuteQuery(string.Format(@"
+                DevExpress.Xpo.DB.SelectedData _equipmentCharacterParamData = u.ExecuteQuery(string.Format(@"
                SELECT [GUID]
       ,[EquipmentCharacterGUID]
       ,[EquipmentGUID]
@@ -77,7 +77,7 @@ namespace SensorSet.UI.Equipment
       ,[DeletedDate]
   FROM [dbo].[EquipmentCharacterParamView] Where DeletedDate is null"
                 ));
-                 equipmentCharacterParamDataView.LoadData(_measuresData);
+                 equipmentCharacterParamDataView.LoadData(_equipmentCharacterParamData);
             }
             GC.Collect();
         }

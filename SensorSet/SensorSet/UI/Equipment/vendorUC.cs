@@ -69,14 +69,14 @@ namespace SensorSet.UI.Equipment
             using (UnitOfWork u = new UnitOfWork())
             {
                 //TODO сделать фильтр по критериям
-                DevExpress.Xpo.DB.SelectedData _measuresData = u.ExecuteQuery(string.Format(@"
+                DevExpress.Xpo.DB.SelectedData _vendorData = u.ExecuteQuery(string.Format(@"
                 SELECT [GUID]
       ,Name
       ,CountryName      
   FROM list.Vendor
   WHERE [DeletedDate] is null"
                 ));
-                vendorDataView.LoadData(_measuresData);
+                vendorDataView.LoadData(_vendorData);
             }
             GC.Collect();
         }

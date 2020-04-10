@@ -70,7 +70,7 @@ namespace SensorSet.UI.Equipment
             using (UnitOfWork u = new UnitOfWork())
             {
                 //TODO сделать фильтр по критериям
-                DevExpress.Xpo.DB.SelectedData _measuresData = u.ExecuteQuery(string.Format(@"
+                DevExpress.Xpo.DB.SelectedData _deviceEquipmentKindData = u.ExecuteQuery(string.Format(@"
                 SELECT [GUID]
       ,Name 
       ,(Select [Name] FROM [device].[EquipmentKind] where GUID = d.ParentGUID) as ParentName
@@ -78,7 +78,7 @@ namespace SensorSet.UI.Equipment
          as d
         WHERE [DeletedDate] is null"
                 ));
-                deviceEquipmentKindDataView.LoadData(_measuresData);
+                deviceEquipmentKindDataView.LoadData(_deviceEquipmentKindData);
             }
             GC.Collect();
         }

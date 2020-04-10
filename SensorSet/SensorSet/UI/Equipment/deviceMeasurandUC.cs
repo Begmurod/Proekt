@@ -68,14 +68,12 @@ namespace SensorSet.UI.Equipment
                 //TODO сделать фильтр по критериям
                 DevExpress.Xpo.DB.SelectedData _measuresData = u.ExecuteQuery(string.Format(@"
                 SELECT [GUID]
-      ,[Name]
-      ,[NameEn]
-      ,[DimensionID]
       ,[ValueName]
+      ,[DimensionGUID]
+      ,[DimensionID]
       ,[DateOfChange]
       ,[DeletedDate]
-      ,[DimensionGUID]
-  FROM [dbo].[Measurand] Where DeletedDate is null"
+  FROM [dbo].[MeasurandView] Where DeletedDate is null"
                 ));
                 measurandDataView.LoadData(_measuresData);
             }

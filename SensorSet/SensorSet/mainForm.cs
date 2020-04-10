@@ -218,15 +218,15 @@ namespace SensorSet
             hideAllContainerControls(mainContainer);
             ribbonControl.UnMergeRibbon();
             SplashScreenManager.ShowForm(typeof(UI.Common.LoadingIndicator));
-            if (equipmentErrorUC == null)
+            if (deviceMeasurandUC == null)
             {
-                equipmentErrorUC = new Lazy<UI.Equipment.equipmentErrorUC>(() => new UI.Equipment.equipmentErrorUC(mainContainer));
-                equipmentErrorUC.Value.Dock = DockStyle.Fill;
+                deviceMeasurandUC = new Lazy<UI.Equipment.deviceMeasurandUC>(() => new UI.Equipment.deviceMeasurandUC(mainContainer));
+                deviceMeasurandUC.Value.Dock = DockStyle.Fill;
             }
             Text = "SensorSet - Измеряемые величины";
-            equipmentErrorUC.Value.Show();
-            ribbonControl.MergeRibbon(equipmentErrorUC.Value.equipmentErrorRibbonControl);
-            ribbonControl.SelectedPage = equipmentErrorUC.Value.equipmentErrorRibbonControl.SelectedPage;
+            deviceMeasurandUC.Value.Show();
+            ribbonControl.MergeRibbon(deviceMeasurandUC.Value.deviceMeasurandRibbonControl);
+            ribbonControl.SelectedPage = deviceMeasurandUC.Value.deviceMeasurandRibbonControl.SelectedPage;
             SplashScreenManager.CloseForm();
         }
         void initequipmentCharacterEquipmentTypeUC()

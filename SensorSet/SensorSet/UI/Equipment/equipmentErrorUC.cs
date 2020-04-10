@@ -63,7 +63,7 @@ namespace SensorSet.UI.Equipment
             using (UnitOfWork u = new UnitOfWork())
             {
                 //TODO сделать фильтр по критериям
-                DevExpress.Xpo.DB.SelectedData _measuresData = u.ExecuteQuery(string.Format(@"
+                DevExpress.Xpo.DB.SelectedData _equipmentErrorData = u.ExecuteQuery(string.Format(@"
              SELECT   [GUID]
       ,[MeasurandGUID]
       ,[EquipmentGUID]
@@ -74,11 +74,10 @@ namespace SensorSet.UI.Equipment
       ,[DeltaValue]
       ,[DateOfChange]
       ,[DeletedDate]
-      ,[EquipmentID]
   FROM [dbo].[EquipmentErrorView]
   WHERE [DeletedDate] is null"
                 ));
-                equipmentErrorDataView.LoadData(_measuresData);
+                equipmentErrorDataView.LoadData(_equipmentErrorData);
             }
             GC.Collect();
         }

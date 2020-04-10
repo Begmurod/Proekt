@@ -35,6 +35,7 @@
             DevExpress.Xpo.DataViewProperty dataViewProperty4 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty5 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty6 = new DevExpress.Xpo.DataViewProperty();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(equipmentTypeUC));
             DevExpress.Xpo.DataViewProperty dataViewProperty7 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty8 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty9 = new DevExpress.Xpo.DataViewProperty();
@@ -46,13 +47,19 @@
             DevExpress.Xpo.DataViewProperty dataViewProperty15 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty16 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty17 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             this.equipmentTypeDataView = new DevExpress.Xpo.XPDataView(this.components);
             this.dimensionRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItemAdd = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItemEdit = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItemDelete = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItemView = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItemAddCh = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItemViewCh = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItemEditCh = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItemDeleteCh = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.equipmentTypeGridControl = new DevExpress.XtraGrid.GridControl();
             this.equipmentTypeGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -77,31 +84,20 @@
             this.colNumericParam2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDeletedDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDateOfChange = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ButtonItemAdd = new DevExpress.XtraEditors.SimpleButton();
-            this.ButtonItemView = new DevExpress.XtraEditors.SimpleButton();
-            this.ButtonItemEdit = new DevExpress.XtraEditors.SimpleButton();
-            this.ButtonItemDelete = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.simpleSeparator1 = new DevExpress.XtraLayout.SimpleSeparator();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
             this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.simpleButtonLCI = new DevExpress.XtraLayout.LayoutControlItem();
             this.simpleSeparator3 = new DevExpress.XtraLayout.SimpleSeparator();
-            this.simpleButtonLCI1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.simpleButtonLCI2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.simpleButtonLCI3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.simpleSeparator2 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator4 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator5 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator6 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator7 = new DevExpress.XtraLayout.SimpleSeparator();
             this.splitterItem1 = new DevExpress.XtraLayout.SplitterItem();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonGalleryBarItem1 = new DevExpress.XtraBars.RibbonGalleryBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentTypeDataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dimensionRibbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentTypeGridControl)).BeginInit();
@@ -117,12 +113,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleButtonLCI)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleButtonLCI1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleButtonLCI2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleButtonLCI3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator5)).BeginInit();
@@ -162,10 +153,13 @@
             this.barButtonItemEdit,
             this.barButtonItemDelete,
             this.barButtonItemView,
-            this.barButtonItem1,
-            this.barButtonItem2});
+            this.barButtonItemAddCh,
+            this.barButtonItemViewCh,
+            this.barButtonItemEditCh,
+            this.barButtonItemDeleteCh,
+            this.ribbonGalleryBarItem1});
             this.dimensionRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.dimensionRibbonControl.MaxItemId = 9;
+            this.dimensionRibbonControl.MaxItemId = 12;
             this.dimensionRibbonControl.Name = "dimensionRibbonControl";
             this.dimensionRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -174,7 +168,9 @@
             // barButtonItemAdd
             // 
             this.barButtonItemAdd.Caption = "Добавить";
+            this.barButtonItemAdd.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemAdd.Glyph")));
             this.barButtonItemAdd.Id = 3;
+            this.barButtonItemAdd.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemAdd.LargeGlyph")));
             this.barButtonItemAdd.Name = "barButtonItemAdd";
             this.barButtonItemAdd.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemAdd_ItemClick);
             // 
@@ -182,6 +178,7 @@
             // 
             this.barButtonItemEdit.Caption = "Редактировать";
             this.barButtonItemEdit.Enabled = false;
+            this.barButtonItemEdit.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemEdit.Glyph")));
             this.barButtonItemEdit.Id = 4;
             this.barButtonItemEdit.Name = "barButtonItemEdit";
             this.barButtonItemEdit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemEdit_ItemClick);
@@ -190,6 +187,7 @@
             // 
             this.barButtonItemDelete.Caption = "Удалить";
             this.barButtonItemDelete.Enabled = false;
+            this.barButtonItemDelete.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemDelete.Glyph")));
             this.barButtonItemDelete.Id = 5;
             this.barButtonItemDelete.Name = "barButtonItemDelete";
             this.barButtonItemDelete.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemDelete_ItemClick);
@@ -198,9 +196,45 @@
             // 
             this.barButtonItemView.Caption = "Просмотр";
             this.barButtonItemView.Enabled = false;
+            this.barButtonItemView.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemView.Glyph")));
             this.barButtonItemView.Id = 6;
+            this.barButtonItemView.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemView.LargeGlyph")));
             this.barButtonItemView.Name = "barButtonItemView";
             this.barButtonItemView.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemView_ItemClick);
+            // 
+            // barButtonItemAddCh
+            // 
+            this.barButtonItemAddCh.Caption = "Добавить";
+            this.barButtonItemAddCh.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemAddCh.Glyph")));
+            this.barButtonItemAddCh.Id = 7;
+            this.barButtonItemAddCh.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemAddCh.LargeGlyph")));
+            this.barButtonItemAddCh.Name = "barButtonItemAddCh";
+            this.barButtonItemAddCh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemAddCh_ItemClick);
+            // 
+            // barButtonItemViewCh
+            // 
+            this.barButtonItemViewCh.Caption = "Просмотр";
+            this.barButtonItemViewCh.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemViewCh.Glyph")));
+            this.barButtonItemViewCh.Id = 8;
+            this.barButtonItemViewCh.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemViewCh.LargeGlyph")));
+            this.barButtonItemViewCh.Name = "barButtonItemViewCh";
+            this.barButtonItemViewCh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemViewCh_ItemClick);
+            // 
+            // barButtonItemEditCh
+            // 
+            this.barButtonItemEditCh.Caption = "Редактировать";
+            this.barButtonItemEditCh.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemEditCh.Glyph")));
+            this.barButtonItemEditCh.Id = 9;
+            this.barButtonItemEditCh.Name = "barButtonItemEditCh";
+            this.barButtonItemEditCh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemEditCh_ItemClick);
+            // 
+            // barButtonItemDeleteCh
+            // 
+            this.barButtonItemDeleteCh.Caption = "Удалить";
+            this.barButtonItemDeleteCh.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemDeleteCh.Glyph")));
+            this.barButtonItemDeleteCh.Id = 10;
+            this.barButtonItemDeleteCh.Name = "barButtonItemDeleteCh";
+            this.barButtonItemDeleteCh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemDeleteCh_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -210,6 +244,15 @@
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "Главная";
             // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItemAddCh);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItemViewCh);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItemEditCh);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItemDeleteCh);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "Набор характеристик типового оборудования";
+            // 
             // ribbonPageGroup1
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemAdd);
@@ -217,6 +260,7 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemEdit);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemDelete);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "Тип обородования";
             // 
             // equipmentTypeGridControl
             // 
@@ -293,10 +337,6 @@
             // 
             this.layoutControl1.Controls.Add(this.equipmentCharacterEquipmentTypeGridControl);
             this.layoutControl1.Controls.Add(this.equipmentTypeGridControl);
-            this.layoutControl1.Controls.Add(this.ButtonItemAdd);
-            this.layoutControl1.Controls.Add(this.ButtonItemView);
-            this.layoutControl1.Controls.Add(this.ButtonItemEdit);
-            this.layoutControl1.Controls.Add(this.ButtonItemDelete);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 141);
             this.layoutControl1.Name = "layoutControl1";
@@ -309,10 +349,10 @@
             // equipmentCharacterEquipmentTypeGridControl
             // 
             this.equipmentCharacterEquipmentTypeGridControl.DataSource = this.equipmentCharacterEquipmentTypeDataView;
-            this.equipmentCharacterEquipmentTypeGridControl.Location = new System.Drawing.Point(24, 342);
+            this.equipmentCharacterEquipmentTypeGridControl.Location = new System.Drawing.Point(24, 318);
             this.equipmentCharacterEquipmentTypeGridControl.MainView = this.equipmentCharacterEquipmentTypeGridView;
             this.equipmentCharacterEquipmentTypeGridControl.Name = "equipmentCharacterEquipmentTypeGridControl";
-            this.equipmentCharacterEquipmentTypeGridControl.Size = new System.Drawing.Size(971, 108);
+            this.equipmentCharacterEquipmentTypeGridControl.Size = new System.Drawing.Size(971, 132);
             this.equipmentCharacterEquipmentTypeGridControl.TabIndex = 5;
             this.equipmentCharacterEquipmentTypeGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.equipmentCharacterEquipmentTypeGridView});
@@ -371,6 +411,7 @@
             this.equipmentCharacterEquipmentTypeGridView.GridControl = this.equipmentCharacterEquipmentTypeGridControl;
             this.equipmentCharacterEquipmentTypeGridView.Name = "equipmentCharacterEquipmentTypeGridView";
             this.equipmentCharacterEquipmentTypeGridView.OptionsView.ShowGroupPanel = false;
+            this.equipmentCharacterEquipmentTypeGridView.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.equipmentCharacterEquipmentTypeGridView_FocusedRowChanged);
             // 
             // cGUID
             // 
@@ -459,50 +500,6 @@
             this.colDateOfChange.FieldName = "DateOfChange";
             this.colDateOfChange.Name = "colDateOfChange";
             // 
-            // ButtonItemAdd
-            // 
-            this.ButtonItemAdd.AutoWidthInLayoutControl = true;
-            this.ButtonItemAdd.Location = new System.Drawing.Point(26, 314);
-            this.ButtonItemAdd.Name = "ButtonItemAdd";
-            this.ButtonItemAdd.Size = new System.Drawing.Size(59, 22);
-            this.ButtonItemAdd.StyleController = this.layoutControl1;
-            this.ButtonItemAdd.TabIndex = 4;
-            this.ButtonItemAdd.Text = "Добавить";
-            this.ButtonItemAdd.Click += new System.EventHandler(this.ButtonItemAdd_Click);
-            // 
-            // ButtonItemView
-            // 
-            this.ButtonItemView.AutoWidthInLayoutControl = true;
-            this.ButtonItemView.Location = new System.Drawing.Point(91, 314);
-            this.ButtonItemView.Name = "ButtonItemView";
-            this.ButtonItemView.Size = new System.Drawing.Size(57, 22);
-            this.ButtonItemView.StyleController = this.layoutControl1;
-            this.ButtonItemView.TabIndex = 4;
-            this.ButtonItemView.Text = "Просмотр";
-            this.ButtonItemView.Click += new System.EventHandler(this.ButtonItemView_Click);
-            // 
-            // ButtonItemEdit
-            // 
-            this.ButtonItemEdit.AutoWidthInLayoutControl = true;
-            this.ButtonItemEdit.Location = new System.Drawing.Point(154, 314);
-            this.ButtonItemEdit.Name = "ButtonItemEdit";
-            this.ButtonItemEdit.Size = new System.Drawing.Size(88, 22);
-            this.ButtonItemEdit.StyleController = this.layoutControl1;
-            this.ButtonItemEdit.TabIndex = 4;
-            this.ButtonItemEdit.Text = "Редактировать";
-            this.ButtonItemEdit.Click += new System.EventHandler(this.ButtonItemEdit_Click);
-            // 
-            // ButtonItemDelete
-            // 
-            this.ButtonItemDelete.AutoWidthInLayoutControl = true;
-            this.ButtonItemDelete.Location = new System.Drawing.Point(248, 314);
-            this.ButtonItemDelete.Name = "ButtonItemDelete";
-            this.ButtonItemDelete.Size = new System.Drawing.Size(53, 22);
-            this.ButtonItemDelete.StyleController = this.layoutControl1;
-            this.ButtonItemDelete.TabIndex = 4;
-            this.ButtonItemDelete.Text = "Удалить";
-            this.ButtonItemDelete.Click += new System.EventHandler(this.ButtonItemDelete_Click);
-            // 
             // layoutControlGroup1
             // 
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -549,12 +546,7 @@
             this.layoutControlGroup3.CustomizationFormText = "Tab1";
             this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem2,
-            this.emptySpaceItem1,
-            this.simpleButtonLCI,
             this.simpleSeparator3,
-            this.simpleButtonLCI1,
-            this.simpleButtonLCI2,
-            this.simpleButtonLCI3,
             this.simpleSeparator2,
             this.simpleSeparator4,
             this.simpleSeparator5,
@@ -568,116 +560,53 @@
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.equipmentCharacterEquipmentTypeGridControl;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 28);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 4);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(975, 112);
+            this.layoutControlItem2.Size = new System.Drawing.Size(975, 136);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
-            // 
-            // emptySpaceItem1
-            // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(283, 0);
-            this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(692, 26);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // simpleButtonLCI
-            // 
-            this.simpleButtonLCI.Control = this.ButtonItemAdd;
-            this.simpleButtonLCI.ControlAlignment = System.Drawing.ContentAlignment.BottomCenter;
-            this.simpleButtonLCI.CustomizationFormText = "simpleButtonLCI";
-            this.simpleButtonLCI.Location = new System.Drawing.Point(2, 0);
-            this.simpleButtonLCI.Name = "simpleButtonLCI";
-            this.simpleButtonLCI.Size = new System.Drawing.Size(63, 26);
-            this.simpleButtonLCI.TextLocation = DevExpress.Utils.Locations.Left;
-            this.simpleButtonLCI.TextSize = new System.Drawing.Size(0, 0);
-            this.simpleButtonLCI.TextVisible = false;
-            this.simpleButtonLCI.TrimClientAreaToControl = false;
             // 
             // simpleSeparator3
             // 
             this.simpleSeparator3.AllowHotTrack = false;
-            this.simpleSeparator3.Location = new System.Drawing.Point(2, 26);
+            this.simpleSeparator3.Location = new System.Drawing.Point(2, 2);
             this.simpleSeparator3.Name = "simpleSeparator3";
             this.simpleSeparator3.Size = new System.Drawing.Size(973, 2);
-            // 
-            // simpleButtonLCI1
-            // 
-            this.simpleButtonLCI1.Control = this.ButtonItemView;
-            this.simpleButtonLCI1.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.simpleButtonLCI1.CustomizationFormText = "simpleButtonLCI";
-            this.simpleButtonLCI1.Location = new System.Drawing.Point(67, 0);
-            this.simpleButtonLCI1.Name = "simpleButtonLCI1";
-            this.simpleButtonLCI1.Size = new System.Drawing.Size(61, 26);
-            this.simpleButtonLCI1.Text = "simpleButtonLCI";
-            this.simpleButtonLCI1.TextLocation = DevExpress.Utils.Locations.Left;
-            this.simpleButtonLCI1.TextSize = new System.Drawing.Size(0, 0);
-            this.simpleButtonLCI1.TextVisible = false;
-            this.simpleButtonLCI1.TrimClientAreaToControl = false;
-            // 
-            // simpleButtonLCI2
-            // 
-            this.simpleButtonLCI2.Control = this.ButtonItemEdit;
-            this.simpleButtonLCI2.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.simpleButtonLCI2.CustomizationFormText = "simpleButtonLCI";
-            this.simpleButtonLCI2.Location = new System.Drawing.Point(130, 0);
-            this.simpleButtonLCI2.Name = "simpleButtonLCI2";
-            this.simpleButtonLCI2.Size = new System.Drawing.Size(92, 26);
-            this.simpleButtonLCI2.Text = "simpleButtonLCI";
-            this.simpleButtonLCI2.TextLocation = DevExpress.Utils.Locations.Left;
-            this.simpleButtonLCI2.TextSize = new System.Drawing.Size(0, 0);
-            this.simpleButtonLCI2.TextVisible = false;
-            this.simpleButtonLCI2.TrimClientAreaToControl = false;
-            // 
-            // simpleButtonLCI3
-            // 
-            this.simpleButtonLCI3.Control = this.ButtonItemDelete;
-            this.simpleButtonLCI3.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.simpleButtonLCI3.CustomizationFormText = "simpleButtonLCI";
-            this.simpleButtonLCI3.Location = new System.Drawing.Point(224, 0);
-            this.simpleButtonLCI3.Name = "simpleButtonLCI3";
-            this.simpleButtonLCI3.Size = new System.Drawing.Size(57, 26);
-            this.simpleButtonLCI3.Text = "simpleButtonLCI";
-            this.simpleButtonLCI3.TextLocation = DevExpress.Utils.Locations.Left;
-            this.simpleButtonLCI3.TextSize = new System.Drawing.Size(0, 0);
-            this.simpleButtonLCI3.TextVisible = false;
-            this.simpleButtonLCI3.TrimClientAreaToControl = false;
             // 
             // simpleSeparator2
             // 
             this.simpleSeparator2.AllowHotTrack = false;
-            this.simpleSeparator2.Location = new System.Drawing.Point(222, 0);
+            this.simpleSeparator2.Location = new System.Drawing.Point(130, 0);
             this.simpleSeparator2.Name = "simpleSeparator2";
-            this.simpleSeparator2.Size = new System.Drawing.Size(2, 26);
+            this.simpleSeparator2.Size = new System.Drawing.Size(94, 2);
             // 
             // simpleSeparator4
             // 
             this.simpleSeparator4.AllowHotTrack = false;
-            this.simpleSeparator4.Location = new System.Drawing.Point(281, 0);
+            this.simpleSeparator4.Location = new System.Drawing.Point(224, 0);
             this.simpleSeparator4.Name = "simpleSeparator4";
-            this.simpleSeparator4.Size = new System.Drawing.Size(2, 26);
+            this.simpleSeparator4.Size = new System.Drawing.Size(751, 2);
             // 
             // simpleSeparator5
             // 
             this.simpleSeparator5.AllowHotTrack = false;
-            this.simpleSeparator5.Location = new System.Drawing.Point(128, 0);
+            this.simpleSeparator5.Location = new System.Drawing.Point(67, 0);
             this.simpleSeparator5.Name = "simpleSeparator5";
-            this.simpleSeparator5.Size = new System.Drawing.Size(2, 26);
+            this.simpleSeparator5.Size = new System.Drawing.Size(63, 2);
             // 
             // simpleSeparator6
             // 
             this.simpleSeparator6.AllowHotTrack = false;
-            this.simpleSeparator6.Location = new System.Drawing.Point(65, 0);
+            this.simpleSeparator6.Location = new System.Drawing.Point(2, 0);
             this.simpleSeparator6.Name = "simpleSeparator6";
-            this.simpleSeparator6.Size = new System.Drawing.Size(2, 26);
+            this.simpleSeparator6.Size = new System.Drawing.Size(65, 2);
             // 
             // simpleSeparator7
             // 
             this.simpleSeparator7.AllowHotTrack = false;
             this.simpleSeparator7.Location = new System.Drawing.Point(0, 0);
             this.simpleSeparator7.Name = "simpleSeparator7";
-            this.simpleSeparator7.Size = new System.Drawing.Size(2, 28);
+            this.simpleSeparator7.Size = new System.Drawing.Size(2, 4);
             // 
             // splitterItem1
             // 
@@ -686,24 +615,17 @@
             this.splitterItem1.Name = "splitterItem1";
             this.splitterItem1.Size = new System.Drawing.Size(999, 5);
             // 
-            // ribbonPageGroup2
+            // ribbonGalleryBarItem1
             // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem1);
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
+            this.ribbonGalleryBarItem1.Caption = "ribbonGalleryBarItem1";
             // 
-            // barButtonItem1
             // 
-            this.barButtonItem1.Caption = "barButtonItem1";
-            this.barButtonItem1.Id = 7;
-            this.barButtonItem1.Name = "barButtonItem1";
             // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "barButtonItem2";
-            this.barButtonItem2.Id = 8;
-            this.barButtonItem2.Name = "barButtonItem2";
+            galleryItemGroup1.Caption = "Group1";
+            this.ribbonGalleryBarItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup1});
+            this.ribbonGalleryBarItem1.Id = 11;
+            this.ribbonGalleryBarItem1.Name = "ribbonGalleryBarItem1";
             // 
             // equipmentTypeUC
             // 
@@ -729,12 +651,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleButtonLCI)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleButtonLCI1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleButtonLCI2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleButtonLCI3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator5)).EndInit();
@@ -782,16 +699,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colNumericParam2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.Xpo.XPDataView equipmentCharacterEquipmentTypeDataView;
-        private DevExpress.XtraEditors.SimpleButton ButtonItemAdd;
-        private DevExpress.XtraEditors.SimpleButton ButtonItemView;
-        private DevExpress.XtraEditors.SimpleButton ButtonItemEdit;
-        private DevExpress.XtraEditors.SimpleButton ButtonItemDelete;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
-        private DevExpress.XtraLayout.LayoutControlItem simpleButtonLCI;
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator3;
-        private DevExpress.XtraLayout.LayoutControlItem simpleButtonLCI1;
-        private DevExpress.XtraLayout.LayoutControlItem simpleButtonLCI2;
-        private DevExpress.XtraLayout.LayoutControlItem simpleButtonLCI3;
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator2;
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator4;
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator5;
@@ -800,8 +708,11 @@
         private DevExpress.XtraGrid.Columns.GridColumn colDeletedDate;
         private DevExpress.XtraGrid.Columns.GridColumn colDateOfChange;
         private DevExpress.XtraLayout.SplitterItem splitterItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItemAddCh;
+        private DevExpress.XtraBars.BarButtonItem barButtonItemViewCh;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItemEditCh;
+        private DevExpress.XtraBars.BarButtonItem barButtonItemDeleteCh;
+        private DevExpress.XtraBars.RibbonGalleryBarItem ribbonGalleryBarItem1;
     }
 }

@@ -134,6 +134,12 @@ namespace SensorSet.Model.SensorSet
             get { return fDateModify; }
             set { SetPropertyValue<DateTime>("DateModify", ref fDateModify, value); }
         }
+        DateTime fDateOfChange;
+        public DateTime DateOfChange
+        {
+            get { return fDateOfChange; }
+            set { SetPropertyValue<DateTime>("DateOfChange", ref fDateOfChange, value); }
+        }
         [Association(@"device_EquipmentReferencesdevice_Equipment")]
         public XPCollection<device_Equipment> device_EquipmentCollection { get { return GetCollection<device_Equipment>("device_EquipmentCollection"); } }
         [Association(@"device_EquipmentCharacterParamReferencesdevice_Equipment")]

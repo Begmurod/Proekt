@@ -57,6 +57,18 @@ namespace SensorSet.Model.SensorSet
             get { return fIsSystem; }
             set { SetPropertyValue<bool>("IsSystem", ref fIsSystem, value); }
         }
+        DateTime fDeletedDate;
+        public DateTime DeletedDate
+        {
+            get { return fDeletedDate; }
+            set { SetPropertyValue<DateTime>("DeletedDate", ref fDeletedDate, value); }
+        }
+        DateTime fDateOfChange;
+        public DateTime DateOfChange
+        {
+            get { return fDateOfChange; }
+            set { SetPropertyValue<DateTime>("DateOfChange", ref fDateOfChange, value); }
+        }
         [Association(@"device_EquipmentCharacterEquipmentTypeReferencesdevice_EquipmentCharacter")]
         public XPCollection<device_EquipmentCharacterEquipmentType> device_EquipmentCharacterEquipmentTypes { get { return GetCollection<device_EquipmentCharacterEquipmentType>("device_EquipmentCharacterEquipmentTypes"); } }
         [Association(@"device_EquipmentCharacterParamReferencesdevice_EquipmentCharacter")]
