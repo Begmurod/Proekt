@@ -33,6 +33,7 @@ namespace SensorSet
             foreach (Control child in container.Controls)
                 child.Hide();
         }
+        
 
         void initEquipmentUC()
         {

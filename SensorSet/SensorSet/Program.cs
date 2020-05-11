@@ -15,6 +15,7 @@ namespace SensorSet
 {
     static class Program
     {
+        public static string ExampleDBConnectionString = "Data Source=localhost;Initial Catalog=SensorSet;Integrated Security=False";
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -43,7 +44,8 @@ namespace SensorSet
                 throw (e);
             }
 
-            Application.Run(new mainForm());            
+            Application.Run(new RegForm());   
+            
         }
     }
 }

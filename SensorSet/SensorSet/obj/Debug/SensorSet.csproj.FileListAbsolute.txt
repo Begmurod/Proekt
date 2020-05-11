@@ -2237,3 +2237,4 @@ D:\3 2 cm\SensorSet\SensorSet\SensorSet\obj\Debug\SensorSet.csproj.CoreCompileIn
 D:\3 2 cm\SensorSet\SensorSet\SensorSet\obj\Debug\SensorSet.csproj.CopyComplete
 D:\3 2 cm\SensorSet\SensorSet\SensorSet\obj\Debug\SensorSet.exe
 D:\3 2 cm\SensorSet\SensorSet\SensorSet\obj\Debug\SensorSet.pdb
+D:\3 2 cm\SensorSet\SensorSet\SensorSet\obj\Debug\SensorSet.RegForm.resources
