@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SensorSetDataSet" targetNamespace="http://tempuri.org/SensorSetDataSet.xsd" xmlns:mstns="http://tempuri.org/SensorSetDataSet.xsd" xmlns="http://tempuri.org/SensorSetDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SensorSetConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SensorSetConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SensorSet.Properties.Settings.GlobalReference.Default.SensorSetConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DimensionTableAdapter" GeneratorDataComponentClassName="DimensionTableAdapter" Name="Dimension" UserDataComponentName="DimensionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SensorSetConnectionString (Settings)" DbObjectName="SensorSet.list.Dimension" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Name, NameEn, ParentGUID, Koef, ShowInInterface, Digits FROM list.Dimension</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="NameEn" DataSetColumn="NameEn" />
+              <Mapping SourceColumn="ParentGUID" DataSetColumn="ParentGUID" />
+              <Mapping SourceColumn="Koef" DataSetColumn="Koef" />
+              <Mapping SourceColumn="ShowInInterface" DataSetColumn="ShowInInterface" />
+              <Mapping SourceColumn="Digits" DataSetColumn="Digits" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SensorSetDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SensorSetDataSet" msprop:Generator_UserDSName="SensorSetDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Dimension" msprop:Generator_TableClassName="DimensionDataTable" msprop:Generator_TableVarName="tableDimension" msprop:Generator_TablePropName="Dimension" msprop:Generator_RowDeletingName="DimensionRowDeleting" msprop:Generator_RowChangingName="DimensionRowChanging" msprop:Generator_RowEvHandlerName="DimensionRowChangeEventHandler" msprop:Generator_RowDeletedName="DimensionRowDeleted" msprop:Generator_UserTableName="Dimension" msprop:Generator_RowChangedName="DimensionRowChanged" msprop:Generator_RowEvArgName="DimensionRowChangeEvent" msprop:Generator_RowClassName="DimensionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NameEn" msprop:Generator_ColumnVarNameInTable="columnNameEn" msprop:Generator_ColumnPropNameInRow="NameEn" msprop:Generator_ColumnPropNameInTable="NameEnColumn" msprop:Generator_UserColumnName="NameEn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParentGUID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnParentGUID" msprop:Generator_ColumnPropNameInRow="ParentGUID" msprop:Generator_ColumnPropNameInTable="ParentGUIDColumn" msprop:Generator_UserColumnName="ParentGUID" type="xs:string" minOccurs="0" />
+              <xs:element name="Koef" msprop:Generator_ColumnVarNameInTable="columnKoef" msprop:Generator_ColumnPropNameInRow="Koef" msprop:Generator_ColumnPropNameInTable="KoefColumn" msprop:Generator_UserColumnName="Koef" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ShowInInterface" msprop:Generator_ColumnVarNameInTable="columnShowInInterface" msprop:Generator_ColumnPropNameInRow="ShowInInterface" msprop:Generator_ColumnPropNameInTable="ShowInInterfaceColumn" msprop:Generator_UserColumnName="ShowInInterface" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Digits" msprop:Generator_ColumnVarNameInTable="columnDigits" msprop:Generator_ColumnPropNameInRow="Digits" msprop:Generator_ColumnPropNameInTable="DigitsColumn" msprop:Generator_UserColumnName="Digits" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
