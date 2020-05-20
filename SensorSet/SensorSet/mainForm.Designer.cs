@@ -156,7 +156,6 @@
             this.equipmentGroup.LargeImage = ((System.Drawing.Image)(resources.GetObject("equipmentGroup.LargeImage")));
             this.equipmentGroup.Name = "equipmentGroup";
             this.equipmentGroup.SmallImage = ((System.Drawing.Image)(resources.GetObject("equipmentGroup.SmallImage")));
-            this.equipmentGroup.TopVisibleLinkIndex = 6;
             // 
             // equipmentItem
             // 

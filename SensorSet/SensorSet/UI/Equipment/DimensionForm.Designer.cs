@@ -28,23 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DimensionForm));
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
-            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule2 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.Xpo.DataViewProperty dataViewProperty1 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty2 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty3 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.XtraEditors.DXErrorProvider.CompareAgainstControlValidationRule compareAgainstControlValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.CompareAgainstControlValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule2 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule3 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
-            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule4 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.cancelButton = new DevExpress.XtraEditors.SimpleButton();
             this.addButton = new DevExpress.XtraEditors.SimpleButton();
             this.checkEdit = new DevExpress.XtraEditors.CheckEdit();
             this.koefTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.baseNameLookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
-            this.dimensionDataView = new DevExpress.Xpo.XPDataView(this.components);
+            this.dimensionDataView = new DevExpress.Xpo.XPDataView();
             this.nameEngTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.nameTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.digitTextEdit = new DevExpress.XtraEditors.SpinEdit();
@@ -58,7 +56,7 @@
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.dxValidationProvider = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
+            this.dxValidationProvider = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit.Properties)).BeginInit();
@@ -159,9 +157,6 @@
             this.baseNameLookUpEdit.Size = new System.Drawing.Size(214, 20);
             this.baseNameLookUpEdit.StyleController = this.layoutControl1;
             this.baseNameLookUpEdit.TabIndex = 6;
-            conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.NotEquals;
-            conditionValidationRule2.ErrorText = "Поле не должно быть пустым";
-            this.dxValidationProvider.SetValidationRule(this.baseNameLookUpEdit, conditionValidationRule2);
             // 
             // dimensionDataView
             // 
@@ -194,9 +189,9 @@
             this.nameTextEdit.Size = new System.Drawing.Size(214, 20);
             this.nameTextEdit.StyleController = this.layoutControl1;
             this.nameTextEdit.TabIndex = 4;
-            conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.NotEquals;
-            conditionValidationRule3.ErrorText = "Поле Обозначение не должно быть пустым";
-            this.dxValidationProvider.SetValidationRule(this.nameTextEdit, conditionValidationRule3);
+            conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.NotEquals;
+            conditionValidationRule2.ErrorText = "Поле Обозначение не должно быть пустым";
+            this.dxValidationProvider.SetValidationRule(this.nameTextEdit, conditionValidationRule2);
             // 
             // digitTextEdit
             // 
@@ -214,9 +209,9 @@
             this.digitTextEdit.Size = new System.Drawing.Size(214, 20);
             this.digitTextEdit.StyleController = this.layoutControl1;
             this.digitTextEdit.TabIndex = 9;
-            conditionValidationRule4.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.NotEquals;
-            conditionValidationRule4.ErrorText = "Поле не должно быть пустым";
-            this.dxValidationProvider.SetValidationRule(this.digitTextEdit, conditionValidationRule4);
+            conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.NotEquals;
+            conditionValidationRule3.ErrorText = "Поле не должно быть пустым";
+            this.dxValidationProvider.SetValidationRule(this.digitTextEdit, conditionValidationRule3);
             // 
             // layoutControlGroup1
             // 
