@@ -96,8 +96,8 @@ namespace SensorSet.UI.Equipment
       ,[BoolParam]
       ,[NumericParam]
       ,[NumericParam2]
-      ,[DeletedDate]
       ,[DateOfChange]
+      ,[DeletedDate]
   FROM [dbo].[EquipmentCharacterEquipmentTypeView] Where DeletedDate is null "
             ));
                 equipmentCharacterEquipmentTypeDataView.LoadData(_measuresData);
