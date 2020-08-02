@@ -2791,7 +2791,6 @@ C:\Users\Bek\Desktop\практика 2020\SensorSet\SensorSet\SensorSet\obj\Deb
 C:\Users\Bek\Desktop\практика 2020\SensorSet\SensorSet\SensorSet\obj\Debug\SensorSet.UI.Equipment.EquipmentTypeForm.resources
 C:\Users\Bek\Desktop\практика 2020\SensorSet\SensorSet\SensorSet\obj\Debug\SensorSet.UI.Equipment.equipmentTypeUC.resources
 C:\Users\Bek\Desktop\практика 2020\SensorSet\SensorSet\SensorSet\obj\Debug\SensorSet.UI.Equipment.equipmentUC.resources
-C:\Users\Bek\Desktop\практика 2020\SensorSet\SensorSet\SensorSet\obj\Debug\SensorSet.UI.Equipment.MeasurandForm.resources
 C:\Users\Bek\Desktop\практика 2020\SensorSet\SensorSet\SensorSet\obj\Debug\SensorSet.UI.Equipment.MeasurandFormForm.resources
 C:\Users\Bek\Desktop\практика 2020\SensorSet\SensorSet\SensorSet\obj\Debug\SensorSet.UI.Equipment.VendorForm.resources
 C:\Users\Bek\Desktop\практика 2020\SensorSet\SensorSet\SensorSet\obj\Debug\SensorSet.UI.Equipment.vendorUC.resources

@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MeasurandFormForm));
-            DevExpress.Xpo.DataViewProperty dataViewProperty4 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty5 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty6 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty1 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty2 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty3 = new DevExpress.Xpo.DataViewProperty();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.cancelButton = new DevExpress.XtraEditors.SimpleButton();
             this.addButton = new DevExpress.XtraEditors.SimpleButton();
@@ -83,6 +83,7 @@
             this.cancelButton.StyleController = this.layoutControl1;
             this.cancelButton.TabIndex = 11;
             this.cancelButton.Text = "Отмена";
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // addButton
             // 
@@ -113,16 +114,16 @@
             // 
             // dimensionGUIDDataView
             // 
-            dataViewProperty4.Name = "GUID";
-            dataViewProperty4.ValueType = typeof(object);
-            dataViewProperty5.Name = "Name";
-            dataViewProperty5.ValueType = typeof(string);
-            dataViewProperty6.Name = "NameEn";
-            dataViewProperty6.ValueType = typeof(string);
+            dataViewProperty1.Name = "GUID";
+            dataViewProperty1.ValueType = typeof(object);
+            dataViewProperty2.Name = "Name";
+            dataViewProperty2.ValueType = typeof(string);
+            dataViewProperty3.Name = "NameEn";
+            dataViewProperty3.ValueType = typeof(string);
             this.dimensionGUIDDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
-            dataViewProperty4,
-            dataViewProperty5,
-            dataViewProperty6});
+            dataViewProperty1,
+            dataViewProperty2,
+            dataViewProperty3});
             // 
             // valueNameTextEdit
             // 

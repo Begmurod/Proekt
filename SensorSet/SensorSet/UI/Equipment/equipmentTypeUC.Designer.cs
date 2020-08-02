@@ -36,6 +36,7 @@
             DevExpress.Xpo.DataViewProperty dataViewProperty5 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty6 = new DevExpress.Xpo.DataViewProperty();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(equipmentTypeUC));
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.Xpo.DataViewProperty dataViewProperty7 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty8 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty9 = new DevExpress.Xpo.DataViewProperty();
@@ -45,9 +46,6 @@
             DevExpress.Xpo.DataViewProperty dataViewProperty13 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty14 = new DevExpress.Xpo.DataViewProperty();
             DevExpress.Xpo.DataViewProperty dataViewProperty15 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty16 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty17 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             this.equipmentTypeDataView = new DevExpress.Xpo.XPDataView(this.components);
             this.dimensionRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItemAdd = new DevExpress.XtraBars.BarButtonItem();
@@ -58,6 +56,7 @@
             this.barButtonItemViewCh = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItemEditCh = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItemDeleteCh = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonGalleryBarItem1 = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -97,7 +96,6 @@
             this.simpleSeparator6 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator7 = new DevExpress.XtraLayout.SimpleSeparator();
             this.splitterItem1 = new DevExpress.XtraLayout.SplitterItem();
-            this.ribbonGalleryBarItem1 = new DevExpress.XtraBars.RibbonGalleryBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentTypeDataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dimensionRibbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equipmentTypeGridControl)).BeginInit();
@@ -128,11 +126,11 @@
             dataViewProperty1.ValueType = typeof(object);
             dataViewProperty2.Name = "Name";
             dataViewProperty2.ValueType = typeof(string);
-            dataViewProperty3.Name = "EquipmentKindGUID";
+            dataViewProperty3.Name = "FullName";
             dataViewProperty3.ValueType = typeof(string);
-            dataViewProperty4.Name = "EquipmentVendorGUID";
+            dataViewProperty4.Name = "EquipmentKindGUID";
             dataViewProperty4.ValueType = typeof(string);
-            dataViewProperty5.Name = "FullName";
+            dataViewProperty5.Name = "EquipmentVendorGUID";
             dataViewProperty5.ValueType = typeof(string);
             dataViewProperty6.Name = "Description";
             dataViewProperty6.ValueType = typeof(string);
@@ -236,6 +234,18 @@
             this.barButtonItemDeleteCh.Name = "barButtonItemDeleteCh";
             this.barButtonItemDeleteCh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemDeleteCh_ItemClick);
             // 
+            // ribbonGalleryBarItem1
+            // 
+            this.ribbonGalleryBarItem1.Caption = "ribbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            galleryItemGroup1.Caption = "Group1";
+            this.ribbonGalleryBarItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup1});
+            this.ribbonGalleryBarItem1.Id = 11;
+            this.ribbonGalleryBarItem1.Name = "ribbonGalleryBarItem1";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -280,8 +290,8 @@
             this.colGUID,
             this.colName,
             this.colKindName,
-            this.colVendorName,
             this.colFullName,
+            this.colVendorName,
             this.colDescription});
             this.equipmentTypeGridView.GridControl = this.equipmentTypeGridControl;
             this.equipmentTypeGridView.Name = "equipmentTypeGridView";
@@ -377,10 +387,6 @@
             dataViewProperty14.ValueType = typeof(long);
             dataViewProperty15.Name = "NumericParam2";
             dataViewProperty15.ValueType = typeof(double);
-            dataViewProperty16.Name = "DeletedDate";
-            dataViewProperty16.ValueType = typeof(System.DateTime);
-            dataViewProperty17.Name = "DateOfChange";
-            dataViewProperty17.ValueType = typeof(System.DateTime);
             this.equipmentCharacterEquipmentTypeDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
             dataViewProperty7,
             dataViewProperty8,
@@ -390,9 +396,7 @@
             dataViewProperty12,
             dataViewProperty13,
             dataViewProperty14,
-            dataViewProperty15,
-            dataViewProperty16,
-            dataViewProperty17});
+            dataViewProperty15});
             // 
             // equipmentCharacterEquipmentTypeGridView
             // 
@@ -614,18 +618,6 @@
             this.splitterItem1.Location = new System.Drawing.Point(0, 261);
             this.splitterItem1.Name = "splitterItem1";
             this.splitterItem1.Size = new System.Drawing.Size(999, 5);
-            // 
-            // ribbonGalleryBarItem1
-            // 
-            this.ribbonGalleryBarItem1.Caption = "ribbonGalleryBarItem1";
-            // 
-            // 
-            // 
-            galleryItemGroup1.Caption = "Group1";
-            this.ribbonGalleryBarItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup1});
-            this.ribbonGalleryBarItem1.Id = 11;
-            this.ribbonGalleryBarItem1.Name = "ribbonGalleryBarItem1";
             // 
             // equipmentTypeUC
             // 

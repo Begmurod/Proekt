@@ -76,7 +76,7 @@ namespace SensorSet.UI.Equipment
             if (edit)
             {
                 valueNameTextEdit.Text = currentMeasurand.ValueName;
-                DimensionGUIDLookUpEdit.EditValue = currentMeasurand.DimensionGUID;
+                DimensionGUIDLookUpEdit.EditValue = currentMeasurand.DimensionGUID.GUID;
 
             }
 
@@ -126,6 +126,12 @@ namespace SensorSet.UI.Equipment
                 }
             }
 
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            uow.Dispose();
+            Close();
         }
     }
 }

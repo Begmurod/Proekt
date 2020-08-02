@@ -44,7 +44,7 @@ namespace SensorSet
                 throw (e);
             }
 
-            Application.Run(new RegForm());   
+            Application.Run(new mainForm());   
             
         }
     }

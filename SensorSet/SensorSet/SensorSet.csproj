@@ -358,12 +358,6 @@
     <Compile Include="UI\Equipment\equipmentUC.Designer.cs">
       <DependentUpon>equipmentUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Equipment\MeasurandForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Equipment\MeasurandForm.Designer.cs">
-      <DependentUpon>MeasurandForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\Equipment\MeasurandFormForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -475,9 +469,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Equipment\equipmentUC.resx">
       <DependentUpon>equipmentUC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Equipment\MeasurandForm.resx">
-      <DependentUpon>MeasurandForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Equipment\MeasurandFormForm.resx">
       <DependentUpon>MeasurandFormForm.cs</DependentUpon>

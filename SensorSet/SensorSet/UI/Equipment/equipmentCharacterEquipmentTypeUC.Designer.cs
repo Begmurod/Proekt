@@ -29,17 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.Xpo.DataViewProperty dataViewProperty12 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty13 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty14 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty15 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty16 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty17 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty18 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty19 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty20 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty21 = new DevExpress.Xpo.DataViewProperty();
-            DevExpress.Xpo.DataViewProperty dataViewProperty22 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty1 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty2 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty3 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty4 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty5 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty6 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty7 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty8 = new DevExpress.Xpo.DataViewProperty();
+            DevExpress.Xpo.DataViewProperty dataViewProperty9 = new DevExpress.Xpo.DataViewProperty();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(equipmentCharacterEquipmentTypeUC));
             this.equipmentCharacterEquipmentTypeDataView = new DevExpress.Xpo.XPDataView(this.components);
             this.equipmentCharacterEquipmentTypeRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
@@ -68,40 +66,34 @@
             // 
             // equipmentCharacterEquipmentTypeDataView
             // 
-            dataViewProperty12.Name = "GUID";
-            dataViewProperty12.ValueType = typeof(object);
-            dataViewProperty13.Name = "EquipmentCharacterGUID";
-            dataViewProperty13.ValueType = typeof(string);
-            dataViewProperty14.Name = "EquipmentTypeGUID";
-            dataViewProperty14.ValueType = typeof(string);
-            dataViewProperty15.Name = "IntParam";
-            dataViewProperty15.ValueType = typeof(long);
-            dataViewProperty16.Name = "StrParam";
-            dataViewProperty16.ValueType = typeof(string);
-            dataViewProperty17.Name = "DataParam";
-            dataViewProperty17.ValueType = typeof(System.DateTime);
-            dataViewProperty18.Name = "BoolParam";
-            dataViewProperty18.ValueType = typeof(bool);
-            dataViewProperty19.Name = "NumericParam";
-            dataViewProperty19.ValueType = typeof(long);
-            dataViewProperty20.Name = "NumericParam2";
-            dataViewProperty20.ValueType = typeof(double);
-            dataViewProperty21.Name = "DeletedDate";
-            dataViewProperty21.ValueType = typeof(System.DateTime);
-            dataViewProperty22.Name = "DateOfChange";
-            dataViewProperty22.ValueType = typeof(System.DateTime);
+            dataViewProperty1.Name = "GUID";
+            dataViewProperty1.ValueType = typeof(object);
+            dataViewProperty2.Name = "EquipmentCharacterGUID";
+            dataViewProperty2.ValueType = typeof(string);
+            dataViewProperty3.Name = "EquipmentTypeGUID";
+            dataViewProperty3.ValueType = typeof(string);
+            dataViewProperty4.Name = "IntParam";
+            dataViewProperty4.ValueType = typeof(long);
+            dataViewProperty5.Name = "StrParam";
+            dataViewProperty5.ValueType = typeof(string);
+            dataViewProperty6.Name = "DataParam";
+            dataViewProperty6.ValueType = typeof(System.DateTime);
+            dataViewProperty7.Name = "BoolParam";
+            dataViewProperty7.ValueType = typeof(bool);
+            dataViewProperty8.Name = "NumericParam";
+            dataViewProperty8.ValueType = typeof(long);
+            dataViewProperty9.Name = "NumericParam2";
+            dataViewProperty9.ValueType = typeof(double);
             this.equipmentCharacterEquipmentTypeDataView.Properties.AddRange(new DevExpress.Xpo.DataViewProperty[] {
-            dataViewProperty12,
-            dataViewProperty13,
-            dataViewProperty14,
-            dataViewProperty15,
-            dataViewProperty16,
-            dataViewProperty17,
-            dataViewProperty18,
-            dataViewProperty19,
-            dataViewProperty20,
-            dataViewProperty21,
-            dataViewProperty22});
+            dataViewProperty1,
+            dataViewProperty2,
+            dataViewProperty3,
+            dataViewProperty4,
+            dataViewProperty5,
+            dataViewProperty6,
+            dataViewProperty7,
+            dataViewProperty8,
+            dataViewProperty9});
             // 
             // equipmentCharacterEquipmentTypeRibbonControl
             // 

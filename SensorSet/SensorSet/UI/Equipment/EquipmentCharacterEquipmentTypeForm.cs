@@ -87,7 +87,7 @@ namespace SensorSet.UI.Equipment
                 SelectedData EquipmentCharacterGUID = u.ExecuteQuery(@"SELECT GUID, CharacterName FROM  device.EquipmentCharacter WHERE DeletedDate is null");
                 EquipmentCharacterGUIDDataView.LoadData(EquipmentCharacterGUID);
 
-                SelectedData EquipmentTypeGUID = u.ExecuteQuery(@"SELECT GUID, FullName FROM  [device].[EquipmentType] WHERE DeletedDate is null");
+                SelectedData EquipmentTypeGUID = u.ExecuteQuery(@"SELECT GUID, Name, FullName FROM  [device].[EquipmentType] WHERE DeletedDate is null");
                 EquipmentTypeGUIDDataView.LoadData(EquipmentTypeGUID);
             }
             #endregion
@@ -98,7 +98,7 @@ namespace SensorSet.UI.Equipment
                 equipmentTypeGUIDLookUpEdit.EditValue = currentEquipmentCharacterEquipmentType.EquipmentTypeGUID.GUID;
                 intParamTextEdit.Text = currentEquipmentCharacterEquipmentType.IntParam.ToString();
                 strParamTextEdit.Text = currentEquipmentCharacterEquipmentType.StrParam;
-                dataParamdateEdit.DateTime = currentEquipmentCharacterEquipmentType.DataParam;
+                dataParamdateEdit.Text = currentEquipmentCharacterEquipmentType.DataParam.ToString();
                 if (currentEquipmentCharacterEquipmentType.BoolParam)
                     checkEdit.Checked = true;
                 numericParamtextEdit.Text = currentEquipmentCharacterEquipmentType.NumericParam.ToString();
@@ -130,7 +130,7 @@ namespace SensorSet.UI.Equipment
                 currentEquipmentCharacterEquipmentType.EquipmentTypeGUID = uow.GetObjectByKey<device_EquipmentType>(equipmentTypeGUIDLookUpEdit.EditValue);
                 currentEquipmentCharacterEquipmentType.IntParam = Convert.ToInt64(intParamTextEdit.Text);
                 currentEquipmentCharacterEquipmentType.StrParam = strParamTextEdit.Text;
-                currentEquipmentCharacterEquipmentType.DataParam = dataParamdateEdit.DateTime;
+                currentEquipmentCharacterEquipmentType.DataParam = Convert.ToDateTime(dataParamdateEdit.Text);
                 currentEquipmentCharacterEquipmentType.BoolParam = checkEdit.Checked;
                 currentEquipmentCharacterEquipmentType.NumericParam = Convert.ToInt64(numericParamtextEdit.Text);
                 currentEquipmentCharacterEquipmentType.NumericParam2 = Convert.ToDouble(numericParam2textEdit.Text);
