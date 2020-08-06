@@ -65,8 +65,8 @@
             this.colGUID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colKindName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colVendorName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colFullName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colVendorName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDescription = new DevExpress.XtraGrid.Columns.GridColumn();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.equipmentCharacterEquipmentTypeGridControl = new DevExpress.XtraGrid.GridControl();
@@ -316,16 +316,6 @@
             this.colKindName.Caption = "Идентификатор вида устройства";
             this.colKindName.FieldName = "EquipmentKindGUID";
             this.colKindName.Name = "colKindName";
-            this.colKindName.Visible = true;
-            this.colKindName.VisibleIndex = 1;
-            // 
-            // colVendorName
-            // 
-            this.colVendorName.Caption = "Идентификатор производителя оборудования";
-            this.colVendorName.FieldName = "EquipmentVendorGUID";
-            this.colVendorName.Name = "colVendorName";
-            this.colVendorName.Visible = true;
-            this.colVendorName.VisibleIndex = 2;
             // 
             // colFullName
             // 
@@ -333,7 +323,15 @@
             this.colFullName.FieldName = "FullName";
             this.colFullName.Name = "colFullName";
             this.colFullName.Visible = true;
-            this.colFullName.VisibleIndex = 3;
+            this.colFullName.VisibleIndex = 2;
+            // 
+            // colVendorName
+            // 
+            this.colVendorName.Caption = "Идентификатор производителя оборудования";
+            this.colVendorName.FieldName = "EquipmentVendorGUID";
+            this.colVendorName.Name = "colVendorName";
+            this.colVendorName.Visible = true;
+            this.colVendorName.VisibleIndex = 1;
             // 
             // colDescription
             // 
@@ -341,7 +339,7 @@
             this.colDescription.FieldName = "Description";
             this.colDescription.Name = "colDescription";
             this.colDescription.Visible = true;
-            this.colDescription.VisibleIndex = 4;
+            this.colDescription.VisibleIndex = 3;
             // 
             // layoutControl1
             // 
